@@ -1,4 +1,4 @@
-# Daily briefing, Sat Oct 31, 2:27 PM ET
+# Daily briefing, Sat Oct 31, 4:56 PM ET
 - Scout: PAPER PICK GATO. Passed every filter, highest score 84.
 - Paper: 2 open, 0 closed, win rate n/a, net $+0.00 realized, $+1.58 open (after fees/slippage). Paper only.
 - Wallets: $68.54 total vs $100.40 on Oct 27 (read-only).

@@ -498,5 +498,12 @@
     "CBUCKS up 26% on $4.50; $0 closed"
    ]
   ]
+ },
+ "spending": {
+  "source": "Notion Bot Ops > Expenses",
+  "rows": [],
+  "week_total": 0,
+  "month_total": 0,
+  "hint": "Log a receipt: drop receipt photos or bank screenshots (cover card/account numbers) in your Notion Inbox, or send them in chat. They're logged to Notion Expenses on the weekday-morning sync."
  }
 }

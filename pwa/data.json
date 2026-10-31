@@ -394,7 +394,14 @@
    ]
   ]
  },
- "updated_iso": "2026-10-31T14:26:58.026880-04:00",
+ "spending": {
+  "source": "Notion Bot Ops > Expenses",
+  "rows": [],
+  "week_total": 0,
+  "month_total": 0,
+  "hint": "Log a receipt: drop receipt photos or bank screenshots (cover card/account numbers) in your Notion Inbox, or send them in chat. They're logged to Notion Expenses on the weekday-morning sync."
+ },
+ "updated_iso": "2026-10-31T09:06:05.185036-04:00",
  "agents": [
   {
    "id": "chief",
@@ -403,7 +410,7 @@
    "bot": "chief",
    "hue": 190,
    "role": "Runs the 8 AM refresh, keeps the rules",
-   "activity": "Refresh done 2:26 PM ET"
+   "activity": "Refresh done 9:06 AM ET"
   },
   {
    "id": "scout",
@@ -967,7 +974,7 @@
   "Restaurants": 0.0,
   "Alcohol": 0.0
  },
- "updated": "Oct 31, 2026, 2:26 PM ET",
+ "updated": "Oct 31, 2026, 9:06 AM ET",
  "sol_price": 96.58,
  "wallets": [
   {
@@ -1026,7 +1033,7 @@
    68.54
   ],
   [
-   "Oct 31 2:26p",
+   "Oct 31 9:06a",
    68.54
   ]
  ],
@@ -1177,7 +1184,7 @@
    "sym": "BURN",
    "name": "BURN",
    "ca": "5ANpBFZjmhTv48dvU18sCLmgQS9mwJ7meU6aMYSZpump",
-   "age": "32 h",
+   "age": "34 h",
    "liq": "unverified",
    "vol": "unverified",
    "chg": "mcap $12.1k",
