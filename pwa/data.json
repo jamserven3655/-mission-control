@@ -394,7 +394,7 @@
    ]
   ]
  },
- "updated_iso": "2026-10-31T09:11:21.630583-04:00",
+ "updated_iso": "2026-10-31T09:38:02.343254-04:00",
  "agents": [
   {
    "id": "chief",
@@ -403,7 +403,7 @@
    "bot": "chief",
    "hue": 190,
    "role": "Runs the 8 AM refresh, keeps the rules",
-   "activity": "Refresh done 9:11 AM ET"
+   "activity": "Refresh done 9:38 AM ET"
   },
   {
    "id": "scout",
@@ -412,7 +412,7 @@
    "bot": "chief",
    "hue": 45,
    "role": "Scans DexScreener + RugCheck (scan.py)",
-   "activity": "Scanned 49 pairs: NO TRADE"
+   "activity": "Scanned 48 pairs: NO TRADE"
   },
   {
    "id": "paper",
@@ -461,7 +461,7 @@
   }
  ],
  "scan": {
-  "run": "2026-10-31 09:11 ET",
+  "run": "2026-10-31 09:38 ET",
   "decision": "NO TRADE today",
   "reason": "No token passed every filter",
   "pick": null,
@@ -482,14 +482,14 @@
     "name": "GTA6CAT",
     "ca": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
     "url": "https://dexscreener.com/solana/5e3dxlxgwmtdcoka51wyyakttjfzbwqcoyuhbui5gt2m",
-    "price": 0.005884,
-    "liq": 241048,
-    "vol24": 1071425,
-    "vol_liq": 4.4,
-    "age_h": 1608.7,
-    "chg1": -3.54,
-    "chg24": 24.91,
-    "bs1": 0.84,
+    "price": 0.005921,
+    "liq": 241692,
+    "vol24": 1075562,
+    "vol_liq": 4.5,
+    "age_h": 1609.2,
+    "chg1": 0.24,
+    "chg24": 28.6,
+    "bs1": 0.81,
     "score": 80,
     "scout": "SKIP",
     "flags": [
@@ -506,14 +506,14 @@
     "name": "DogWifJob",
     "ca": "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump",
     "url": "https://dexscreener.com/solana/hauvbmnthcfmg9srxmvz1gaxnpu955hkpdsasc2cx4c8",
-    "price": 0.003318,
-    "liq": 160472,
-    "vol24": 1346378,
-    "vol_liq": 8.4,
-    "age_h": 90.0,
-    "chg1": -0.25,
-    "chg24": 16.36,
-    "bs1": 0.7,
+    "price": 0.003319,
+    "liq": 160453,
+    "vol24": 1335148,
+    "vol_liq": 8.3,
+    "age_h": 90.4,
+    "chg1": -2.52,
+    "chg24": 21.31,
+    "bs1": 0.6,
     "score": 77,
     "scout": "SKIP",
     "flags": [
@@ -530,41 +530,18 @@
     "name": "Infinite Money Glitch",
     "ca": "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump",
     "url": "https://dexscreener.com/solana/em6rvzgxhd35pz7cvujctpenv4jaztscavhaxbxcbcg7",
-    "price": 0.003326,
-    "liq": 159639,
-    "vol24": 524268,
-    "vol_liq": 3.3,
-    "age_h": 357.6,
-    "chg1": 0.24,
-    "chg24": 16.86,
-    "bs1": 1.11,
+    "price": 0.003479,
+    "liq": 163200,
+    "vol24": 527290,
+    "vol_liq": 3.2,
+    "age_h": 358.1,
+    "chg1": 7.71,
+    "chg24": 28.05,
+    "bs1": 0.93,
     "score": 76,
     "scout": "SKIP",
     "flags": [
-     "RugCheck UNVERIFIED"
-    ],
-    "rug": {
-     "ok": false,
-     "err": "HTTP Error 400: Bad Request"
-    }
-   },
-   {
-    "sym": "AMC",
-    "name": "A Massive Cock",
-    "ca": "5G3pzMiNQxiFctE1aZRTctYJLz5zGdfA1S65QMT5pump",
-    "url": "https://dexscreener.com/solana/hc8wzjcag5x3cqycc3pberdc7xxpafx6fhmv4wjzjmfz",
-    "price": 7.568e-05,
-    "liq": 23106,
-    "vol24": 46591,
-    "vol_liq": 2.0,
-    "age_h": 85.7,
-    "chg1": -15.71,
-    "chg24": 63.03,
-    "bs1": 1.1,
-    "score": 73,
-    "scout": "SKIP",
-    "flags": [
-     "Low liquidity",
+     "Sell pressure (1h)",
      "RugCheck UNVERIFIED"
     ],
     "rug": {
@@ -577,14 +554,14 @@
     "name": "Super Intelligence SI276",
     "ca": "HMYd9tosnUXuNHmq7pXmoePRVBLBBjA3JBfydq6upump",
     "url": "https://dexscreener.com/solana/12jc1dzjpzbcdakum4brakh9jcfry2tlg1ffgsl4ftcg",
-    "price": 0.0004891,
-    "liq": 70640,
-    "vol24": 36970,
+    "price": 0.0005113,
+    "liq": 72227,
+    "vol24": 37664,
     "vol_liq": 0.5,
-    "age_h": 593.8,
-    "chg1": -1.54,
-    "chg24": 30.17,
-    "bs1": 2.33,
+    "age_h": 594.2,
+    "chg1": 3.5,
+    "chg24": 42.39,
+    "bs1": 2.35,
     "score": 71,
     "scout": "SKIP",
     "flags": [
@@ -600,19 +577,18 @@
     "name": "STANK",
     "ca": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
     "url": "https://dexscreener.com/solana/6hyfmye2byyscterqueckhihq5x9j2wd2z9watdwy38n",
-    "price": 0.0002536,
-    "liq": 42724,
-    "vol24": 281272,
-    "vol_liq": 6.6,
-    "age_h": 47.2,
-    "chg1": 1.06,
-    "chg24": 117,
-    "bs1": 0.96,
+    "price": 0.0002471,
+    "liq": 41985,
+    "vol24": 279575,
+    "vol_liq": 6.7,
+    "age_h": 47.7,
+    "chg1": 3.65,
+    "chg24": 91.8,
+    "bs1": 1.33,
     "score": 67,
     "scout": "SKIP",
     "flags": [
      "Low liquidity",
-     "Sell pressure (1h)",
      "RugCheck UNVERIFIED"
     ],
     "rug": {
@@ -621,85 +597,72 @@
     }
    },
    {
-    "sym": "Leverhedge",
-    "name": "Leverhedge",
-    "ca": "FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump",
-    "url": "https://dexscreener.com/solana/6d3ujezdb2wdbvvryfycvgxsih9fw6ml6hscia5qvhwp",
-    "price": 0.001261,
-    "liq": 94419,
-    "vol24": 1052623,
-    "vol_liq": 11.1,
-    "age_h": 13.5,
-    "chg1": 32.33,
-    "chg24": 2736,
-    "bs1": 1.9,
-    "score": 65,
+    "sym": "HELL",
+    "name": "Hellhound",
+    "ca": "A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump",
+    "url": "https://dexscreener.com/solana/ewsyhiuznynqh5f65ypfsoqblq2kyetuvhm5un7wsfdg",
+    "price": 0.002711,
+    "liq": 139705,
+    "vol24": 104085,
+    "vol_liq": 0.7,
+    "age_h": 432.6,
+    "chg1": 0.27,
+    "chg24": -11.03,
+    "bs1": 1.11,
+    "score": 59,
     "scout": "SKIP",
     "flags": [
-     "Very new (<24h)",
-     "RugCheck not run (outside top 8)"
+     "RugCheck UNVERIFIED"
     ],
-    "rug": null
+    "rug": {
+     "ok": false,
+     "err": "HTTP Error 400: Bad Request"
+    }
    },
    {
     "sym": "AMAZON",
     "name": "Amazon.com, Inc.",
     "ca": "9L2FD9gNEu8h9NdD9VqRWCqhNgh1UznG8Ve7VZWpump",
     "url": "https://dexscreener.com/solana/4dh9bkp5fgvr6oel7rj2femjpbshtig8zr4ypvbrbfkd",
-    "price": 0.0008422,
-    "liq": 74323,
-    "vol24": 161215,
-    "vol_liq": 2.2,
-    "age_h": 2.9,
-    "chg1": 102,
-    "chg24": 2023,
-    "bs1": 2.08,
-    "score": 60,
+    "price": 9.476e-05,
+    "liq": 23891,
+    "vol24": 209673,
+    "vol_liq": 8.8,
+    "age_h": 3.4,
+    "chg1": -85.39,
+    "chg24": 139,
+    "bs1": 2.03,
+    "score": 59,
     "scout": "SKIP",
     "flags": [
+     "Low liquidity",
      "Very new (<24h)",
-     "RugCheck not run (outside top 8)"
+     "Dumping",
+     "RugCheck UNVERIFIED"
     ],
-    "rug": null
+    "rug": {
+     "ok": false,
+     "err": "HTTP Error 400: Bad Request"
+    }
    },
    {
     "sym": "NIL",
     "name": "Nipples In Latex",
     "ca": "5EH4bo9k5omHfD1mRSKfpUsSgPRyeRjaaFdhHGq1pump",
     "url": "https://dexscreener.com/solana/77sfnuzyaytxspdzmescsgcoaovxjtiafcdl39qydbd6",
-    "price": 0.0001303,
-    "liq": 28476,
-    "vol24": 201455,
-    "vol_liq": 7.1,
-    "age_h": 0.4,
-    "chg1": 223,
-    "chg24": 223,
-    "bs1": 1.81,
-    "score": 59,
+    "price": 9.904e-05,
+    "liq": 25012,
+    "vol24": 323735,
+    "vol_liq": 12.9,
+    "age_h": 0.8,
+    "chg1": 145,
+    "chg24": 145,
+    "bs1": 1.56,
+    "score": 58,
     "scout": "SKIP",
     "flags": [
      "Low liquidity",
      "Very new (<24h)",
-     "RugCheck not run (outside top 8)"
-    ],
-    "rug": null
-   },
-   {
-    "sym": "HELL",
-    "name": "Hellhound",
-    "ca": "A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump",
-    "url": "https://dexscreener.com/solana/ewsyhiuznynqh5f65ypfsoqblq2kyetuvhm5un7wsfdg",
-    "price": 0.002632,
-    "liq": 137648,
-    "vol24": 102999,
-    "vol_liq": 0.7,
-    "age_h": 432.1,
-    "chg1": 6.79,
-    "chg24": -2.64,
-    "bs1": 1.08,
-    "score": 58,
-    "scout": "SKIP",
-    "flags": [
      "RugCheck UNVERIFIED"
     ],
     "rug": {
@@ -712,15 +675,37 @@
     "name": "CATPAD",
     "ca": "2gTbp2gwH46rqExzabSyrdR3294SLwCp2rSqWDS6Sim1",
     "url": "https://dexscreener.com/solana/gu2ajbkebpvxumm27t41xetevusbvrwghdmjw7fdc4bn",
-    "price": 0.0001448,
-    "liq": 30842,
-    "vol24": 578663,
-    "vol_liq": 18.8,
-    "age_h": 22.2,
-    "chg1": -5.76,
-    "chg24": 216,
-    "bs1": 1.45,
+    "price": 0.000138,
+    "liq": 30064,
+    "vol24": 581231,
+    "vol_liq": 19.3,
+    "age_h": 22.7,
+    "chg1": -7.53,
+    "chg24": 201,
+    "bs1": 1.43,
     "score": 57,
+    "scout": "SKIP",
+    "flags": [
+     "Low liquidity",
+     "Very new (<24h)",
+     "RugCheck not run (outside top 8)"
+    ],
+    "rug": null
+   },
+   {
+    "sym": "RAM",
+    "name": "Ram Altman",
+    "ca": "6QUHcqYuiPRHxhnYZoygewXtNQr9kUrhc9Tmwgtbpump",
+    "url": "https://dexscreener.com/solana/a5fpvh5c4zya6ewbbwgzlsfdougcx5bjsxk4fxkuwhmw",
+    "price": 0.0001537,
+    "liq": 32245,
+    "vol24": 586976,
+    "vol_liq": 18.2,
+    "age_h": 9.7,
+    "chg1": 265,
+    "chg24": 289,
+    "bs1": 1.4,
+    "score": 56,
     "scout": "SKIP",
     "flags": [
      "Low liquidity",
@@ -738,10 +723,10 @@
     "liq": 25695,
     "vol24": 34751,
     "vol_liq": 1.4,
-    "age_h": 7031.0,
-    "chg1": -3.86,
+    "age_h": 7031.4,
+    "chg1": -0.19,
     "chg24": 35.82,
-    "bs1": 0.33,
+    "bs1": 0.0,
     "score": 54,
     "scout": "SKIP",
     "flags": [
@@ -752,23 +737,23 @@
     "rug": null
    },
    {
-    "sym": "\uc0bc\uc131\ucc2c",
-    "name": "SamsungChan",
-    "ca": "8WNQQvdcPaNMn6mJLpT64SEMBoDFyjKsHmbB5tknpump",
-    "url": "https://dexscreener.com/solana/gzaciveyu1mcb97d2r36jsysrgkbvywh86vysxxkdupo",
-    "price": 0.0002013,
-    "liq": 36526,
-    "vol24": 446817,
+    "sym": "Leverhedge",
+    "name": "Leverhedge",
+    "ca": "FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump",
+    "url": "https://dexscreener.com/solana/6d3ujezdb2wdbvvryfycvgxsih9fw6ml6hscia5qvhwp",
+    "price": 0.001137,
+    "liq": 89599,
+    "vol24": 1089772,
     "vol_liq": 12.2,
-    "age_h": 0.9,
-    "chg1": 399,
-    "chg24": 399,
-    "bs1": 1.43,
-    "score": 50,
+    "age_h": 13.9,
+    "chg1": 37.82,
+    "chg24": 2458,
+    "bs1": 0.11,
+    "score": 53,
     "scout": "SKIP",
     "flags": [
-     "Low liquidity",
      "Very new (<24h)",
+     "Sell pressure (1h)",
      "RugCheck not run (outside top 8)"
     ],
     "rug": null
@@ -778,43 +763,62 @@
     "name": "Quantum Inu",
     "ca": "8TiMkgvsrat9tM2esko8zVTt99LZLpefUM4SnZaziXaQ",
     "url": "https://dexscreener.com/solana/cb4gfrgeitfu5qtxfrmiqzsavpwgbd3heor4cs2jfpn",
-    "price": 0.000217,
-    "liq": 52102,
-    "vol24": 51965,
-    "vol_liq": 1.0,
-    "age_h": 536.4,
-    "chg1": -1.37,
-    "chg24": -5.64,
-    "bs1": 1.2,
-    "score": 47,
+    "price": 0.0002163,
+    "liq": 51952,
+    "vol24": 47982,
+    "vol_liq": 0.9,
+    "age_h": 536.8,
+    "chg1": -2.57,
+    "chg24": -4.12,
+    "bs1": 0.75,
+    "score": 46,
     "scout": "SKIP",
     "flags": [
-     "RugCheck UNVERIFIED"
+     "Sell pressure (1h)",
+     "RugCheck not run (outside top 8)"
     ],
-    "rug": {
-     "ok": false,
-     "err": "HTTP Error 400: Bad Request"
-    }
+    "rug": null
    },
    {
-    "sym": "VAMPCAT",
-    "name": "Vamp Cat",
-    "ca": "4rsSV6L6mQ6jN587eKi5tNgkbgdzc8c9fxEVY8wapump",
-    "url": "https://dexscreener.com/solana/3qh8289k4dme6yaawfwksyjdhnbcp4reyz75zrtg2phj",
-    "price": 0.0001146,
-    "liq": 27730,
-    "vol24": 784306,
-    "vol_liq": 28.3,
-    "age_h": 2.6,
-    "chg1": -31.29,
-    "chg24": 189,
-    "bs1": 1.56,
-    "score": 47,
+    "sym": "Jason",
+    "name": "Jason Duval",
+    "ca": "3qjBR3LfzEAKVS6QXuR2QZ1RFUsXzATWvmjbGB5Dpump",
+    "url": "https://dexscreener.com/solana/cyksjjjfpzb7hn7m6i7beax2p6ukgs8cssy8uv9x5u1",
+    "price": 0.0001195,
+    "liq": 29036,
+    "vol24": 226675,
+    "vol_liq": 7.8,
+    "age_h": 20.1,
+    "chg1": 0.67,
+    "chg24": 149,
+    "bs1": 1.21,
+    "score": 44,
     "scout": "SKIP",
     "flags": [
      "Low liquidity",
      "Very new (<24h)",
-     "Dumping",
+     "RugCheck not run (outside top 8)"
+    ],
+    "rug": null
+   },
+   {
+    "sym": "\uc0bc\uc131\ucc2c",
+    "name": "SamsungChan",
+    "ca": "8WNQQvdcPaNMn6mJLpT64SEMBoDFyjKsHmbB5tknpump",
+    "url": "https://dexscreener.com/solana/gzaciveyu1mcb97d2r36jsysrgkbvywh86vysxxkdupo",
+    "price": 0.0001195,
+    "liq": 28364,
+    "vol24": 628831,
+    "vol_liq": 22.2,
+    "age_h": 1.3,
+    "chg1": 12.37,
+    "chg24": 196,
+    "bs1": 1.22,
+    "score": 44,
+    "scout": "SKIP",
+    "flags": [
+     "Low liquidity",
+     "Very new (<24h)",
      "RugCheck not run (outside top 8)"
     ],
     "rug": null
@@ -828,7 +832,7 @@
    "wins": 0,
    "win_rate": null,
    "net": 0,
-   "unrealized": 1.85,
+   "unrealized": 1.94,
    "fees": 0.04,
    "slippage": 0.09,
    "avg_hold_h": null,
@@ -842,8 +846,8 @@
     "opened": "2026-10-30",
     "status": "open",
     "entry": 0.0009007,
-    "last": 0.001349,
-    "x": 1.498,
+    "last": 0.001369,
+    "x": 1.52,
     "half": false,
     "net": null,
     "fees": 0.045,
@@ -852,10 +856,6 @@
    }
   ],
   "log": [
-   [
-    "2026-10-30",
-    "Opened $4.50 paper position in CBUCKS at $0.0009007"
-   ],
    [
     "2026-10-30",
     "CBUCKS: open, price x1.13 of entry"
@@ -875,6 +875,14 @@
    [
     "2026-10-31",
     "CBUCKS: open, price x1.50 of entry"
+   ],
+   [
+    "2026-10-31",
+    "NO TRADE today (no token passed every filter)"
+   ],
+   [
+    "2026-10-31",
+    "CBUCKS: open, price x1.52 of entry"
    ],
    [
     "2026-10-31",
@@ -901,7 +909,7 @@
   "Restaurants": 0.0,
   "Alcohol": 0.0
  },
- "updated": "Oct 31, 2026, 9:11 AM ET",
+ "updated": "Oct 31, 2026, 9:38 AM ET",
  "sol_price": 96.58,
  "wallets": [
   {
@@ -960,7 +968,7 @@
    68.54
   ],
   [
-   "Oct 31 9:11a",
+   "Oct 31 9:38a",
    68.54
   ]
  ],
@@ -1182,7 +1190,7 @@
  ],
  "briefing": [
   "- Scout: NO TRADE today. No token passed every filter.",
-  "- Paper: 1 open, 0 closed, win rate n/a, net $+0.00 realized, $+1.85 open (after fees/slippage). Paper only.",
+  "- Paper: 1 open, 0 closed, win rate n/a, net $+0.00 realized, $+1.94 open (after fees/slippage). Paper only.",
   "- Wallets: $68.54 total vs $100.40 on Oct 27 (read-only).",
   "- Spend this week vs caps: Tobacco $0/$25, Crypto $0/$0, Restaurants $0/$10, Alcohol $0/$15 (no Notion expenses logged yet).",
   "- $5K mission: income/savings are entered in the app on your phone; the server only knows confirmed savings $0.",

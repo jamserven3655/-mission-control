@@ -1,6 +1,6 @@
-# Daily briefing, Sat Oct 31, 9:11 AM ET
+# Daily briefing, Sat Oct 31, 9:38 AM ET
 - Scout: NO TRADE today. No token passed every filter.
-- Paper: 1 open, 0 closed, win rate n/a, net $+0.00 realized, $+1.85 open (after fees/slippage). Paper only.
+- Paper: 1 open, 0 closed, win rate n/a, net $+0.00 realized, $+1.94 open (after fees/slippage). Paper only.
 - Wallets: $68.54 total vs $100.40 on Oct 27 (read-only).
 - Spend this week vs caps: Tobacco $0/$25, Crypto $0/$0, Restaurants $0/$10, Alcohol $0/$15 (no Notion expenses logged yet).
 - $5K mission: income/savings are entered in the app on your phone; the server only knows confirmed savings $0.
