@@ -23,8 +23,8 @@
    "fill": 0.000918714,
    "qty": 4849.169600114943,
    "qty0": 4849.169600114943,
-   "peak": 0.001134,
-   "last_px": 0.001134,
+   "peak": 0.001349,
+   "last_px": 0.001349,
    "half_sold": false,
    "proceeds": 0.0,
    "fees": 0.045,
@@ -38,7 +38,7 @@
      -4.5
     ]
    ],
-   "mark_x": 1.259
+   "mark_x": 1.498
   }
  ],
  "losses": {},
@@ -62,6 +62,14 @@
   [
    "2026-10-31",
    "NO TRADE today (no token passed every filter)"
+  ],
+  [
+   "2026-10-31",
+   "CBUCKS: open, price x1.50 of entry"
+  ],
+  [
+   "2026-10-31",
+   "NO TRADE today (no token passed every filter)"
   ]
  ],
  "summary": {
@@ -70,7 +78,7 @@
   "wins": 0,
   "win_rate": null,
   "net": 0,
-  "unrealized": 0.84,
+  "unrealized": 1.85,
   "fees": 0.04,
   "slippage": 0.09,
   "avg_hold_h": null,
