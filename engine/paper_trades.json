@@ -1,0 +1,80 @@
+{
+ "rules": {
+  "stake": 4.5,
+  "fee": 0.01,
+  "slip": 0.02,
+  "take": 2.0,
+  "trail": 0.3,
+  "stop": 0.5,
+  "max_hold_h": 72,
+  "max_open": 2,
+  "daily_loss_stop": 3,
+  "bucket": 88.0
+ },
+ "trades": [
+  {
+   "id": 1,
+   "sym": "CBUCKS",
+   "ca": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
+   "url": "https://dexscreener.com/solana/b4cp45pgifvm5faxfh6aev8qz3eunqnqgbw7kuc7mhnb",
+   "opened": "2026-10-30",
+   "opened_ts": 1793364737.0826752,
+   "entry_mkt": 0.0009007,
+   "fill": 0.000918714,
+   "qty": 4849.169600114943,
+   "qty0": 4849.169600114943,
+   "peak": 0.001134,
+   "last_px": 0.001134,
+   "half_sold": false,
+   "proceeds": 0.0,
+   "fees": 0.045,
+   "slip_cost": 0.08735294117647059,
+   "status": "open",
+   "events": [
+    [
+     1793364737.0826752,
+     "open $4.50 paper",
+     0.0009007,
+     -4.5
+    ]
+   ],
+   "mark_x": 1.259
+  }
+ ],
+ "losses": {},
+ "log": [
+  [
+   "2026-10-30",
+   "Opened $4.50 paper position in CBUCKS at $0.0009007"
+  ],
+  [
+   "2026-10-30",
+   "CBUCKS: open, price x1.13 of entry"
+  ],
+  [
+   "2026-10-30",
+   "Already opened a paper trade today"
+  ],
+  [
+   "2026-10-31",
+   "CBUCKS: open, price x1.26 of entry"
+  ],
+  [
+   "2026-10-31",
+   "NO TRADE today (no token passed every filter)"
+  ]
+ ],
+ "summary": {
+  "closed": 0,
+  "open": 1,
+  "wins": 0,
+  "win_rate": null,
+  "net": 0,
+  "unrealized": 0.84,
+  "fees": 0.04,
+  "slippage": 0.09,
+  "avg_hold_h": null,
+  "bucket_left": 83.5
+ },
+ "last_run": "2026-10-31"
+}

@@ -1,0 +1,8 @@
+# Daily briefing, Sat Oct 31, 12:24 AM ET
+- Scout: NO TRADE today. No token passed every filter.
+- Paper: 1 open, 0 closed, win rate n/a, net $+0.00 realized, $+0.84 open (after fees/slippage). Paper only.
+- Wallets: $68.54 total vs $100.40 on Oct 27 (read-only).
+- Spend this week vs caps: Tobacco $0/$25, Crypto $0/$0, Restaurants $0/$10, Alcohol $0/$15 (no Notion expenses logged yet).
+- $5K mission: income/savings are entered in the app on your phone; the server only knows confirmed savings $0.
+- Grok cost this month $71.69 (extra $26.69 vs $20 cap). Usage 100%, resets Sun Nov 1, 4:12 AM ET.
+- WARNING: plan usage at or above 90%.

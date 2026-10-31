@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+*.zip
+*.bak
+backups/
+*.backup.json
+.env
+.env.*
+*.token
+*secret*
+.netlify/
+.netlify_site_id
+.DS_Store

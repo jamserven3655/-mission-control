@@ -1,0 +1,39 @@
+name: Mission Control update
+on:
+  schedule:
+    - cron: "0 13 * * *"   # 8 AM ET (winter)
+    - cron: "0 18 * * *"   # 1 PM ET
+    - cron: "0 23 * * *"   # 6 PM ET
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: mc-update
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Scan, paper trade, build (no AI, paper only)
+        run: |
+          python engine/scan.py || echo "scan failed, keeping last data"
+          python engine/paper.py || echo "paper failed"
+          python pwa/build_data.py
+      - name: Save data
+        run: |
+          git config user.name "mission-control-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A engine pwa
+          git diff --cached --quiet || git commit -m "Auto update $(date -u +%FT%TZ)"
+          git pull --rebase -X ours || true
+          git push || echo "push skipped"
+      - name: Deploy to Netlify
+        if: ${{ env.NETLIFY_AUTH_TOKEN != '' }}
+        run: |
+          cd pwa && zip -qr ../site.zip index.html app.css app.js manifest.json sw.js data.json briefing.md icons && cd ..
+          curl -sf -H "Authorization: Bearer $NETLIFY_AUTH_TOKEN" -H "Content-Type: application/zip" --data-binary @site.zip "https://api.netlify.com/api/v1/sites/$NETLIFY_SITE_ID/deploys" > /dev/null && echo deployed

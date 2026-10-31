@@ -1,0 +1,502 @@
+{
+ "bots": {
+  "chief": {
+   "id": "42fc9d6a-ae77-4ebf-8627-222c1f677868",
+   "name": "Chief Bot",
+   "short": "CB",
+   "state": "working",
+   "task": "Running the daily refresh",
+   "detail": "Savings tracking toward $1,000, memecoin Scout, Risk Keeper and Post-Mortem"
+  },
+  "grok": {
+   "id": "a3c71898-3ded-4507-8dcd-b748bcfd09f3",
+   "name": "Grok Bot",
+   "short": "GB",
+   "state": "idle",
+   "task": "Idle, last active Oct 28, 3:22 AM",
+   "detail": "General teammate: job search, work email, Gmail",
+   "last": "Oct 28, 3:22 AM ET"
+  }
+ },
+ "wallet_meta": [
+  {
+   "key": "main",
+   "name": "Main",
+   "addr": "BZD82QWFzFpfKgAbm46GRr1GR76pZq6AmktLnjCZB2NA"
+  },
+  {
+   "key": "j1df",
+   "name": "Phantom J1df",
+   "addr": "J1dfibagGeMAbWpUMAjWeJ1oLEQ7uLysqSjqw6xcDto5"
+  },
+  {
+   "key": "81ns",
+   "name": "Phantom 81Ns",
+   "addr": "81NsSsVMAC1Fo8daTvohCq2bnE5syiMRMHtg2hp8Ye5D"
+  },
+  {
+   "key": "fomo",
+   "name": "FOMO app",
+   "addr": "DsV7L4LnsekSsfV3FFqgnpvNApBKipq7hbtEGzoyYYcb"
+  }
+ ],
+ "oct27_total": 100.4,
+ "wallet_note": "The $20 USDC that left the FOMO wallet at 1:06 AM ET Oct 29 was your own transfer. October cost basis $118.56; all-time down $68.69 as of Oct 27.",
+ "history": [
+  [
+   "Oct 27",
+   100.4
+  ],
+  [
+   "Oct 29 12:55a",
+   88.85
+  ],
+  [
+   "Oct 29 1:19a",
+   68.9
+  ],
+  [
+   "Oct 29 8:10a",
+   68.86
+  ],
+  [
+   "Oct 30 8:20a",
+   68.54
+  ]
+ ],
+ "stats": {
+  "paper_trades": 0,
+  "savings": 0,
+  "savings_goal": 1000,
+  "grok_month": 71.69,
+  "grok_detail": "$45 plan + $26.69 extra",
+  "grok_extra": 26.69,
+  "grok_cap": 20,
+  "caps": "Tobacco $25, crypto $0, restaurants $10, alcohol $15",
+  "caps_status": "No spend logged"
+ },
+ "usage": {
+  "plan": "Premium",
+  "pct": 100,
+  "reset": "2026-11-01T04:12:00-04:00",
+  "reset_label": "Sun Nov 1, 4:12 AM ET",
+  "as_of": "Oct 30, 6:07 PM ET",
+  "note": "Weekly limit is used up (shared with your other apps on the plan), so you're running on extra credits until the reset.",
+  "by": [
+   [
+    "Deleted bots and others",
+    70,
+    ""
+   ],
+   [
+    "Chief Bot",
+    29,
+    ""
+   ],
+   [
+    "Grok Bot",
+    1,
+    ""
+   ],
+   [
+    "Mission Control daily refresh (routine)",
+    0,
+    "Ran once, Oct 29 8:08 AM; not yet rated"
+   ]
+  ],
+  "days": [
+   [
+    "Oct 25",
+    26,
+    0
+   ],
+   [
+    "Oct 26",
+    30,
+    2
+   ],
+   [
+    "Oct 27",
+    10,
+    10
+   ],
+   [
+    "Oct 28",
+    4,
+    13
+   ],
+   [
+    "Oct 29",
+    0,
+    4
+   ]
+  ],
+  "routine_note": "The only active routine, Mission Control daily refresh (weekdays at 8 AM ET), has only just started running, so it hasn't been flagged as low-value.",
+  "save": [
+   "Send each prompt once",
+   "Batch and crop screenshots",
+   "Skip 'ok' replies",
+   "Refreshes run once each weekday at 8 AM ET",
+   "Lower the extra-usage cap in Settings"
+  ]
+ },
+ "waiting": [
+  [
+   "Override the $20 Grok cap for one memecoin paper test, and send a contract address with RugCheck and DexScreener data",
+   "chief"
+  ],
+  [
+   "Get the T-Mobile payoff in writing before switching to Visible",
+   "chief"
+  ],
+  [
+   "Confirm your first transfer into savings",
+   "chief"
+  ],
+  [
+   "Send the Kikoff fee screen",
+   "chief"
+  ],
+  [
+   "Send the Comewel cancellation proof",
+   "chief"
+  ],
+  [
+   "Send the Planet Fitness cancellation receipt",
+   "chief"
+  ],
+  [
+   "Send the GEICO settlement letter showing the car loan status",
+   "chief"
+  ],
+  [
+   "Paste your other assistant's memory export (Oct 28, the first paste was only the prompt)",
+   "grok"
+  ],
+  [
+   "Send your store manager's name and email for the return-to-work email draft (Oct 25)",
+   "grok"
+  ]
+ ],
+ "timeline": [
+  [
+   "chief",
+   "Oct 30, 8:20 AM",
+   "Ran the daily Mission Control refresh: wallets, Risk Keeper, trending tokens and the Notion Inbox"
+  ],
+  [
+   "chief",
+   "Oct 29, 8:10 AM",
+   "Ran the daily Mission Control refresh: wallets, Risk Keeper and trending tokens"
+  ],
+  [
+   "chief",
+   "Oct 29, 1:25 AM",
+   "Built the Mission Control page from live wallet, DexScreener and pump.fun data"
+  ],
+  [
+   "chief",
+   "Oct 29",
+   "Checked how much your usage dropped and gave four ways to use less"
+  ],
+  [
+   "chief",
+   "Oct 29",
+   "Checked for a Base44 connector (none, browser only)"
+  ],
+  [
+   "chief",
+   "Oct 29",
+   "Read the viral memecoin bot post and advised skipping it"
+  ],
+  [
+   "chief",
+   "Oct 28",
+   "Set up the Scout, Risk Keeper and Post-Mortem roles on one $88 bucket"
+  ],
+  [
+   "chief",
+   "Oct 28",
+   "Set weekly caps, with alcohol at $15 a week"
+  ],
+  [
+   "grok",
+   "Oct 28, 3:22 AM",
+   "Explained the memory import came through empty"
+  ],
+  [
+   "grok",
+   "Oct 26, 2:46 PM",
+   "Flagged a Fulfillment Worker job match in Ashburn"
+  ],
+  [
+   "grok",
+   "Oct 25, 5:23 AM",
+   "Searched your inbox for your store manager's email (not found)"
+  ],
+  [
+   "grok",
+   "Oct 25, 5:19 AM",
+   "Rewrote your Home Depot safety review comments around forklift flagging"
+  ],
+  [
+   "grok",
+   "Oct 25, 5:13 AM",
+   "Connected Gmail and got set up"
+  ]
+ ],
+ "routines": [
+  [
+   "Mission Control daily refresh",
+   "Chief Bot, weekdays around 8 AM ET",
+   "Ran Oct 30, 8:14 AM ET; next Mon Nov 2 around 8 AM ET",
+   "Scheduled"
+  ],
+  [
+   "Bot team check-in (weekly)",
+   "Chief Bot",
+   "",
+   "Paused"
+  ],
+  [
+   "Retry Stream Snaps channel name",
+   "Chief Bot",
+   "",
+   "Paused"
+  ]
+ ],
+ "heat": {
+  "days": [
+   "Sat Oct 24",
+   "Sun Oct 25",
+   "Mon Oct 26",
+   "Tue Oct 27",
+   "Wed Oct 28",
+   "Thu Oct 29",
+   "Fri Oct 30"
+  ],
+  "cells": [
+   [
+    "Sun Oct 25",
+    5,
+    8
+   ],
+   [
+    "Sun Oct 25",
+    9,
+    1
+   ],
+   [
+    "Mon Oct 26",
+    14,
+    1
+   ],
+   [
+    "Wed Oct 28",
+    3,
+    1
+   ],
+   [
+    "Thu Oct 29",
+    0,
+    1
+   ],
+   [
+    "Thu Oct 29",
+    1,
+    1
+   ],
+   [
+    "Thu Oct 29",
+    8,
+    1
+   ],
+   [
+    "Fri Oct 30",
+    8,
+    1
+   ]
+  ],
+  "note": "Messages per hour (ET), last 7 days, both bots. Chief Bot shows only its readable runs."
+ },
+ "risk": [
+  [
+   "Bucket",
+   "$88, shared across all four wallets"
+  ],
+  [
+   "Bet size",
+   "Fixed $4 to $5, assumed a total loss"
+  ],
+  [
+   "Open positions",
+   "0 of max 2"
+  ],
+  [
+   "Daily stop",
+   "After 3 losses; no revenge trades"
+  ],
+  [
+   "Mode",
+   "Paper trading only, 0 paper trades logged"
+  ]
+ ],
+ "scout_override": {
+  "CATBOT": "Earlier post claimed 27% bundled"
+ },
+ "rules": [
+  "Bots never trade, move funds, or touch keys.",
+  "You approve every payment, cancellation, purchase, contract, and message to anyone else.",
+  "Savings count only after you confirm the transfer.",
+  "Scout gives WATCH or SKIP only; BUY needs RugCheck and DexScreener data you paste."
+ ],
+ "mission": {
+  "goal": 5000,
+  "by": "2026-12-31",
+  "label": "$5,000 by Dec 31, 2026",
+  "note": "Counts only income and transfers you enter or confirm. Savings start at $0."
+ },
+ "caps_weekly": {
+  "Tobacco": 25,
+  "Crypto": 0,
+  "Restaurants": 10,
+  "Alcohol": 15
+ },
+ "subscriptions": [
+  [
+   "Grok Bot Premium",
+   "$45/mo plan + $26.69 extra in Oct",
+   "Confirmed (usage page)"
+  ],
+  [
+   "CooMeet",
+   "$0.99/mo intro, renews Nov 26, 2026",
+   "Confirmed (email Oct 26); regular price unknown"
+  ],
+  [
+   "Apple Services via PayPal",
+   "~$9.99 repeating, last seen Apr 21, 2026",
+   "Unconfirmed if still active"
+  ],
+  [
+   "Acorns",
+   "Monthly fee, amount not in email",
+   "Investments paused; check if still billing"
+  ],
+  [
+   "Dave ExtraCash",
+   "5% fee per advance",
+   "Per use, not monthly"
+  ]
+ ],
+ "income_ideas": [
+  [
+   "Local AI help gigs",
+   "Set up simple automations, email triage or flyers for small local shops. Start on Nextdoor/Facebook groups. $0 startup."
+  ],
+  [
+   "Resume and job-post rewrites",
+   "Use bots to draft, you edit and deliver. Fiverr/Upwork listing is free to start."
+  ],
+  [
+   "Resell clearance and thrift finds",
+   "Bots scan Marketplace/eBay comps; you only buy items with a clear margin. Start with $20 or less."
+  ],
+  [
+   "Paid surveys and user testing",
+   "UserTesting, Prolific: small but real pay for your time. No startup cost."
+  ],
+  [
+   "Short-form faceless content",
+   "Bots draft scripts for TikTok/YouTube Shorts on a niche you know. Free to start; income slow and uncertain."
+  ]
+ ],
+ "agents": [
+  {
+   "id": "chief",
+   "name": "Chief",
+   "room": "cmd",
+   "bot": "chief",
+   "hue": 190,
+   "role": "Runs the 8 AM refresh, keeps the rules"
+  },
+  {
+   "id": "scout",
+   "name": "Scout",
+   "room": "trade",
+   "bot": "chief",
+   "hue": 45,
+   "role": "Scans DexScreener + RugCheck (scan.py)"
+  },
+  {
+   "id": "paper",
+   "name": "Paper Trader",
+   "room": "trade",
+   "bot": "chief",
+   "hue": 150,
+   "role": "Runs the paper ledger (paper.py)"
+  },
+  {
+   "id": "risk",
+   "name": "Risk Keeper",
+   "room": "trade",
+   "bot": "chief",
+   "hue": 350,
+   "role": "Max 2 open, 3-loss stop, $88 bucket"
+  },
+  {
+   "id": "analyst",
+   "name": "Analyst",
+   "room": "research",
+   "bot": "chief",
+   "hue": 270,
+   "role": "Writes the daily briefing"
+  },
+  {
+   "id": "finance",
+   "name": "Finance",
+   "room": "finance",
+   "bot": "chief",
+   "hue": 120,
+   "role": "Spending vs caps, subscriptions, $5K goal"
+  },
+  {
+   "id": "income",
+   "name": "Income Scout",
+   "room": "income",
+   "bot": "grok",
+   "hue": 310,
+   "role": "Income ideas; job search via Grok Bot"
+  }
+ ],
+ "pnl": {
+  "as_of": "Oct 31, 12:30 AM ET",
+  "rows": [
+   [
+    "All-time (real wallets), as of Oct 27",
+    "-$68.69",
+    "on $169.09 net put in"
+   ],
+   [
+    "Since Oct 27 (real wallets)",
+    "-$11.86",
+    "$100.40 to $68.54, not counting your own $20 USDC transfer out"
+   ],
+   [
+    "All-time estimate now",
+    "-$80.55",
+    "Oct 27 figure plus the change since"
+   ],
+   [
+    "Realized sells Oct 27",
+    "+$15.79",
+    "from your own trades"
+   ],
+   [
+    "Paper trades (no real money)",
+    "+$0.84 open",
+    "CBUCKS up 26% on $4.50; $0 closed"
+   ]
+  ]
+ }
+}

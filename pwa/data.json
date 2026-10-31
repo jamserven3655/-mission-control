@@ -1,0 +1,1183 @@
+{
+ "bots": {
+  "chief": {
+   "id": "42fc9d6a-ae77-4ebf-8627-222c1f677868",
+   "name": "Chief Bot",
+   "short": "CB",
+   "state": "working",
+   "task": "Running the daily refresh",
+   "detail": "Savings tracking toward $1,000, memecoin Scout, Risk Keeper and Post-Mortem"
+  },
+  "grok": {
+   "id": "a3c71898-3ded-4507-8dcd-b748bcfd09f3",
+   "name": "Grok Bot",
+   "short": "GB",
+   "state": "idle",
+   "task": "Idle, last active Oct 28, 3:22 AM",
+   "detail": "General teammate: job search, work email, Gmail",
+   "last": "Oct 28, 3:22 AM ET"
+  }
+ },
+ "oct27_total": 100.4,
+ "wallet_note": "The $20 USDC that left the FOMO wallet at 1:06 AM ET Oct 29 was your own transfer. October cost basis $118.56; all-time down $68.69 as of Oct 27.",
+ "stats": {
+  "paper_trades": 0,
+  "savings": 0,
+  "savings_goal": 1000,
+  "grok_month": 71.69,
+  "grok_detail": "$45 plan + $26.69 extra",
+  "grok_extra": 26.69,
+  "grok_cap": 20,
+  "caps": "Tobacco $25, crypto $0, restaurants $10, alcohol $15",
+  "caps_status": "No spend logged"
+ },
+ "usage": {
+  "plan": "Premium",
+  "pct": 100,
+  "reset": "2026-11-01T04:12:00-04:00",
+  "reset_label": "Sun Nov 1, 4:12 AM ET",
+  "as_of": "Oct 30, 6:07 PM ET",
+  "note": "Weekly limit is used up (shared with your other apps on the plan), so you're running on extra credits until the reset.",
+  "by": [
+   [
+    "Deleted bots and others",
+    70,
+    ""
+   ],
+   [
+    "Chief Bot",
+    29,
+    ""
+   ],
+   [
+    "Grok Bot",
+    1,
+    ""
+   ],
+   [
+    "Mission Control daily refresh (routine)",
+    0,
+    "Ran once, Oct 29 8:08 AM; not yet rated"
+   ]
+  ],
+  "days": [
+   [
+    "Oct 25",
+    26,
+    0
+   ],
+   [
+    "Oct 26",
+    30,
+    2
+   ],
+   [
+    "Oct 27",
+    10,
+    10
+   ],
+   [
+    "Oct 28",
+    4,
+    13
+   ],
+   [
+    "Oct 29",
+    0,
+    4
+   ]
+  ],
+  "routine_note": "The only active routine, Mission Control daily refresh (weekdays at 8 AM ET), has only just started running, so it hasn't been flagged as low-value.",
+  "save": [
+   "Send each prompt once",
+   "Batch and crop screenshots",
+   "Skip 'ok' replies",
+   "Refreshes run once each weekday at 8 AM ET",
+   "Lower the extra-usage cap in Settings"
+  ]
+ },
+ "waiting": [
+  [
+   "Override the $20 Grok cap for one memecoin paper test, and send a contract address with RugCheck and DexScreener data",
+   "chief"
+  ],
+  [
+   "Get the T-Mobile payoff in writing before switching to Visible",
+   "chief"
+  ],
+  [
+   "Confirm your first transfer into savings",
+   "chief"
+  ],
+  [
+   "Send the Kikoff fee screen",
+   "chief"
+  ],
+  [
+   "Send the Comewel cancellation proof",
+   "chief"
+  ],
+  [
+   "Send the Planet Fitness cancellation receipt",
+   "chief"
+  ],
+  [
+   "Send the GEICO settlement letter showing the car loan status",
+   "chief"
+  ],
+  [
+   "Paste your other assistant's memory export (Oct 28, the first paste was only the prompt)",
+   "grok"
+  ],
+  [
+   "Send your store manager's name and email for the return-to-work email draft (Oct 25)",
+   "grok"
+  ]
+ ],
+ "timeline": [
+  [
+   "chief",
+   "Oct 30, 8:20 AM",
+   "Ran the daily Mission Control refresh: wallets, Risk Keeper, trending tokens and the Notion Inbox"
+  ],
+  [
+   "chief",
+   "Oct 29, 8:10 AM",
+   "Ran the daily Mission Control refresh: wallets, Risk Keeper and trending tokens"
+  ],
+  [
+   "chief",
+   "Oct 29, 1:25 AM",
+   "Built the Mission Control page from live wallet, DexScreener and pump.fun data"
+  ],
+  [
+   "chief",
+   "Oct 29",
+   "Checked how much your usage dropped and gave four ways to use less"
+  ],
+  [
+   "chief",
+   "Oct 29",
+   "Checked for a Base44 connector (none, browser only)"
+  ],
+  [
+   "chief",
+   "Oct 29",
+   "Read the viral memecoin bot post and advised skipping it"
+  ],
+  [
+   "chief",
+   "Oct 28",
+   "Set up the Scout, Risk Keeper and Post-Mortem roles on one $88 bucket"
+  ],
+  [
+   "chief",
+   "Oct 28",
+   "Set weekly caps, with alcohol at $15 a week"
+  ],
+  [
+   "grok",
+   "Oct 28, 3:22 AM",
+   "Explained the memory import came through empty"
+  ],
+  [
+   "grok",
+   "Oct 26, 2:46 PM",
+   "Flagged a Fulfillment Worker job match in Ashburn"
+  ],
+  [
+   "grok",
+   "Oct 25, 5:23 AM",
+   "Searched your inbox for your store manager's email (not found)"
+  ],
+  [
+   "grok",
+   "Oct 25, 5:19 AM",
+   "Rewrote your Home Depot safety review comments around forklift flagging"
+  ],
+  [
+   "grok",
+   "Oct 25, 5:13 AM",
+   "Connected Gmail and got set up"
+  ]
+ ],
+ "routines": [
+  [
+   "Mission Control daily refresh",
+   "Chief Bot, weekdays around 8 AM ET",
+   "Ran Oct 30, 8:14 AM ET; next Mon Nov 2 around 8 AM ET",
+   "Scheduled"
+  ],
+  [
+   "Bot team check-in (weekly)",
+   "Chief Bot",
+   "",
+   "Paused"
+  ],
+  [
+   "Retry Stream Snaps channel name",
+   "Chief Bot",
+   "",
+   "Paused"
+  ]
+ ],
+ "heat": {
+  "days": [
+   "Sat Oct 24",
+   "Sun Oct 25",
+   "Mon Oct 26",
+   "Tue Oct 27",
+   "Wed Oct 28",
+   "Thu Oct 29",
+   "Fri Oct 30"
+  ],
+  "cells": [
+   [
+    "Sun Oct 25",
+    5,
+    8
+   ],
+   [
+    "Sun Oct 25",
+    9,
+    1
+   ],
+   [
+    "Mon Oct 26",
+    14,
+    1
+   ],
+   [
+    "Wed Oct 28",
+    3,
+    1
+   ],
+   [
+    "Thu Oct 29",
+    0,
+    1
+   ],
+   [
+    "Thu Oct 29",
+    1,
+    1
+   ],
+   [
+    "Thu Oct 29",
+    8,
+    1
+   ],
+   [
+    "Fri Oct 30",
+    8,
+    1
+   ]
+  ],
+  "note": "Messages per hour (ET), last 7 days, both bots. Chief Bot shows only its readable runs."
+ },
+ "risk": [
+  [
+   "Bucket",
+   "$88, shared across all four wallets"
+  ],
+  [
+   "Bet size",
+   "Fixed $4 to $5, assumed a total loss"
+  ],
+  [
+   "Open positions",
+   "1 of max 2"
+  ],
+  [
+   "Daily stop",
+   "After 3 losses; no revenge trades"
+  ],
+  [
+   "Mode",
+   "Paper trading only, 1 paper trades logged"
+  ]
+ ],
+ "rules": [
+  "Bots never trade, move funds, or touch keys.",
+  "You approve every payment, cancellation, purchase, contract, and message to anyone else.",
+  "Savings count only after you confirm the transfer.",
+  "Scout gives WATCH or SKIP only; BUY needs RugCheck and DexScreener data you paste."
+ ],
+ "mission": {
+  "goal": 5000,
+  "by": "2026-12-31",
+  "label": "$5,000 by Dec 31, 2026",
+  "note": "Counts only income and transfers you enter or confirm. Savings start at $0."
+ },
+ "caps_weekly": {
+  "Tobacco": 25,
+  "Crypto": 0,
+  "Restaurants": 10,
+  "Alcohol": 15
+ },
+ "subscriptions": [
+  [
+   "Grok Bot Premium",
+   "$45/mo plan + $26.69 extra in Oct",
+   "Confirmed (usage page)"
+  ],
+  [
+   "CooMeet",
+   "$0.99/mo intro, renews Nov 26, 2026",
+   "Confirmed (email Oct 26); regular price unknown"
+  ],
+  [
+   "Apple Services via PayPal",
+   "~$9.99 repeating, last seen Apr 21, 2026",
+   "Unconfirmed if still active"
+  ],
+  [
+   "Acorns",
+   "Monthly fee, amount not in email",
+   "Investments paused; check if still billing"
+  ],
+  [
+   "Dave ExtraCash",
+   "5% fee per advance",
+   "Per use, not monthly"
+  ]
+ ],
+ "income_ideas": [
+  [
+   "Local AI help gigs",
+   "Set up simple automations, email triage or flyers for small local shops. Start on Nextdoor/Facebook groups. $0 startup."
+  ],
+  [
+   "Resume and job-post rewrites",
+   "Use bots to draft, you edit and deliver. Fiverr/Upwork listing is free to start."
+  ],
+  [
+   "Resell clearance and thrift finds",
+   "Bots scan Marketplace/eBay comps; you only buy items with a clear margin. Start with $20 or less."
+  ],
+  [
+   "Paid surveys and user testing",
+   "UserTesting, Prolific: small but real pay for your time. No startup cost."
+  ],
+  [
+   "Short-form faceless content",
+   "Bots draft scripts for TikTok/YouTube Shorts on a niche you know. Free to start; income slow and uncertain."
+  ]
+ ],
+ "pnl": {
+  "as_of": "Oct 31, 12:30 AM ET",
+  "rows": [
+   [
+    "All-time (real wallets), as of Oct 27",
+    "-$68.69",
+    "on $169.09 net put in"
+   ],
+   [
+    "Since Oct 27 (real wallets)",
+    "-$11.86",
+    "$100.40 to $68.54, not counting your own $20 USDC transfer out"
+   ],
+   [
+    "All-time estimate now",
+    "-$80.55",
+    "Oct 27 figure plus the change since"
+   ],
+   [
+    "Realized sells Oct 27",
+    "+$15.79",
+    "from your own trades"
+   ],
+   [
+    "Paper trades (no real money)",
+    "+$0.84 open",
+    "CBUCKS up 26% on $4.50; $0 closed"
+   ]
+  ]
+ },
+ "updated_iso": "2026-10-30T08:14:20.741030-04:00",
+ "agents": [
+  {
+   "id": "chief",
+   "name": "Chief",
+   "room": "cmd",
+   "bot": "chief",
+   "hue": 190,
+   "role": "Runs the 8 AM refresh, keeps the rules",
+   "activity": "Refresh done 8:14 AM ET"
+  },
+  {
+   "id": "scout",
+   "name": "Scout",
+   "room": "trade",
+   "bot": "chief",
+   "hue": 45,
+   "role": "Scans DexScreener + RugCheck (scan.py)",
+   "activity": "Scanned 58 pairs: NO TRADE"
+  },
+  {
+   "id": "paper",
+   "name": "Paper Trader",
+   "room": "trade",
+   "bot": "chief",
+   "hue": 150,
+   "role": "Runs the paper ledger (paper.py)",
+   "activity": "1 open, 0 closed"
+  },
+  {
+   "id": "risk",
+   "name": "Risk Keeper",
+   "room": "trade",
+   "bot": "chief",
+   "hue": 350,
+   "role": "Max 2 open, 3-loss stop, $88 bucket",
+   "activity": "Bucket left $83.5"
+  },
+  {
+   "id": "analyst",
+   "name": "Analyst",
+   "room": "research",
+   "bot": "chief",
+   "hue": 270,
+   "role": "Writes the daily briefing",
+   "activity": "Daily briefing written"
+  },
+  {
+   "id": "finance",
+   "name": "Finance",
+   "room": "finance",
+   "bot": "chief",
+   "hue": 120,
+   "role": "Spending vs caps, subscriptions, $5K goal",
+   "activity": "0 Notion expenses synced"
+  },
+  {
+   "id": "income",
+   "name": "Income Scout",
+   "room": "income",
+   "bot": "grok",
+   "hue": 310,
+   "role": "Income ideas; job search via Grok Bot",
+   "activity": "5 ideas on the board"
+  }
+ ],
+ "scan": {
+  "run": "2026-10-31 00:24 ET",
+  "decision": "NO TRADE today",
+  "reason": "No token passed every filter",
+  "pick": null,
+  "filters": {
+   "min_liq": 50000,
+   "max_vol_liq": 50,
+   "min_age_h": 24,
+   "min_buy_sell": 1.0,
+   "min_chg24": -50,
+   "min_chg1": -25,
+   "max_top10": 30,
+   "min_holders": 500,
+   "max_rug_score": 500
+  },
+  "candidates": [
+   {
+    "sym": "DESSA",
+    "name": "Dessa",
+    "ca": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
+    "url": "https://dexscreener.com/solana/dextcer4k9dwbxtmu8znvvwgevvmvhmb183pf2xxzwvh",
+    "price": 0.01506,
+    "liq": 349988,
+    "vol24": 3447685,
+    "vol_liq": 9.9,
+    "age_h": 111.3,
+    "chg1": -19.14,
+    "chg24": 78.16,
+    "bs1": 1.17,
+    "score": 82,
+    "scout": "SKIP",
+    "flags": [
+     "RugCheck UNVERIFIED"
+    ],
+    "rug": {
+     "ok": false,
+     "err": "HTTP Error 400: Bad Request"
+    }
+   },
+   {
+    "sym": "GATO",
+    "name": "GTA6CAT",
+    "ca": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+    "url": "https://dexscreener.com/solana/5e3dxlxgwmtdcoka51wyyakttjfzbwqcoyuhbui5gt2m",
+    "price": 0.004824,
+    "liq": 217497,
+    "vol24": 943068,
+    "vol_liq": 4.3,
+    "age_h": 1599.9,
+    "chg1": -4.23,
+    "chg24": 6.72,
+    "bs1": 0.56,
+    "score": 80,
+    "scout": "SKIP",
+    "flags": [
+     "Sell pressure (1h)",
+     "RugCheck UNVERIFIED"
+    ],
+    "rug": {
+     "ok": false,
+     "err": "HTTP Error 400: Bad Request"
+    }
+   },
+   {
+    "sym": "JOB",
+    "name": "DogWifJob",
+    "ca": "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump",
+    "url": "https://dexscreener.com/solana/hauvbmnthcfmg9srxmvz1gaxnpu955hkpdsasc2cx4c8",
+    "price": 0.00354,
+    "liq": 165159,
+    "vol24": 1527825,
+    "vol_liq": 9.3,
+    "age_h": 81.2,
+    "chg1": 0.38,
+    "chg24": 23.01,
+    "bs1": 0.79,
+    "score": 80,
+    "scout": "SKIP",
+    "flags": [
+     "Sell pressure (1h)",
+     "RugCheck UNVERIFIED"
+    ],
+    "rug": {
+     "ok": false,
+     "err": "HTTP Error 400: Bad Request"
+    }
+   },
+   {
+    "sym": "three",
+    "name": "three.ws",
+    "ca": "FeMbDoX7R1Psc4GEcvJdsbNbZA3bfztcyDCatJVJpump",
+    "url": "https://dexscreener.com/solana/5byl7mzolabynwmpzkpkjf4mgkz7febzranos19pre2z",
+    "price": 0.0006195,
+    "liq": 164514,
+    "vol24": 114031,
+    "vol_liq": 0.7,
+    "age_h": 4437.2,
+    "chg1": -3.13,
+    "chg24": -13.63,
+    "bs1": 2.9,
+    "score": 78,
+    "scout": "SKIP",
+    "flags": [
+     "RugCheck UNVERIFIED"
+    ],
+    "rug": {
+     "ok": false,
+     "err": "HTTP Error 400: Bad Request"
+    }
+   },
+   {
+    "sym": "GLITCH",
+    "name": "Infinite Money Glitch",
+    "ca": "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump",
+    "url": "https://dexscreener.com/solana/em6rvzgxhd35pz7cvujctpenv4jaztscavhaxbxcbcg7",
+    "price": 0.003611,
+    "liq": 166411,
+    "vol24": 537321,
+    "vol_liq": 3.2,
+    "age_h": 348.8,
+    "chg1": -4.89,
+    "chg24": 32.38,
+    "bs1": 0.87,
+    "score": 75,
+    "scout": "SKIP",
+    "flags": [
+     "Sell pressure (1h)",
+     "RugCheck UNVERIFIED"
+    ],
+    "rug": {
+     "ok": false,
+     "err": "HTTP Error 400: Bad Request"
+    }
+   },
+   {
+    "sym": "STANK",
+    "name": "STANK",
+    "ca": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
+    "url": "https://dexscreener.com/solana/6hyfmye2byyscterqueckhihq5x9j2wd2z9watdwy38n",
+    "price": 0.0002194,
+    "liq": 40250,
+    "vol24": 295559,
+    "vol_liq": 7.3,
+    "age_h": 38.5,
+    "chg1": -8.04,
+    "chg24": 213,
+    "bs1": 0.64,
+    "score": 66,
+    "scout": "SKIP",
+    "flags": [
+     "Low liquidity",
+     "Sell pressure (1h)",
+     "RugCheck UNVERIFIED"
+    ],
+    "rug": {
+     "ok": false,
+     "err": "HTTP Error 400: Bad Request"
+    }
+   },
+   {
+    "sym": "TRUMPTY",
+    "name": "Trumpty Dumpty",
+    "ca": "26uqr1EAd5o9czpp3CxWGRPBgzya2733WC7faQX4mqNA",
+    "url": "https://dexscreener.com/solana/3weujhlesdjhasbwwqng4rsqlhjagvmlaca7respuwvy",
+    "price": 0.0001076,
+    "liq": 27473,
+    "vol24": 2332,
+    "vol_liq": 0.1,
+    "age_h": 721.6,
+    "chg1": null,
+    "chg24": 25.04,
+    "bs1": 0.0,
+    "score": 64,
+    "scout": "SKIP",
+    "flags": [
+     "Low liquidity",
+     "Sell pressure (1h)",
+     "RugCheck UNVERIFIED"
+    ],
+    "rug": {
+     "ok": false,
+     "err": "HTTP Error 400: Bad Request"
+    }
+   },
+   {
+    "sym": "bul",
+    "name": "bul",
+    "ca": "GyWkSn2ah7dqLyPeZAjEZmfxuU2H4nwfGvgJhfYDVegn",
+    "url": "https://dexscreener.com/solana/cnwmuoehufxq2y1hfq67ttnks8zis3eujy6ksfsspsph",
+    "price": 4.131e-05,
+    "liq": 17256,
+    "vol24": 29183,
+    "vol_liq": 1.7,
+    "age_h": 610.9,
+    "chg1": -1.68,
+    "chg24": 15.17,
+    "bs1": 0.8,
+    "score": 63,
+    "scout": "SKIP",
+    "flags": [
+     "Low liquidity",
+     "Sell pressure (1h)",
+     "RugCheck UNVERIFIED"
+    ],
+    "rug": {
+     "ok": false,
+     "err": "HTTP Error 400: Bad Request"
+    }
+   },
+   {
+    "sym": "AMC",
+    "name": "A Massive Cock",
+    "ca": "5G3pzMiNQxiFctE1aZRTctYJLz5zGdfA1S65QMT5pump",
+    "url": "https://dexscreener.com/solana/hc8wzjcag5x3cqycc3pberdc7xxpafx6fhmv4wjzjmfz",
+    "price": 7.419e-05,
+    "liq": 22841,
+    "vol24": 42910,
+    "vol_liq": 1.9,
+    "age_h": 76.9,
+    "chg1": 4.14,
+    "chg24": 76.05,
+    "bs1": 3.25,
+    "score": 63,
+    "scout": "SKIP",
+    "flags": [
+     "Low liquidity",
+     "RugCheck not run (outside top 8)"
+    ],
+    "rug": null
+   },
+   {
+    "sym": "BS",
+    "name": "Black Shiba",
+    "ca": "BX6QbxPJ1rmgwd8q3FrqoVeEQGTYVidzNQ7UjLUbpump",
+    "url": "https://dexscreener.com/solana/f1tgazqp2qz4dr5sgie3x3n6bwmmxn13e5lqpazpwmp8",
+    "price": 8.672e-06,
+    "liq": 6464,
+    "vol24": 3434,
+    "vol_liq": 0.5,
+    "age_h": 408.5,
+    "chg1": -7.84,
+    "chg24": 73.38,
+    "bs1": 0.21,
+    "score": 59,
+    "scout": "SKIP",
+    "flags": [
+     "Low liquidity",
+     "Sell pressure (1h)",
+     "RugCheck not run (outside top 8)"
+    ],
+    "rug": null
+   },
+   {
+    "sym": "AgenC",
+    "name": "The Super Intelligent Beauty",
+    "ca": "DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump",
+    "url": "https://dexscreener.com/solana/abf43sbqjwkf1gzy8mkhnhr8ejlzgf6v9asr8lrmbucj",
+    "price": 0.001728,
+    "liq": 117761,
+    "vol24": 3360188,
+    "vol_liq": 28.5,
+    "age_h": 10.1,
+    "chg1": -13.87,
+    "chg24": 3241,
+    "bs1": 2.89,
+    "score": 58,
+    "scout": "SKIP",
+    "flags": [
+     "Very new (<24h)",
+     "RugCheck not run (outside top 8)"
+    ],
+    "rug": null
+   },
+   {
+    "sym": "Leverhedge",
+    "name": "Leverhedge",
+    "ca": "FWatMYieKhRuJ1yuTcmVG1njRhZWwqHwjR11pBympump",
+    "url": "https://dexscreener.com/solana/6d3ujezdb2wdbvvryfycvgxsih9fw6ml6hscia5qvhwp",
+    "price": 0.0005768,
+    "liq": 62540,
+    "vol24": 591841,
+    "vol_liq": 9.5,
+    "age_h": 4.7,
+    "chg1": -19.05,
+    "chg24": 1197,
+    "bs1": 3.48,
+    "score": 58,
+    "scout": "SKIP",
+    "flags": [
+     "Very new (<24h)",
+     "RugCheck not run (outside top 8)"
+    ],
+    "rug": null
+   },
+   {
+    "sym": "NETWORK",
+    "name": "Network Coin",
+    "ca": "8THZ69JP2ErZuHVj4G5rcwkFfsQafp5mQsaoQReApump",
+    "url": "https://dexscreener.com/solana/88jxy6wuyurl7whzsnywjvjqwvtdoxt3rurac1prglwu",
+    "price": 0.0003072,
+    "liq": 47582,
+    "vol24": 243352,
+    "vol_liq": 5.1,
+    "age_h": 150.6,
+    "chg1": 51.81,
+    "chg24": 43.01,
+    "bs1": 1.33,
+    "score": 58,
+    "scout": "SKIP",
+    "flags": [
+     "Low liquidity",
+     "RugCheck not run (outside top 8)"
+    ],
+    "rug": null
+   },
+   {
+    "sym": "HELL",
+    "name": "Hellhound",
+    "ca": "A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump",
+    "url": "https://dexscreener.com/solana/ewsyhiuznynqh5f65ypfsoqblq2kyetuvhm5un7wsfdg",
+    "price": 0.002305,
+    "liq": 128872,
+    "vol24": 102690,
+    "vol_liq": 0.8,
+    "age_h": 423.3,
+    "chg1": -18.43,
+    "chg24": -16.1,
+    "bs1": 0.97,
+    "score": 57,
+    "scout": "SKIP",
+    "flags": [
+     "Sell pressure (1h)",
+     "RugCheck not run (outside top 8)"
+    ],
+    "rug": null
+   },
+   {
+    "sym": "WORTHLESS",
+    "name": "Worthless Coin",
+    "ca": "87sEXKPMBeoryaqFQQnq1Yq6mUvjeNzhiFGxJbRjpump",
+    "url": "https://dexscreener.com/solana/hnjy1mvocfbpnxwtanscceqnr5t2ackyfyuskwjhee3j",
+    "price": 4.821e-05,
+    "liq": 19030,
+    "vol24": 8536,
+    "vol_liq": 0.4,
+    "age_h": 278.1,
+    "chg1": 9.89,
+    "chg24": -0.53,
+    "bs1": 6.0,
+    "score": 56,
+    "scout": "SKIP",
+    "flags": [
+     "Low liquidity",
+     "RugCheck not run (outside top 8)"
+    ],
+    "rug": null
+   }
+  ]
+ },
+ "paper": {
+  "summary": {
+   "closed": 0,
+   "open": 1,
+   "wins": 0,
+   "win_rate": null,
+   "net": 0,
+   "unrealized": 0.84,
+   "fees": 0.04,
+   "slippage": 0.09,
+   "avg_hold_h": null,
+   "bucket_left": 83.5
+  },
+  "trades": [
+   {
+    "id": 1,
+    "sym": "CBUCKS",
+    "url": "https://dexscreener.com/solana/b4cp45pgifvm5faxfh6aev8qz3eunqnqgbw7kuc7mhnb",
+    "opened": "2026-10-30",
+    "status": "open",
+    "entry": 0.0009007,
+    "last": 0.001134,
+    "x": 1.259,
+    "half": false,
+    "net": null,
+    "fees": 0.045,
+    "last_event": "open $4.50 paper",
+    "closed": null
+   }
+  ],
+  "log": [
+   [
+    "2026-10-30",
+    "Opened $4.50 paper position in CBUCKS at $0.0009007"
+   ],
+   [
+    "2026-10-30",
+    "CBUCKS: open, price x1.13 of entry"
+   ],
+   [
+    "2026-10-30",
+    "Already opened a paper trade today"
+   ],
+   [
+    "2026-10-31",
+    "CBUCKS: open, price x1.26 of entry"
+   ],
+   [
+    "2026-10-31",
+    "NO TRADE today (no token passed every filter)"
+   ]
+  ],
+  "rules": {
+   "stake": 4.5,
+   "fee": 0.01,
+   "slip": 0.02,
+   "take": 2.0,
+   "trail": 0.3,
+   "stop": 0.5,
+   "max_hold_h": 72,
+   "max_open": 2,
+   "daily_loss_stop": 3,
+   "bucket": 88.0
+  }
+ },
+ "expenses": [],
+ "week_spend": {
+  "Tobacco": 0.0,
+  "Crypto": 0.0,
+  "Restaurants": 0.0,
+  "Alcohol": 0.0
+ },
+ "updated": "Oct 30, 2026, 8:14 AM ET",
+ "sol_price": 96.58,
+ "wallets": [
+  {
+   "key": "main",
+   "name": "Main",
+   "addr": "BZD82QWFzFpfKgAbm46GRr1GR76pZq6AmktLnjCZB2NA",
+   "hold": "0.0918 SOL, 0.84 USDC, dust",
+   "now": 9.71,
+   "prev": 10.03
+  },
+  {
+   "key": "j1df",
+   "name": "Phantom J1df",
+   "addr": "J1dfibagGeMAbWpUMAjWeJ1oLEQ7uLysqSjqw6xcDto5",
+   "hold": "40.02 CASH",
+   "now": 39.99,
+   "prev": 39.99
+  },
+  {
+   "key": "81ns",
+   "name": "Phantom 81Ns",
+   "addr": "81NsSsVMAC1Fo8daTvohCq2bnE5syiMRMHtg2hp8Ye5D",
+   "hold": "0.0012 SOL",
+   "now": 0.12,
+   "prev": 0.12
+  },
+  {
+   "key": "fomo",
+   "name": "FOMO app",
+   "addr": "DsV7L4LnsekSsfV3FFqgnpvNApBKipq7hbtEGzoyYYcb",
+   "hold": "18.72 USDC, dust",
+   "now": 18.72,
+   "prev": 18.72
+  }
+ ],
+ "total": 68.54,
+ "history": [
+  [
+   "Oct 27",
+   100.4
+  ],
+  [
+   "Oct 29 12:55a",
+   88.85
+  ],
+  [
+   "Oct 29 1:19a",
+   68.9
+  ],
+  [
+   "Oct 29 8:10a",
+   68.86
+  ],
+  [
+   "Oct 30 8:20a",
+   68.54
+  ],
+  [
+   "Oct 30 8:14a",
+   68.54
+  ]
+ ],
+ "dex": [
+  {
+   "sym": "HEXN",
+   "name": "Hexncoin",
+   "ca": "ANVLA6eKiAq4nstD2Sg3SZhfVkSEwfnGccn12UQWpump",
+   "age": "19 h",
+   "liq": "$62.4k",
+   "vol": "$5.4M",
+   "chg": "+739%",
+   "scout": "WATCH",
+   "why": "Volume 86x liquidity",
+   "url": "https://dexscreener.com/solana/bqjzersgugnhav8c1m3vc4wa6mgqbae8t2w7eptsdkw4",
+   "liqn": 62416.63,
+   "voln": 5380038.2
+  },
+  {
+   "sym": "DESSA",
+   "name": "Dessa",
+   "ca": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
+   "age": "4 d",
+   "liq": "$275.6k",
+   "vol": "$4.8M",
+   "chg": "+839%",
+   "scout": "WATCH",
+   "why": "Liquidity ok",
+   "url": "https://dexscreener.com/solana/dextcer4k9dwbxtmu8znvvwgevvmvhmb183pf2xxzwvh",
+   "liqn": 275559.62,
+   "voln": 4817573.03
+  },
+  {
+   "sym": "HYPERCHAN",
+   "name": "Hyper-Chan",
+   "ca": "3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump",
+   "age": "9 h",
+   "liq": "$122.1k",
+   "vol": "$2.8M",
+   "chg": "+4014%",
+   "scout": "WATCH",
+   "why": "Volume 23x liquidity",
+   "url": "https://dexscreener.com/solana/5mxppt9pftdyk624qq5lxbw1hfgr4ycqeafudkmtkyvy",
+   "liqn": 122051.76,
+   "voln": 2766026.02
+  },
+  {
+   "sym": "AgenC",
+   "name": "AgenC SI Beauty",
+   "ca": "GJKnJsRiM5ATS4yhwjYRegT3iRsXUvcW1dafJPh8pump",
+   "age": "20 h",
+   "liq": "$3.1k",
+   "vol": "$2.3M",
+   "chg": "-95%",
+   "scout": "SKIP",
+   "why": "Down 95%, liquidity $3.1k",
+   "url": "https://dexscreener.com/solana/7suxtjgpem1z1moticxgeo5jt9pbmnpcyk32w7cfqhis",
+   "liqn": 3149.27,
+   "voln": 2303569.86
+  },
+  {
+   "sym": "Foxii",
+   "name": "Foxii",
+   "ca": "J3ReuwckNtcJP1Zhn7wVbfXhTDNTkHxozQWWAwxWpump",
+   "age": "10 h",
+   "liq": "$48.6k",
+   "vol": "$2.0M",
+   "chg": "+659%",
+   "scout": "SKIP",
+   "why": "Liquidity under $50k",
+   "url": "https://dexscreener.com/solana/dcfrbm9vywqswmqiqjsb3mynfj2mgpqwdirfzt78dq97",
+   "liqn": 48632.74,
+   "voln": 2019387.76
+  },
+  {
+   "sym": "SENSE",
+   "name": "Sixth Sense Labs",
+   "ca": "GydpvgKppv8a4gGQqAQsyQJxtQN4S6Ym9gKxjnN3mfun",
+   "age": "22 h",
+   "liq": "$56.3k",
+   "vol": "$2.0M",
+   "chg": "+706%",
+   "scout": "WATCH",
+   "why": "Volume 35x liquidity",
+   "url": "https://dexscreener.com/solana/gtl872vumrwnc34asqlzctih8co2fcwd9zpkzy2y1lqc",
+   "liqn": 56322.89,
+   "voln": 1989023.98
+  },
+  {
+   "sym": "GATO",
+   "name": "GTA6CAT",
+   "ca": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+   "age": "66 d",
+   "liq": "$211.1k",
+   "vol": "$905.4k",
+   "chg": "-15%",
+   "scout": "WATCH",
+   "why": "Liquidity ok",
+   "url": "https://dexscreener.com/solana/5e3dxlxgwmtdcoka51wyyakttjfzbwqcoyuhbui5gt2m",
+   "liqn": 211065.48,
+   "voln": 905356.88
+  },
+  {
+   "sym": "BITCAT",
+   "name": "BitCat Coin",
+   "ca": "9hzqsjCkxq3dQkfSkpRM1zk3NmLofHVBcwzKdvj3pump",
+   "age": "9 h",
+   "liq": "$2.1k",
+   "vol": "$674.7k",
+   "chg": "-95%",
+   "scout": "SKIP",
+   "why": "Down 95%, liquidity $2.1k",
+   "url": "https://dexscreener.com/solana/ezfjhntvdzdb1ifgkxugmum43ne7yujgq5tx1qhy5qrx",
+   "liqn": 2140.2,
+   "voln": 674689.53
+  },
+  {
+   "sym": "VI",
+   "name": "Vice Inu",
+   "ca": "A6PM7bxyWYiUxaEpRMHvuL4tY2jYVf8N46vXZ15Hpump",
+   "age": "22 h",
+   "liq": "$2.0k",
+   "vol": "$651.1k",
+   "chg": "-96%",
+   "scout": "SKIP",
+   "why": "Down 96%, liquidity $2.0k",
+   "url": "https://dexscreener.com/solana/g8vqy7bo6mrfkqh6cxsuie9ksh7fgby4nhspj4gklfhu",
+   "liqn": 2032.36,
+   "voln": 651088.82
+  },
+  {
+   "sym": "STANK",
+   "name": "STANK",
+   "ca": "5wsjHxT5nW5jQuVupXUNnYszF3WoWCfGGk9LMcsCJzY8",
+   "age": "22 h",
+   "liq": "$26.2k",
+   "vol": "$518.3k",
+   "chg": "+123%",
+   "scout": "SKIP",
+   "why": "Liquidity under $50k",
+   "url": "https://dexscreener.com/solana/6hyfmye2byyscterqueckhihq5x9j2wd2z9watdwy38n",
+   "liqn": 26169.76,
+   "voln": 518286.87
+  }
+ ],
+ "pump": [
+  {
+   "sym": "BURN",
+   "name": "BURN",
+   "ca": "5ANpBFZjmhTv48dvU18sCLmgQS9mwJ7meU6aMYSZpump",
+   "age": "18 h",
+   "liq": "unverified",
+   "vol": "unverified",
+   "chg": "mcap $12.1k",
+   "scout": "SKIP",
+   "why": "Liquidity unverified, on bonding curve",
+   "url": "https://pump.fun/coin/5ANpBFZjmhTv48dvU18sCLmgQS9mwJ7meU6aMYSZpump"
+  },
+  {
+   "sym": "NTRNDM",
+   "name": "notrandom",
+   "ca": "NTRNDMqQSiwEC2jJs3wJiZS6bpGYQJtMNQJgiX3WyV6",
+   "age": "22 d",
+   "liq": "unverified",
+   "vol": "unverified",
+   "chg": "mcap $555.3k",
+   "scout": "SKIP",
+   "why": "Liquidity unverified",
+   "url": "https://pump.fun/coin/NTRNDMqQSiwEC2jJs3wJiZS6bpGYQJtMNQJgiX3WyV6"
+  },
+  {
+   "sym": "RAT",
+   "name": "$RAT - Exfil Rat",
+   "ca": "9FAjujeZsLW7C8jRLvcH1fS3dYCtLV6LYHKq822dpump",
+   "age": "11 d",
+   "liq": "unverified",
+   "vol": "unverified",
+   "chg": "mcap $99.7k",
+   "scout": "SKIP",
+   "why": "Liquidity unverified",
+   "url": "https://pump.fun/coin/9FAjujeZsLW7C8jRLvcH1fS3dYCtLV6LYHKq822dpump"
+  },
+  {
+   "sym": "Wifoween",
+   "name": "Wifoween",
+   "ca": "DtBatQsrazRRVp37UTMQH7TnXL1mT2qrJTj7PB9Rpump",
+   "age": "4 d",
+   "liq": "unverified",
+   "vol": "unverified",
+   "chg": "mcap $54.9k",
+   "scout": "SKIP",
+   "why": "Liquidity unverified",
+   "url": "https://pump.fun/coin/DtBatQsrazRRVp37UTMQH7TnXL1mT2qrJTj7PB9Rpump"
+  },
+  {
+   "sym": "DIG",
+   "name": "DIG",
+   "ca": "7BZBP5Tm5mHAtgMF3qKF5aBeE8eM8cqQdNWgFmSDpump",
+   "age": "10 d",
+   "liq": "unverified",
+   "vol": "unverified",
+   "chg": "mcap $27.5k",
+   "scout": "SKIP",
+   "why": "Liquidity unverified",
+   "url": "https://pump.fun/coin/7BZBP5Tm5mHAtgMF3qKF5aBeE8eM8cqQdNWgFmSDpump"
+  },
+  {
+   "sym": "AUDACITY",
+   "name": "Dacity Coin",
+   "ca": "HJS1ncCpUDfzXNpM8MwnTHisdPrBqMCbnrQ2nsL8pump",
+   "age": "14 d",
+   "liq": "unverified",
+   "vol": "unverified",
+   "chg": "mcap $11.9k",
+   "scout": "SKIP",
+   "why": "Liquidity unverified",
+   "url": "https://pump.fun/coin/HJS1ncCpUDfzXNpM8MwnTHisdPrBqMCbnrQ2nsL8pump"
+  }
+ ],
+ "briefing": [
+  "- Scout: NO TRADE today. No token passed every filter.",
+  "- Paper: 1 open, 0 closed, win rate n/a, net $+0.00 realized, $+0.84 open (after fees/slippage). Paper only.",
+  "- Wallets: $68.54 total vs $100.40 on Oct 27 (read-only).",
+  "- Spend this week vs caps: Tobacco $0/$25, Crypto $0/$0, Restaurants $0/$10, Alcohol $0/$15 (no Notion expenses logged yet).",
+  "- $5K mission: income/savings are entered in the app on your phone; the server only knows confirmed savings $0.",
+  "- Grok cost this month $71.69 (extra $26.69 vs $20 cap). Usage 100%, resets Sun Nov 1, 4:12 AM ET.",
+  "- WARNING: plan usage at or above 90%."
+ ]
+}
