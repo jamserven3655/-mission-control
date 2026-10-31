@@ -24,7 +24,7 @@
    "qty": 4849.169600114943,
    "qty0": 4849.169600114943,
    "peak": 0.001369,
-   "last_px": 0.001369,
+   "last_px": 0.001349,
    "half_sold": false,
    "proceeds": 0.0,
    "fees": 0.045,
@@ -38,7 +38,35 @@
      -4.5
     ]
    ],
-   "mark_x": 1.52
+   "mark_x": 1.498
+  },
+  {
+   "id": 2,
+   "sym": "GATO",
+   "ca": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+   "url": "https://dexscreener.com/solana/5e3dxlxgwmtdcoka51wyyakttjfzbwqcoyuhbui5gt2m",
+   "opened": "2026-10-31",
+   "opened_ts": 1793471224.8959649,
+   "entry_mkt": 0.007353,
+   "fill": 0.00750006,
+   "qty": 593.9952480380157,
+   "qty0": 593.9952480380157,
+   "peak": 0.007353,
+   "last_px": 0.007353,
+   "half_sold": false,
+   "proceeds": 0.0,
+   "fees": 0.045,
+   "slip_cost": 0.08735294117647059,
+   "status": "open",
+   "events": [
+    [
+     1793471224.8959649,
+     "open $4.50 paper",
+     0.007353,
+     -4.5
+    ]
+   ],
+   "mark_x": 1.0
   }
  ],
  "losses": {},
@@ -78,19 +106,27 @@
   [
    "2026-10-31",
    "NO TRADE today (no token passed every filter)"
+  ],
+  [
+   "2026-10-31",
+   "CBUCKS: open, price x1.50 of entry"
+  ],
+  [
+   "2026-10-31",
+   "Opened $4.50 paper position in GATO at $0.007353"
   ]
  ],
  "summary": {
   "closed": 0,
-  "open": 1,
+  "open": 2,
   "wins": 0,
   "win_rate": null,
   "net": 0,
-  "unrealized": 1.94,
-  "fees": 0.04,
-  "slippage": 0.09,
+  "unrealized": 1.58,
+  "fees": 0.09,
+  "slippage": 0.17,
   "avg_hold_h": null,
-  "bucket_left": 83.5
+  "bucket_left": 79.0
  },
  "last_run": "2026-10-31"
 }
