@@ -97,3 +97,21 @@ ol,ul{margin:6px 0 0;padding-left:20px}li{margin:5px 0}
 .sheet{position:fixed;inset:0;z-index:20;background:rgba(0,0,0,.55);display:none;align-items:flex-end;justify-content:center}.sheet.on{display:flex}
 .sh{width:100%;max-width:560px;max-height:85vh;overflow:auto;border-radius:20px 20px 0 0;padding:16px 16px calc(16px + env(safe-area-inset-bottom));background:rgba(12,16,28,.96);animation:in .25s ease-out}
 .sh .avatar{animation:none}
+/* ---- Coach ---- */
+.tabs{grid-template-columns:repeat(7,1fr)}.tabs button{font-size:10px;padding:0}.tabs svg{width:22px;height:22px}
+@media (min-width:900px){.tabs{width:720px}}
+.coachwrap{--ca:var(--cy);--cb:rgba(34,228,255,.10)}.coachwrap.th-rt{--ca:#3dff6e;--cb:rgba(61,255,110,.08)}.coachwrap.th-cap{--ca:var(--mg);--cb:rgba(255,61,242,.10)}
+.coachwrap.th-rt .chat,.coachwrap.th-rt .bub{font-family:var(--mono)}
+.coachwrap .seg{display:flex;gap:6px;flex-wrap:wrap}.coachwrap .seg button{flex:1 1 auto}
+.chat{display:flex;flex-direction:column;gap:8px;max-height:46vh;overflow:auto;padding:8px 2px;margin-top:8px}
+.bub{max-width:88%;padding:9px 12px;border-radius:16px;font-size:14px;line-height:1.4;word-wrap:break-word}
+.bub.me{align-self:flex-end;background:rgba(255,255,255,.08);border-bottom-right-radius:4px}
+.bub.co{align-self:flex-start;display:flex;gap:8px;background:var(--cb);border:1px solid var(--ca);border-bottom-left-radius:4px;box-shadow:0 0 12px var(--cb)}
+.cav{flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:rgba(0,0,0,.35);border:1px solid var(--ca);font-size:15px}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:2px 0 6px;-webkit-overflow-scrolling:touch}
+.chip{flex:none;border:1px solid var(--line);background:rgba(0,0,0,.25);color:var(--fg);border-radius:999px;padding:6px 11px;font:inherit;font-size:12.5px;min-height:32px}
+.chip.on{border-color:var(--ca,var(--cy));color:var(--ca,var(--cy))}
+.cacts{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.cmarks{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}.cmarks .chip{padding:3px 9px;min-height:28px;font-size:11.5px}
+.idea{padding:10px 0;border-bottom:1px solid var(--line);font-size:13.5px}.idea:last-child{border:0}.idea .s{margin-top:4px}
+.cban{display:flex;gap:8px;align-items:center;background:rgba(34,228,255,.10);border:1px solid var(--cy);border-radius:12px;padding:8px 10px;margin-bottom:10px;font-size:13px}.cban span{flex:1}

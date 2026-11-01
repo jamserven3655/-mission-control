@@ -138,7 +138,7 @@ function viewHQ() {
     return `<div class="room lv${lv} ${stale() ? "amber" : glow}"><div class="rh"><b>${esc(nm)}</b><span class="mono lvl">L${lv}</span></div><div class="decor">${"<i></i>".repeat(lv)}</div>
     <div class="desks">${here.map((a, i) => `<button class="agent" data-agent="${esc(a.id)}" style="--h:${a.hue || 200};--d:${i * 0.4}s"><span class="avatar"><span class="eye"></span><span class="eye"></span></span><span class="desk"></span><b>${esc(a.name)}</b><small>${esc(a.activity || a.role || "")}</small></button>`).join("") || '<p class="note">Empty room</p>'}</div>
     <button class="btn up" data-up="${id}" ${lv >= 5 ? "disabled" : ""}>${lv >= 5 ? "Max level" : "Upgrade room"}</button></div>`; }).join("");
-  return card("HQ", `<div class="moodbar">${md === "green" ? '<span class="pill ok"><span class="dot ok"></span>In profit</span>' : md === "red" ? '<span class="pill bad"><span class="dot bad"></span>Paper loss</span>' : md === "amber" ? '<span class="pill warn"><span class="dot warn"></span>Stale data</span>' : '<span class="pill mut">Flat</span>'}${waste ? '<span class="pill warn">⚠ Waste: Grok extra over cap</span>' : ""}<button class="btn" data-addagent>+ Add agent</button></div><div class="hq ${md}">${rooms}</div><p class="note">Tap an agent for its report and to give it a task. Room levels are cosmetic and only saved on this device.</p>`) +
+  return coachPins() + card("HQ", `<div class="moodbar">${md === "green" ? '<span class="pill ok"><span class="dot ok"></span>In profit</span>' : md === "red" ? '<span class="pill bad"><span class="dot bad"></span>Paper loss</span>' : md === "amber" ? '<span class="pill warn"><span class="dot warn"></span>Stale data</span>' : '<span class="pill mut">Flat</span>'}${waste ? '<span class="pill warn">⚠ Waste: Grok extra over cap</span>' : ""}<button class="btn" data-addagent>+ Add agent</button></div><div class="hq ${md}">${rooms}</div><p class="note">Tap an agent for its report and to give it a task. Room levels are cosmetic and only saved on this device.</p>`) +
   card("Top stats", topStats()) + card("Daily briefing", `<ul class="brief">${D.briefing.map((l) => `<li>${esc(l.replace(/^- /, ""))}</li>`).join("")}</ul>`) + `<div class="grid">` + card("Tasks", tasksCard()) +
   card("Activity timeline", D.timeline.map(([b, w, t]) => `<div class="row"><div class="av ${b}">${esc(D.bots[b].short)}</div><div class="t">${esc(t)}<div class="s">${esc(D.bots[b].name)}, ${esc(w)} ET</div></div></div>`).join("")) +
   card("Activity heatmap", heat()) +
@@ -193,11 +193,11 @@ function agentSheet(id) {
   ${a.custom ? `<button class="btn" data-rmagent="${esc(a.id)}" style="margin-top:10px">Remove agent</button>` : ""}<p class="note">Saved on this device only. Chief Bot sees tasks only if you send it the exported backup.</p>`);
 }
 function addAgentSheet() { sheet(`<h2>Add agent</h2><form class="frm" data-form="agent"><input name="name" placeholder="Name" required maxlength="24"><input name="role" placeholder="What it does" maxlength="80"><select name="room">${ROOMS.map(([i, n]) => `<option value="${i}">${n}</option>`).join("")}</select><button class="btn pri">Add</button></form><p class="note">A custom agent is a card in HQ for planning. It isn't a real bot and doesn't run.</p>`); }
-const VIEWS = { hq: viewHQ, trade: viewTrade, money: viewMoney, wallets: viewWallets, usage: viewUsage, waiting: viewWaiting };
+const VIEWS = { coach: viewCoach, hq: viewHQ, trade: viewTrade, money: viewMoney, wallets: viewWallets, usage: viewUsage, waiting: viewWaiting };
 let cur = location.hash.slice(1) in VIEWS ? location.hash.slice(1) : "hq";
 function render() {
   ci = 0; const app = $("#app");
-  app.innerHTML = `${stale() ? `<div class="stale mono">STALE: data is ${Math.round(hoursOld())} h old (last update ${esc(D.updated)})</div>` : ""}<div class="view on">${VIEWS[cur]()}</div><p class="note mono" style="text-align:center;margin-bottom:10px">Last updated ${esc(D.updated)}${D.offline ? " · offline copy" : ""}</p>`;
+  app.innerHTML = `${coachBanner()}${stale() ? `<div class="stale mono">STALE: data is ${Math.round(hoursOld())} h old (last update ${esc(D.updated)})</div>` : ""}<div class="view on">${VIEWS[cur]()}</div><p class="note mono" style="text-align:center;margin-bottom:10px">Last updated ${esc(D.updated)}${D.offline ? " · offline copy" : ""}</p>`;
   document.querySelectorAll(".tabs button").forEach((b) => b.classList.toggle("on", b.dataset.tab === cur));
   countUp(app);
 }
