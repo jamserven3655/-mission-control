@@ -365,7 +365,7 @@
   ]
  ],
  "pnl": {
-  "as_of": "Oct 31, 12:30 AM ET",
+  "as_of": "Nov 1, 8:11 AM ET",
   "rows": [
    [
     "All-time (real wallets), as of Oct 27",
@@ -374,18 +374,23 @@
    ],
    [
     "Since Oct 27 (real wallets)",
-    "-$11.86",
-    "$100.40 to $68.54, not counting your own $20 USDC transfer out"
+    "-$13.50",
+    "$100.40 to $66.90, not counting your own $20 USDC transfer out"
    ],
    [
     "All-time estimate now",
-    "-$80.55",
+    "-$82.19",
     "Oct 27 figure plus the change since"
    ],
    [
     "Realized sells Oct 27",
     "+$15.79",
     "from your own trades"
+   ],
+   [
+    "Live trade REGRETAMINE (11/01)",
+    "-$1.36",
+    "-0.0143 SOL (-27.2%), fees 0.00047 SOL; bought 7:59:36 AM ET, sold 8:02:41 AM ET"
    ]
   ]
  },
@@ -396,7 +401,7 @@
   "month_total": 0,
   "hint": "Log a receipt: drop receipt photos or bank screenshots (cover card/account numbers) in your Notion Inbox, or send them in chat. They're logged to Notion Expenses on the weekday-morning sync."
  },
- "updated_iso": "2026-11-01T00:36:29.234840-04:00",
+ "updated_iso": "2026-11-01T06:17:53.809402-05:00",
  "agents": [
   {
    "id": "chief",
@@ -405,7 +410,7 @@
    "bot": "chief",
    "hue": 190,
    "role": "Runs the 8 AM refresh, keeps the rules",
-   "activity": "Refresh done 12:36 AM ET"
+   "activity": "Refresh done 6:17 AM ET"
   },
   {
    "id": "scout",
@@ -967,23 +972,23 @@
   "Restaurants": 0.0,
   "Alcohol": 0.0
  },
- "updated": "Nov 1, 2026, 12:36 AM ET",
- "sol_price": 96.58,
+ "updated": "Nov 1, 2026, 8:11 AM ET",
+ "sol_price": 94.8,
  "wallets": [
   {
    "key": "main",
    "name": "Main",
    "addr": "BZD82QWFzFpfKgAbm46GRr1GR76pZq6AmktLnjCZB2NA",
-   "hold": "0.0918 SOL, 0.84 USDC, dust",
-   "now": 9.71,
-   "prev": 10.03
+   "hold": "0.0760 SOL, 0.84 USDC, dust",
+   "now": 8.04,
+   "prev": 9.71
   },
   {
    "key": "j1df",
    "name": "Phantom J1df",
    "addr": "J1dfibagGeMAbWpUMAjWeJ1oLEQ7uLysqSjqw6xcDto5",
    "hold": "40.02 CASH",
-   "now": 39.99,
+   "now": 40.01,
    "prev": 39.99
   },
   {
@@ -999,11 +1004,11 @@
    "name": "FOMO app",
    "addr": "DsV7L4LnsekSsfV3FFqgnpvNApBKipq7hbtEGzoyYYcb",
    "hold": "18.72 USDC, dust",
-   "now": 18.72,
+   "now": 18.73,
    "prev": 18.72
   }
  ],
- "total": 68.54,
+ "total": 66.9,
  "history": [
   [
    "Oct 27",
@@ -1026,8 +1031,8 @@
    68.54
   ],
   [
-   "Nov 1 12:36a",
-   68.54
+   "Nov 1 8:11a",
+   66.9
   ]
  ],
  "dex": [
@@ -1177,7 +1182,7 @@
    "sym": "BURN",
    "name": "BURN",
    "ca": "5ANpBFZjmhTv48dvU18sCLmgQS9mwJ7meU6aMYSZpump",
-   "age": "42 h",
+   "age": "2 d",
    "liq": "unverified",
    "vol": "unverified",
    "chg": "mcap $12.1k",
@@ -1189,7 +1194,7 @@
    "sym": "NTRNDM",
    "name": "notrandom",
    "ca": "NTRNDMqQSiwEC2jJs3wJiZS6bpGYQJtMNQJgiX3WyV6",
-   "age": "23 d",
+   "age": "24 d",
    "liq": "unverified",
    "vol": "unverified",
    "chg": "mcap $555.3k",
@@ -1213,7 +1218,7 @@
    "sym": "Wifoween",
    "name": "Wifoween",
    "ca": "DtBatQsrazRRVp37UTMQH7TnXL1mT2qrJTj7PB9Rpump",
-   "age": "5 d",
+   "age": "6 d",
    "liq": "unverified",
    "vol": "unverified",
    "chg": "mcap $54.9k",
@@ -1237,7 +1242,7 @@
    "sym": "AUDACITY",
    "name": "Dacity Coin",
    "ca": "HJS1ncCpUDfzXNpM8MwnTHisdPrBqMCbnrQ2nsL8pump",
-   "age": "15 d",
+   "age": "16 d",
    "liq": "unverified",
    "vol": "unverified",
    "chg": "mcap $11.9k",
@@ -1246,10 +1251,61 @@
    "url": "https://pump.fun/coin/HJS1ncCpUDfzXNpM8MwnTHisdPrBqMCbnrQ2nsL8pump"
   }
  ],
+ "live_trades": {
+  "generated": "2026-11-01 08:15 EST",
+  "note": "Real trades signed by you, read from the public Solana RPC. USD at the refresh SOL price.",
+  "summary": [
+   {
+    "mint": "Dbyy9LSMVHjxw2ZnPPRrCheSLVeuHq2GMkpxUs3t5xeT",
+    "sym": "REGRETAMINE",
+    "name": "Regretamine",
+    "url": "https://dexscreener.com/solana/8ydjl2ehenultqzus1wbhdqm2tw1jcdiwazttokq7pq8",
+    "closed": true,
+    "cost_sol": 0.052484392,
+    "proceeds_sol": 0.038187996,
+    "realized_sol": -0.014296396,
+    "realized_usd": -1.36,
+    "fees_sol": 0.000473606,
+    "fees_usd": 0.045,
+    "rent_locked_sol": 0.00151384,
+    "pct": -27.2,
+    "first": "2026-11-01 7:59:36 AM ET",
+    "last": "2026-11-01 8:02:41 AM ET"
+   }
+  ],
+  "trades": [
+   {
+    "wallet": "main",
+    "side": "buy",
+    "time": "2026-11-01 7:59:36 AM ET",
+    "sym": "REGRETAMINE",
+    "tokens": 26493.577737,
+    "sol_wallet_delta": -0.053998232,
+    "network_fee": 1.4e-05,
+    "app_fees_tips": 0.000246071,
+    "rent_locked": 0.00151384,
+    "sig": "4HC58EYPN1EXKL3THzBWeSF5zbd5YponfXgsZkPbJaZa77GHazb6Qed1J3dupatYJnKxfywcbTUpCbpugTkkGy6U",
+    "url": "https://dexscreener.com/solana/8ydjl2ehenultqzus1wbhdqm2tw1jcdiwazttokq7pq8"
+   },
+   {
+    "wallet": "main",
+    "side": "sell",
+    "time": "2026-11-01 8:02:41 AM ET",
+    "sym": "REGRETAMINE",
+    "tokens": 26493.577737,
+    "sol_wallet_delta": 0.038187996,
+    "network_fee": 3.0197e-05,
+    "app_fees_tips": 0.000183338,
+    "rent_locked": 0,
+    "sig": "4PRmVeSvac1jMmGmWCpW86wKaAxDKAtecxWQV1NQBXxksrBj9M3er1nh397ZGoj9WKzYjpa42YC9xhXc15UbD4k6",
+    "url": "https://dexscreener.com/solana/8ydjl2ehenultqzus1wbhdqm2tw1jcdiwazttokq7pq8"
+   }
+  ]
+ },
  "briefing": [
   "- Scout: PAPER PICK Dacity. Passed every filter, highest score 79.",
   "- Paper: 2 open, 0 closed, win rate n/a, net $+0.00 realized, $+1.58 open (after fees/slippage). Paper only.",
-  "- Wallets: $68.54 total vs $100.40 on Oct 27 (read-only).",
+  "- Wallets: $66.90 total vs $100.40 on Oct 27 (read-only).",
   "- Spend this week vs caps: Tobacco $0/$25, Crypto $0/$0, Restaurants $0/$10, Alcohol $0/$15 (no Notion expenses logged yet).",
   "- $5K mission: income/savings are entered in the app on your phone; the server only knows confirmed savings $0.",
   "- Grok cost this month $71.69 (extra $26.69 vs $20 cap). Usage 100%, resets Sun Nov 1, 4:12 AM ET.",

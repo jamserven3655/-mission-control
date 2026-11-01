@@ -1,7 +1,7 @@
 {
  "wallets": {
   "main": {
-   "sol": 0.091761738,
+   "sol": 0.075951502,
    "toks": {
     "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh": 8e-08,
     "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": 0.837592,
@@ -12,14 +12,14 @@
     "PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF": 3.04e-07,
     "Pren1FvFX6J3E4kXhJuCiAD5aDmGEb7qJRncwA8Lkhw": 2.38e-07
    },
-   "usd": 9.71
+   "usd": 8.04
   },
   "j1df": {
    "sol": 0.0,
    "toks": {
     "CASHx9KJUStyftLFWGvEVf59SGeG9sh5FfcnZMVPCASH": 40.016171
    },
-   "usd": 39.99
+   "usd": 40.01
   },
   "81ns": {
    "sol": 0.001245315,
@@ -32,20 +32,20 @@
     "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": 18.722063,
     "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh": 8e-08
    },
-   "usd": 18.72
+   "usd": 18.73
   }
  },
  "px": {
   "2qoJSnwrycpwDFwXxgfzJivBbsEhbZ9QvFHWeEVnpump": null,
-  "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh": 77537.93019900538,
+  "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh": 77920.98260647114,
   "3RWq8xkvhRL59KsefDp9NBaamkwRgBKvHtvpknstpump": null,
   "4DFCmurAeSmTBWuiK7fuAcnNDziw2e8tC94LhPD6pump": null,
   "5fBxzGSWr6a5kGBuoT2nM3A4oNWCngvLC6yi56L4pump": null,
-  "CASHx9KJUStyftLFWGvEVf59SGeG9sh5FfcnZMVPCASH": 0.9993309913651891,
-  "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": 0.9996244310046926,
-  "Pren1FvFX6J3E4kXhJuCiAD5aDmGEb7qJRncwA8Lkhw": 970.3203285980654,
-  "PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF": 1340.3253173636886,
-  "So11111111111111111111111111111111111111112": 96.57830469855759
+  "CASHx9KJUStyftLFWGvEVf59SGeG9sh5FfcnZMVPCASH": 0.9997580316880421,
+  "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": 0.9999295207068389,
+  "Pren1FvFX6J3E4kXhJuCiAD5aDmGEb7qJRncwA8Lkhw": 964.3300633759405,
+  "PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF": 1315.4897833492155,
+  "So11111111111111111111111111111111111111112": 94.80318186491058
  },
- "total": 68.53721680380744
+ "total": 66.89636546210272
 }

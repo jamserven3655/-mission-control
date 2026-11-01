@@ -1,5 +1,6 @@
 # Regenerates pwa/data.json from ../wallets.json, ../tokens.json, ../raw_sources.json + pwa/static.json. Read-only data; no keys.
-import json, os, time, datetime
+import json, os, time, datetime, zoneinfo
+ET = zoneinfo.ZoneInfo("America/New_York")
 H = os.path.dirname(os.path.abspath(__file__)); M = os.path.dirname(H)
 L = lambda p: json.load(open(p))
 S = L(os.path.join(H, "static.json"))
@@ -7,7 +8,7 @@ W = L(os.path.join(M, "wallets.json"))
 P = L(os.path.join(M, "wallets_prev.json")) if os.path.exists(os.path.join(M, "wallets_prev.json")) else W
 SYM = {"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": "USDC", "CASHx9KJUStyftLFWGvEVf59SGeG9sh5FfcnZMVPCASH": "CASH"}
 px = W.get("px", {}); sol = px.get("So11111111111111111111111111111111111111112") or 0
-et = datetime.datetime.fromtimestamp(os.path.getmtime(os.path.join(M, "wallets.json")), datetime.timezone(datetime.timedelta(hours=-4)))  # EDT; switch to -5 after Nov 1
+et = datetime.datetime.fromtimestamp(os.path.getmtime(os.path.join(M, "wallets.json")), ET)
 stamp = et.strftime("%b %-d, %Y, %-I:%M %p ET")
 wallets = []
 for m in S["wallet_meta"]:
@@ -42,7 +43,7 @@ def LJ(p, d=None): return L(p) if os.path.exists(p) else d
 scan = LJ(os.path.join(E, "scan.json"), {}); paper = LJ(os.path.join(E, "paper_trades.json"), {"trades": [], "summary": {}, "log": []})
 notion_exp = LJ(os.path.join(E, "expenses.json"), [])  # written by the routine's Notion Inbox step: [{date,merchant,amount,category,source}]
 mt = [os.path.getmtime(os.path.join(M, "wallets.json"))] + ([os.path.getmtime(os.path.join(E, "scan.json"))] if scan else [])
-oldest = datetime.datetime.fromtimestamp(min(mt), datetime.timezone(datetime.timedelta(hours=-4)))
+oldest = datetime.datetime.fromtimestamp(min(mt), ET)
 ps = paper.get("summary") or {}
 trades = [dict(id=t["id"], sym=t["sym"], url=t.get("url"), opened=t["opened"], status=t["status"], entry=t["entry_mkt"], last=t["last_px"], x=t.get("mark_x"), half=t["half_sold"],
                net=t.get("net"), fees=round(t["fees"], 3), last_event=t["events"][-1][1], closed=t.get("closed")) for t in paper["trades"]][::-1]
@@ -67,9 +68,23 @@ out.update(risk=out_risk, updated_iso=oldest.isoformat(), agents=agents, scan=di
            candidates=[{k: c.get(k) for k in ("sym", "name", "ca", "url", "price", "liq", "vol24", "vol_liq", "age_h", "chg1", "chg24", "bs1", "score", "scout", "flags")} | {"rug": c.get("rug")} for c in scan.get("candidates", [])]),
            paper=dict(summary=ps, trades=trades, log=paper.get("log", [])[-8:], rules=paper.get("rules")), expenses=notion_exp, week_spend=week)
 out.update(updated=stamp, sol_price=round(sol, 2), wallets=wallets, total=total, history=hist, dex=dex, pump=pump)
+# Real-wallet P&L: recompute the "since Oct 27" rows from this refresh, and add today's live trades (live_trades.json, built by live_trades.py)
+LT = LJ(os.path.join(M, "live_trades.json"), {"trades": [], "summary": []})
+if out.get("pnl"):
+    since = round(total - S.get("oct27_total", 100.40) + 20, 2)
+    sg = lambda v: ("-$%.2f" if v < 0 else "+$%.2f") % abs(v)
+    rows = [r for r in out["pnl"]["rows"] if not r[0].startswith(("Since Oct 27", "All-time estimate now", "Live trade "))]
+    i = 1 if rows and rows[0][0].startswith("All-time (real") else 0
+    rows[i:i] = [["Since Oct 27 (real wallets)", sg(since), f"${S.get('oct27_total', 100.40):.2f} to ${total:.2f}, not counting your own $20 USDC transfer out"],
+                 ["All-time estimate now", sg(round(-68.69 + since, 2)), "Oct 27 figure plus the change since"]]
+    for t in LT.get("summary", []):
+        if t.get("closed"): rows.append([f"Live trade {t['sym']} ({t['first'][5:10].replace('-', '/')})", sg(t["realized_usd"]), f"{t['realized_sol']:+.4f} SOL ({t['pct']:+.1f}%), fees {t['fees_sol']:.5f} SOL; bought {t['first'][11:]}, sold {t['last'][11:]}"])
+    out["pnl"] = dict(out["pnl"], as_of=stamp.replace(", 2026", "").replace(f", {et.year}", ""), rows=rows)
+out["live_trades"] = dict(generated=LT.get("generated"), note=LT.get("note"), summary=LT.get("summary", []),
+                          trades=[{k: t[k] for k in ("wallet", "side", "time", "sym", "tokens", "sol_wallet_delta", "network_fee", "app_fees_tips", "rent_locked", "sig", "url")} for t in LT.get("trades", [])])
 sm = lambda v: "n/a" if v is None else f"{v:+.2f}"
 hrs = (time.time() - min(mt)) / 3600
-lines = [f"# Daily briefing, {datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-4))).strftime('%a %b %-d, %-I:%M %p')} ET",
+lines = [f"# Daily briefing, {datetime.datetime.now(ET).strftime('%a %b %-d, %-I:%M %p')} ET",
  f"- Scout: {scan.get('decision', 'scan not run')}. {scan.get('reason', '')}.",
  f"- Paper: {ps.get('open', 0)} open, {ps.get('closed', 0)} closed, win rate {('%s%%' % ps['win_rate']) if ps.get('win_rate') is not None else 'n/a'}, net ${sm(ps.get('net'))} realized, ${sm(ps.get('unrealized'))} open (after fees/slippage). Paper only.",
  f"- Wallets: ${total:.2f} total vs ${S['oct27_total']:.2f} on Oct 27 (read-only).",
