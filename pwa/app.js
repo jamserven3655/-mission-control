@@ -45,12 +45,12 @@ function viewWallets() {
   const s = D.stats, bucketPct = (D.total / 88) * 100, capPct = (s.grok_extra / s.grok_cap) * 100;
   const tbl = D.wallets.map((w) => { const c = w.now - w.prev; return `<div class="tok"><div><b>${esc(w.name)}</b> <span style="color:var(--mut)">${esc(w.hold)}</span></div><div class="mono" style="text-align:right"><b>${money(w.now)}</b></div><div class="addr">${esc(w.addr)}</div><div class="mono" style="text-align:right;font-size:12px;color:${Math.abs(c) >= 5 ? "var(--rd)" : "var(--dim)"}">${c >= 0 ? "+" : "-"}${money(Math.abs(c))} vs ${money(w.prev)}</div></div>`; }).join("") +
   `<div class="tok"><b>Total</b><div class="mono" style="text-align:right"><b>${money(D.total)}</b></div><div></div><div class="mono" style="text-align:right;font-size:12px;color:var(--rd)">-${money(D.oct27_total - D.total)} vs Oct 27</div></div>`;
-  const P=D.pnl; const pnlCard = P ? card("Profit & loss", P.rows.map(r=>`<div class="tok"><b>${esc(r[0])}</b><div class="mono" style="text-align:right;color:${r[1].startsWith('-')?'var(--rd)':'var(--fg)'}"><b>${esc(r[1])}</b></div><div></div><div style="font-size:12px;opacity:.75">${esc(r[2])}</div></div>`).join("")+`<p class="note">As of ${esc(P.as_of)}. Real-wallet numbers are read-only estimates from on-chain history.</p>`) : "";
+  const P=D.pnl; const pnlCard = P ? card("Profit & loss", P.rows.filter(r=>!/^Paper trades/i.test(r[0])).map(r=>`<div class="tok"><b>${esc(r[0])}</b><div class="mono" style="text-align:right;color:${r[1].startsWith('-')?'var(--rd)':'var(--fg)'}"><b>${esc(r[1])}</b></div><div></div><div style="font-size:12px;opacity:.75">${esc(r[2])}</div></div>`).join("")+`<p class="note">As of ${esc(P.as_of)}. Real-wallet numbers are read-only estimates from on-chain history.</p>`) : "";
   const SP=D.spending; const spendCard = SP ? card("Spending", `<div style="display:flex;gap:18px;flex-wrap:wrap"><div><div class="mono" style="font-size:22px;font-weight:700">${money(SP.week_total||0)}</div><div style="font-size:12px;opacity:.75">This week</div></div><div><div class="mono" style="font-size:22px;font-weight:700">${money(SP.month_total||0)}</div><div style="font-size:12px;opacity:.75">This month</div></div></div>` + ((SP.rows||[]).length ? SP.rows.slice(0,15).map(r=>`<div class="tok"><b>${esc(r.store)}</b><div class="mono" style="text-align:right"><b>${money(r.amount)}</b></div><div style="font-size:12px;opacity:.75">${esc(r.date)} · ${esc(r.category)}</div><div style="font-size:12px;opacity:.75;text-align:right">${esc(r.source)}</div></div>`).join("") : `<p class="note">No entries yet</p>`) + `<p class="note">${esc(SP.hint||"")} Source: ${esc(SP.source||"")}.</p>`) : "";
   return pnlCard + spendCard + card("Wallets", `<div style="display:flex;justify-content:space-between;align-items:baseline"><div class="mono" style="font-size:30px;font-weight:700;color:var(--fg)"><span data-count="${D.total}" data-pre="$" data-dec="2">$0</span></div><span class="pill bad"><span class="dot bad"></span>-${money(D.oct27_total - D.total)} since Oct 27</span></div>${spark(D.history)}` + tbl + `<p class="note">Read from the public Solana RPC with Jupiter prices; SOL at ${money(D.sol_price)}. ${esc(D.wallet_note)}</p>`) +
-  card("Risk Keeper", `<div class="rings">${ring(bucketPct, money(D.total), "of $88 bucket", "var(--cy)")}${ring(((D.paper.summary.open || 0) / 2) * 100, (D.paper.summary.open || 0) + " / 2", "Open paper positions", "var(--gr)")}${ring(capPct, "$" + s.grok_extra, "of $" + s.grok_cap + " Grok cap")}</div>` +
+  card("Risk Keeper", `<div class="rings">${ring(bucketPct, money(D.total), "of $88 bucket", "var(--cy)")}${ring(capPct, "$" + s.grok_extra, "of $" + s.grok_cap + " Grok cap")}</div>` +
   D.risk.map(([k, v]) => `<div class="row"><div class="t" style="color:var(--mut);flex:0 0 120px">${esc(k)}</div><div class="t">${esc(v)}</div></div>`).join("") +
-  `<div class="row"><div class="t" style="color:var(--mut);flex:0 0 120px">Grok cap</div><div class="t"><span class="pill bad"><span class="dot bad"></span>Over: $${s.grok_extra} of $${s.grok_cap}</span><div class="s">LLM memecoin work stays paused until Nov 1. The paper engine is plain Python and uses no Grok credits.</div></div></div>`);
+  `<div class="row"><div class="t" style="color:var(--mut);flex:0 0 120px">Grok cap</div><div class="t"><span class="pill bad"><span class="dot bad"></span>Over: $${s.grok_extra} of $${s.grok_cap}</span><div class="s">Memecoin tracking moved to Viral Coin Radar.</div></div></div>`);
 }
 let src = "dex";
 function viewTokens() {
@@ -108,8 +108,6 @@ function agents() { return D.agents.concat(ST.custom); }
 /* rule-based tasks agents hand each other (deterministic, from data.json) */
 function autoTasks() {
   const A = [], s = ps();
-  if (s.open) A.push(["risk", "paper", `Re-check ${s.open} open paper position(s) at the next run`]);
-  if (D.scan.pick) A.push(["scout", "risk", `Confirm ${D.scan.pick.sym} still passes filters tomorrow`]);
   if (!D.expenses.length) A.push(["finance", "chief", "Ask James to log this week's spending in the Notion Inbox"]);
   if (grokPct() >= 80) A.push(["analyst", "chief", "Keep refreshes to once a weekday: Grok extra spend is at " + Math.round(grokPct()) + "% of the cap"]);
   if (stale()) A.push(["analyst", "chief", "Data is stale: rerun the morning refresh"]);
@@ -120,18 +118,18 @@ const nameOf = (id) => (id === "you" ? "You" : (agents().find((a) => a.id === id
 function report(a) {
   const s = ps(), m = money5k();
   return ({ chief: `Last refresh ${D.updated}. ${D.briefing.length} briefing lines. Usage ${D.usage.pct}% (resets ${D.usage.reset_label}).`,
-    scout: `${D.scan.decision}. ${D.scan.reason}. Scanned ${D.scan.candidates.length} shown of the pairs checked at ${D.scan.run || "n/a"}.`,
-    paper: `${s.open || 0} open, ${s.closed || 0} closed. Net ${money(s.net || 0)} realized, ${money(s.unrealized || 0)} open, after fees ${money(s.fees || 0)} and slippage ${money(s.slippage || 0)}.`,
-    risk: `Bucket left ${money(s.bucket_left ?? 88)} of $88. Max 2 open (now ${s.open || 0}). Daily stop after 3 losses.`,
+    scout: "Memecoin scanning moved to Viral Coin Radar (Coins tab).",
+    paper: "Paper trades now live in Viral Coin Radar (Coins tab).",
+    risk: "Memecoin limits ($88 bucket, max 2 open, stop after 3 losses) are enforced in Viral Coin Radar.",
     analyst: D.briefing.join(" "), finance: `This device: ${money(m.total)} toward $5,000. ${wasteFlags().length} spending flag(s). ${D.expenses.length} Notion expenses synced.`,
     income: `${D.income_ideas.length} ideas on the board. Revenue logged ${money(m.rev)}, profit ${money(m.profit)}.` })[a.id] || `Custom agent (this device only): ${a.role || ""}`;
 }
 /* ---------- HQ ---------- */
-function mood() { if (stale()) return "amber"; const p = paperPnl(); if (p > 0 || money5k().total >= 5000) return "green"; if (p < 0) return "red"; return ""; }
+function mood() { if (stale()) return "amber"; if (money5k().total >= 5000) return "green"; return ""; }
 function viewHQ() {
   const md = mood(), A = agents(), waste = D.stats.grok_extra > D.stats.grok_cap;
   const rooms = ROOMS.map(([id, nm]) => { const lv = ST.levels[id] || 1, here = A.filter((a) => a.room === id);
-    const glow = id === "trade" ? (paperPnl() > 0 ? "green" : paperPnl() < 0 ? "red" : "") : id === "finance" && money5k().total >= 5000 ? "green" : "";
+    const glow = id === "finance" && money5k().total >= 5000 ? "green" : "";
     return `<div class="room lv${lv} ${stale() ? "amber" : glow}"><div class="rh"><b>${esc(nm)}</b><span class="mono lvl">L${lv}</span></div><div class="decor">${"<i></i>".repeat(lv)}</div>
     <div class="desks">${here.map((a, i) => `<button class="agent" data-agent="${esc(a.id)}" style="--h:${a.hue || 200};--d:${i * 0.4}s"><span class="avatar"><span class="eye"></span><span class="eye"></span></span><span class="desk"></span><b>${esc(a.name)}</b><small>${esc(a.activity || a.role || "")}</small></button>`).join("") || '<p class="note">Empty room</p>'}</div>
     <button class="btn up" data-up="${id}" ${lv >= 5 ? "disabled" : ""}>${lv >= 5 ? "Max level" : "Upgrade room"}</button></div>`; }).join("");
@@ -147,10 +145,7 @@ function viewHQ() {
 function topStats() {
   const s = ps(), m = money5k(), w = weekSpend(), capT = Object.values(D.caps_weekly).reduce((a, b) => a + b, 0), spT = Object.values(w).reduce((a, b) => a + b, 0), gp = grokPct();
   const st = (cls, v, l, d) => `<div class="stat glass ${cls}"><div class="v">${v}</div><div class="l">${esc(l)}</div><div class="d">${esc(d)}</div></div>`;
-  const pn = paperPnl();
-  return `<div class="stats">${st("", s.win_rate == null ? "n/a" : `<span data-count="${s.win_rate}" data-suf="%">0%</span>`, "Paper win rate", `${s.closed || 0} closed, ${s.open || 0} open`)}
-  ${st(pn > 0 ? "good" : pn < 0 ? "bad" : "", (pn < 0 ? "-$" : "$") + Math.abs(pn).toFixed(2), "Paper net", `${money(s.net || 0)} realized + ${money(s.unrealized || 0)} open, after fees`)}
-  ${st("cy", `<span data-count="${D.total}" data-pre="$" data-dec="2">$0</span>`, "Wallet total", "Down " + money(D.oct27_total - D.total) + " vs Oct 27")}
+  return `<div class="stats">${st("cy", `<span data-count="${D.total}" data-pre="$" data-dec="2">$0</span>`, "Wallet total", "Down " + money(D.oct27_total - D.total) + " vs Oct 27")}
   ${st("cy", `<span data-count="${m.total}" data-pre="$" data-dec="0">$0</span>`, "$5K progress", (m.total / 50).toFixed(1) + "% of $5,000 by Dec 31")}
   ${st(spT > capT ? "bad" : "good", "$" + spT.toFixed(0) + " / $" + capT, "Weekly spend vs caps", D.expenses.length || ST.expenses.length ? "From Notion + this device" : "No spend logged yet")}
   ${st(gp >= 80 ? "bad" : "", "$" + D.stats.grok_month.toFixed(2), "Grok cost this month", `Extra $${D.stats.grok_extra} = ${Math.round(gp)}% of $${D.stats.grok_cap} cap${gp >= 100 ? " (over)" : gp >= 80 ? " (80% alert)" : ""}`)}
@@ -165,21 +160,7 @@ function tasksCard() {
 /* ---------- Trade ---------- */
 const fmtUsd = (n) => (n == null ? "?" : n >= 1e6 ? "$" + (n / 1e6).toFixed(1) + "M" : n >= 1e3 ? "$" + (n / 1e3).toFixed(1) + "k" : "$" + Math.round(n));
 function viewTrade() {
-  const S = D.scan, P = D.paper, s = P.summary || {}, pk = S.pick;
-  const pickCard = card("Paper pick of the day", pk ? `<div class="pick"><div><div class="mono big">${esc(pk.sym)}</div><div class="s">${esc(pk.name)} · score ${pk.score}</div><div class="addr">${esc(pk.ca)}</div></div><span class="pill ok"><span class="dot ok"></span>PAPER PICK</span></div><p class="note">${esc(S.reason)}. Entry $${pk.price} with 1% fee and 2% slippage each side. Paper only: nothing is bought.</p><a class="btn" href="${esc(pk.url)}" target="_blank" rel="noopener">DexScreener ↗</a>`
-    : `<div class="pick"><div class="mono big" style="color:var(--am)">NO TRADE today</div></div><p class="note">${esc(S.reason)}.</p>`) ;
-  const tr = P.trades.map((t) => `<div class="tok"><div><b>${esc(t.sym)}</b> <span class="pill ${t.status === "open" ? "warn" : t.net > 0 ? "ok" : "bad"}">${t.status}</span><div class="k">opened ${esc(t.opened)}${t.closed ? " · closed " + esc(t.closed) : ""} · ${esc(t.last_event)}${t.half ? " · half sold" : ""}</div></div><div class="mono" style="text-align:right">${t.status === "open" ? "x" + t.x : (t.net >= 0 ? "+" : "") + money(t.net)}<div class="k">fees ${money(t.fees)}</div></div></div>`).join("") || '<p class="note">No paper trades yet.</p>';
-  const cand = S.candidates.map((c) => { const r = c.rug || {}; return `<div class="tok"><div><b>${esc(c.sym)}</b> <span style="color:var(--mut)">${esc(c.name)}</span><div class="addr">${esc(c.ca)}</div></div><div style="text-align:right"><span class="pill ${c.scout === "WATCH" ? "ok" : "bad"}">${c.scout}</span><div class="k">score ${c.score}</div></div>
-  <div class="k" style="grid-column:1/-1">liq ${fmtUsd(c.liq)} · vol ${fmtUsd(c.vol24)} (${c.vol_liq}x) · age ${c.age_h < 48 ? Math.round(c.age_h) + " h" : Math.round(c.age_h / 24) + " d"} · 1h ${c.chg1 ?? "?"}% · 24h ${c.chg24 ?? "?"}% · buys/sells ${c.bs1}</div>
-  <div class="k" style="grid-column:1/-1">RugCheck: ${r.ok ? `mint ${r.mint_auth ? "ON" : "off"}, freeze ${r.freeze_auth ? "ON" : "off"}, top-10 ${r.top10}%, ${r.holders} holders` : r.err ? "UNVERIFIED" : "not run"}</div>
-  ${c.flags.length ? `<div class="flags" style="grid-column:1/-1">${c.flags.map((f) => `<span class="pill bad">${esc(f)}</span>`).join("")}</div>` : ""}<div style="grid-column:1/-1"><a href="${esc(c.url)}" target="_blank" rel="noopener">Open ↗</a></div></div>`; }).join("");
-  const R = P.rules || {};
-  const openT=((D.paper&&D.paper.trades)||[]).filter(t=>t.status==="open");
-  const liveCard = card("Open paper positions (live)", openT.length ? openT.map(t=>`<div class="tok"><b>${esc(t.sym)}</b><div class="mono" style="text-align:right;color:${t.x>=1?'var(--gr)':'var(--rd)'}"><b>${t.x>=1?'+':''}${Math.round((t.x-1)*100)}%</b></div><div></div><div style="font-size:12px;opacity:.75">Entry $${t.entry} on ${esc(t.opened)} · last checked $${t.last}</div></div><iframe src="${esc(t.url)}?embed=1&loadChartSettings=0&trades=0&info=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=15" style="width:100%;height:340px;border:0;border-radius:12px;margin:8px 0" loading="lazy" title="${esc(t.sym)} live chart"></iframe><a class="btn" href="${esc(t.url)}" target="_blank" rel="noopener">Open ${esc(t.sym)} live ↗</a>`).join("")+`<p class="note">The chart is live from DexScreener. The % is from the last refresh. Paper only.</p>` : `<p class="note">No open paper positions.</p>`);
-  return liveCard + pickCard + card("Paper results", `<div class="rings">${ring(s.win_rate || 0, s.win_rate == null ? "n/a" : s.win_rate + "%", "Win rate", "var(--gr)")}${ring(((s.open || 0) / 2) * 100, (s.open || 0) + " / 2", "Open positions", "var(--am)")}${ring(((s.bucket_left ?? 88) / 88) * 100, money(s.bucket_left ?? 88), "Bucket left", "var(--cy)")}</div>
-  <div class="stats" style="margin-top:12px"><div class="stat glass ${(s.net || 0) < 0 ? "bad" : ""}"><div class="v">${money(s.net || 0)}</div><div class="l">Net realized</div></div><div class="stat glass ${(s.unrealized || 0) < 0 ? "bad" : "good"}"><div class="v">${money(s.unrealized || 0)}</div><div class="l">Open, marked to market</div></div><div class="stat glass"><div class="v">${s.avg_hold_h == null ? "n/a" : s.avg_hold_h + " h"}</div><div class="l">Avg hold</div></div></div>${tr}
-  <p class="note">Rules: $${R.stake} per trade, ${R.fee * 100}% fee and ${R.slip * 100}% slippage each side; sell half at 2x, trail the rest 30% from peak, hard stop -50%, max hold 3 days. Prices are checked once each weekday at the morning run, so exits are approximate.</p>`) +
-  card("Scout candidates", cand + `<p class="note">WATCH only if every filter passes: liquidity $${(S.filters || {}).min_liq / 1000}k+, volume under ${(S.filters || {}).max_vol_liq}x liquidity, older than 24 h, more 1h buys than sells, not dumping, has socials, RugCheck mint and freeze off, top-10 holders ${(S.filters || {}).max_top10}% or less, 500+ holders. Scan ${esc(S.run || "n/a")}.</p>`) + viewTokens();
+  return card("Memecoins moved", `<div class="pick"><div><div class="mono big">Viral Coin Radar</div><div class="s">pump.fun / PumpSwap opportunities, RugCheck safety, paper + live P&amp;L, Phantom buy flow</div></div><span class="pill ok"><span class="dot ok"></span>NEW APP</span></div><p class="note">Memecoin tracking, paper positions (CBUCKS, GATO and history) and the scanner now live in their own app. Paper mode is the default; live buys are always signed by you in Phantom. Add it to your Home Screen from Safari.</p><a class="btn pri" href="https://jellis-coinradar.netlify.app" target="_blank" rel="noopener">Open Viral Coin Radar ↗</a>`);
 }
 /* ---------- Money ---------- */
 function viewMoney() {
