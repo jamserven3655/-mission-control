@@ -21,14 +21,14 @@
    "opened_ts": 1793364737.0826752,
    "entry_mkt": 0.0009007,
    "fill": 0.000918714,
-   "qty": 4849.169600114943,
+   "qty": 2424.5848000574715,
    "qty0": 4849.169600114943,
-   "peak": 0.001483,
-   "last_px": 0.00132,
-   "half_sold": false,
-   "proceeds": 0.0,
-   "fees": 0.045,
-   "slip_cost": 0.08735294117647059,
+   "peak": 0.001843,
+   "last_px": 0.001843,
+   "half_sold": true,
+   "proceeds": 4.335348194868043,
+   "fees": 0.088791395907758,
+   "slip_cost": 0.17672313690658897,
    "status": "open",
    "events": [
     [
@@ -36,9 +36,15 @@
      "open $4.50 paper",
      0.0009007,
      -4.5
+    ],
+    [
+     1793557593.1317565,
+     "sold half at 2x",
+     0.001843,
+     4.3353
     ]
    ],
-   "mark_x": 1.466
+   "mark_x": 2.046
   },
   {
    "id": 2,
@@ -51,8 +57,8 @@
    "fill": 0.00750006,
    "qty": 593.9952480380157,
    "qty0": 593.9952480380157,
-   "peak": 0.007353,
-   "last_px": 0.007022,
+   "peak": 0.007375,
+   "last_px": 0.007375,
    "half_sold": false,
    "proceeds": 0.0,
    "fees": 0.045,
@@ -66,7 +72,7 @@
      -4.5
     ]
    ],
-   "mark_x": 0.955
+   "mark_x": 1.003
   }
  ],
  "losses": {},
@@ -150,6 +156,18 @@
   [
    "2026-11-01",
    "Risk Keeper: max 2 open positions"
+  ],
+  [
+   "2026-11-01",
+   "CBUCKS: open, price x2.05 of entry"
+  ],
+  [
+   "2026-11-01",
+   "GATO: open, price x1.00 of entry"
+  ],
+  [
+   "2026-11-01",
+   "Risk Keeper: max 2 open positions"
   ]
  ],
  "summary": {
@@ -158,9 +176,9 @@
   "wins": 0,
   "win_rate": null,
   "net": 0,
-  "unrealized": 1.26,
-  "fees": 0.09,
-  "slippage": 0.17,
+  "unrealized": 3.92,
+  "fees": 0.13,
+  "slippage": 0.26,
   "avg_hold_h": null,
   "bucket_left": 79.0
  },

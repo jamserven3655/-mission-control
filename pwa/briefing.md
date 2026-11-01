@@ -1,6 +1,6 @@
-# Daily briefing, Sun Nov 1, 8:39 AM ET
-- Scout: PAPER PICK Dacity. Passed every filter, highest score 91.
-- Paper: 2 open, 0 closed, win rate n/a, net $+0.00 realized, $+1.26 open (after fees/slippage). Paper only.
+# Daily briefing, Sun Nov 1, 1:26 PM ET
+- Scout: PAPER PICK CHOO. Passed every filter, highest score 94.
+- Paper: 2 open, 0 closed, win rate n/a, net $+0.00 realized, $+3.92 open (after fees/slippage). Paper only.
 - Wallets: $66.90 total vs $100.40 on Oct 27 (read-only).
 - Spend this week vs caps: Tobacco $0/$25, Crypto $0/$0, Restaurants $0/$10, Alcohol $0/$15 (no Notion expenses logged yet).
 - $5K mission: income/savings are entered in the app on your phone; the server only knows confirmed savings $0.
