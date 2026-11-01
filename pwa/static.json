@@ -77,11 +77,11 @@
  },
  "usage": {
   "plan": "Premium",
-  "pct": 100,
-  "reset": "2026-11-01T04:12:00-04:00",
-  "reset_label": "Sun Nov 1, 4:12 AM ET",
-  "as_of": "Oct 30, 6:07 PM ET",
-  "note": "Weekly limit is used up (shared with your other apps on the plan), so you're running on extra credits until the reset.",
+  "pct": 21.6,
+  "reset": "2026-11-08T04:12:00-05:00",
+  "reset_label": "Sun Nov 8, 4:12 AM ET",
+  "as_of": "Nov 1, 6:00 PM ET",
+  "note": "Weekly limit reset this morning; 21.6% used so far (shared with your other apps on the plan).",
   "by": [
    [
     "Deleted bots and others",
