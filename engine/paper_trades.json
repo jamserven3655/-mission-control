@@ -23,8 +23,8 @@
    "fill": 0.000918714,
    "qty": 4849.169600114943,
    "qty0": 4849.169600114943,
-   "peak": 0.001405,
-   "last_px": 0.001405,
+   "peak": 0.001483,
+   "last_px": 0.001483,
    "half_sold": false,
    "proceeds": 0.0,
    "fees": 0.045,
@@ -38,7 +38,7 @@
      -4.5
     ]
    ],
-   "mark_x": 1.56
+   "mark_x": 1.646
   },
   {
    "id": 2,
@@ -52,7 +52,7 @@
    "qty": 593.9952480380157,
    "qty0": 593.9952480380157,
    "peak": 0.007353,
-   "last_px": 0.00614,
+   "last_px": 0.006247,
    "half_sold": false,
    "proceeds": 0.0,
    "fees": 0.045,
@@ -66,7 +66,7 @@
      -4.5
     ]
    ],
-   "mark_x": 0.835
+   "mark_x": 0.85
   }
  ],
  "losses": {},
@@ -126,6 +126,18 @@
   [
    "2026-10-31",
    "Already opened a paper trade today"
+  ],
+  [
+   "2026-10-31",
+   "CBUCKS: open, price x1.65 of entry"
+  ],
+  [
+   "2026-10-31",
+   "GATO: open, price x0.85 of entry"
+  ],
+  [
+   "2026-10-31",
+   "Already opened a paper trade today"
   ]
  ],
  "summary": {
@@ -134,7 +146,7 @@
   "wins": 0,
   "win_rate": null,
   "net": 0,
-  "unrealized": 1.15,
+  "unrealized": 1.58,
   "fees": 0.09,
   "slippage": 0.17,
   "avg_hold_h": null,
