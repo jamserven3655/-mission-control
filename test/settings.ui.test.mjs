@@ -1,0 +1,23 @@
+// Phone-size UI test of Reminders & usage + server market data. Start test/serve-local.mjs first. node test/settings.ui.test.mjs
+import { createRequire } from "module"; import fs from "node:fs";
+const require = createRequire(process.env.PUPPETEER_FROM || "/workspace/viral-coin-radar/package.json"), puppeteer = require("puppeteer-core");
+const U = process.env.U || "http://localhost:8799", PW = process.env.PW || fs.readFileSync("/tmp/mc-local-pw", "utf8");
+let fails = 0; const ok = (c, m) => { console.log((c ? "PASS " : "FAIL ") + m); if (!c) fails++; }; const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const br = await puppeteer.launch({ executablePath: "/usr/bin/google-chrome", headless: "new", args: ["--no-sandbox"] });
+const p = await br.newPage(); await p.setViewport({ width: 390, height: 844, isMobile: true, hasTouch: true, deviceScaleFactor: 2 });
+const errs = []; p.on("pageerror", (e) => errs.push(String(e)));
+await p.goto(U + "/login", { waitUntil: "networkidle2" }); await p.type("input[name=password]", PW); await Promise.all([p.waitForNavigation({ waitUntil: "networkidle2" }), p.keyboard.press("Enter")]);
+await p.goto(U + "/?t=" + Date.now() + "#hq", { waitUntil: "networkidle2" }); await sleep(1500);
+const txt = () => p.$eval("#app", (e) => e.innerText);
+let t = await txt(); ok(/Reminders & usage/i.test(t) && /Daily gym time/.test(t) && /next payday 2026-11-12/.test(t), "card shows gym time + next payday Nov 12");
+ok(/2nd\/4th Thursday/.test(t), "payday rule label 2nd/4th Thursday");
+await p.$eval("[data-sform=gymonce] input[name=t]", (e) => (e.value = "15:30")); await p.$eval("[data-sform=gymonce] button.pri", (e) => e.click()); await sleep(800); t = await txt();
+ok(/Today's gym time saved/.test(t) && /Gym push today at 3:30 PM ET \(just today\)/.test(t), "set today's gym to 3:30 PM");
+await p.$eval("[data-sform=usage] input", (e) => (e.value = "36.3")); await p.$eval("[data-sform=usage] button", (e) => e.click()); await sleep(800); t = await txt();
+ok(/Saved 36\.3%\. ALERT: Usage 36\.3% \(cap 33%\)/.test(t), "usage 36.3% saved + 33% alert: " + (t.match(/Saved[^\n]*/) || [""])[0]);
+ok(/Usage log: 36\.3%/.test(t) && /🔔 Usage 36\.3% \(cap 33%\)/.test(t), "usage log + banner shown");
+await p.$eval("[data-sform=alerts] input", (e) => (e.value = "33, 40, 45")); await p.$eval("[data-sform=alerts] button", (e) => e.click()); await sleep(800); ok(/Alerts saved/.test(await txt()), "alert levels saved");
+ok(await p.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), "no horizontal overflow at 390px");
+await p.click(".tabs [data-tab=hq]").catch(() => {}); await sleep(300); await p.evaluate(() => document.querySelector("[data-sform]").scrollIntoView()); await p.screenshot({ path: "/tmp/mc-settings.png" });
+ok(!errs.length, "no page errors " + errs.join(" | "));
+await br.close(); console.log(fails ? fails + " FAIL" : "ALL PASS"); process.exit(fails ? 1 : 0);

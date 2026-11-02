@@ -13,3 +13,4 @@ backups/
 .netlify_site_id
 .DS_Store
 cf/.lock-test.mjs
+cf/.local.mjs
