@@ -66,8 +66,8 @@
    "fill": 0.00750006,
    "qty": 593.9952480380157,
    "qty0": 593.9952480380157,
-   "peak": 0.01034,
-   "last_px": 0.01034,
+   "peak": 0.0115,
+   "last_px": 0.0115,
    "half_sold": false,
    "proceeds": 0.0,
    "fees": 0.045,
@@ -81,7 +81,7 @@
      -4.5
     ]
    ],
-   "mark_x": 1.406
+   "mark_x": 1.564
   },
   {
    "id": 3,
@@ -95,7 +95,7 @@
    "qty": 261.53575202536103,
    "qty0": 261.53575202536103,
    "peak": 0.0167,
-   "last_px": 0.0167,
+   "last_px": 0.01302,
    "half_sold": false,
    "proceeds": 0.0,
    "fees": 0.045,
@@ -109,7 +109,7 @@
      -4.5
     ]
    ],
-   "mark_x": 1.0
+   "mark_x": 0.78
   }
  ],
  "losses": {
@@ -243,6 +243,18 @@
   [
    "2026-11-02",
    "Opened $4.50 paper position in DESSA at $0.0167"
+  ],
+  [
+   "2026-11-02",
+   "GATO: open, price x1.56 of entry"
+  ],
+  [
+   "2026-11-02",
+   "DESSA: open, price x0.78 of entry"
+  ],
+  [
+   "2026-11-02",
+   "Already opened a paper trade today"
   ]
  ],
  "summary": {
@@ -251,7 +263,7 @@
   "wins": 1,
   "win_rate": 100.0,
   "net": 4.42,
-  "unrealized": 1.2,
+  "unrealized": 0.93,
   "fees": 0.23,
   "slippage": 0.45,
   "avg_hold_h": 73.1,
