@@ -50,6 +50,9 @@ ok(pushes === 1, "gym pushed once across 3 ticks (pushes=" + pushes + ")"); ok(/
 // market
 const m = JSON.parse(mem.get("market")); ok(m.dex.length === 2 && m.dex[0].sym === "AA" && m.dex[0].scout === "WATCH" && m.dex[1].scout === "SKIP" && m.sol_price === 95.5 && !m.errors.length, "market: dex WATCH/SKIP rule + SOL price stored in KV");
 ok(fetchLog.filter((u) => u.includes("token-boosts")).length === 4, "market hourly: 2 refreshes over 3 ticks in 60 min, not 3");
+// SOL price fallback when DexScreener is rate-limited
+FIX["solana/So11111111111111111111111111111111111111112"] = { status: 429 }; FIX["coinbase.com"] = { data: { amount: "93.8" } };
+mem.delete("market"); const m2 = await M.refreshMarket(env); ok(m2.sol_price === 93.8 && m2.sol_src === "coinbase", "SOL price falls back to Coinbase when DexScreener fails: " + m2.sol_price + " " + m2.errors.join(";"));
 // usage alerts
 pushes = 0; [s, j] = await post("/api/usage", { pct: 32 }); ok(s === 200 && !j.alert, "32%: no alert");
 [s, j] = await post("/api/usage", { pct: 36.3 }); ok(j.alert === "Usage 36.3% (cap 33%)" && pushes === 1, "36.3%: 33% alert + push");

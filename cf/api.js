@@ -68,7 +68,11 @@ async function refreshMarket(env) {
         why: chg <= -50 ? `Down ${Math.abs(Math.round(chg))}%, liquidity ${money(liq)}` : liq < 50000 ? "Liquidity under $50k" : vol > 20 * liq ? `Volume ${Math.round(vol / liq)}x liquidity` : "Liquidity ok", url: p.url, liqn: liq, voln: vol }; });
   } catch (e) { m.errors.push("dexscreener: " + String(e.message || e).slice(0, 80)); }
   // pump.fun's API answers 403 to server requests (tested from the box), so it is not fetched; Coin Radar covers new coins.
-  try { const r = await fetch("https://api.dexscreener.com/tokens/v1/solana/" + SOL, { headers: H }); let b = [0, 0]; for (const p of await r.json()) if (/USD/.test(p.quoteToken.symbol) && ((p.liquidity && p.liquidity.usd) || 0) > b[0]) b = [p.liquidity.usd, +p.priceUsd]; if (b[1]) m.sol_price = b[1]; else throw new Error("no USD pair"); } catch (e) { m.errors.push("sol price: " + String(e.message || e).slice(0, 80)); }
+  try { const r = await fetch("https://api.dexscreener.com/tokens/v1/solana/" + SOL, { headers: H }); let b = [0, 0]; for (const p of await r.json()) if (/USD/.test(p.quoteToken.symbol) && ((p.liquidity && p.liquidity.usd) || 0) > b[0]) b = [p.liquidity.usd, +p.priceUsd]; if (b[1]) m.sol_price = b[1]; else throw new Error("no USD pair"); } catch (e) { m.errors.push("sol price dexscreener: " + String(e.message || e).slice(0, 60)); }
+  // DexScreener rate-limits Cloudflare egress (429/1015 seen Nov 2), so fall back to other free no-key SOL/USD quotes
+  const FB = [["coinbase", "https://api.coinbase.com/v2/prices/SOL-USD/spot", (j) => +j.data.amount], ["kraken", "https://api.kraken.com/0/public/Ticker?pair=SOLUSD", (j) => +Object.values(j.result)[0].c[0]], ["coingecko", "https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd", (j) => +j.solana.usd]];
+  for (const [n, u, f] of FB) { if (m.sol_price) break; try { const r = await fetch(u, { headers: H }); const v = f(await r.json()); if (v > 0) { m.sol_price = v; m.sol_src = n; } } catch (e) { m.errors.push(n + ": " + String(e.message || e).slice(0, 40)); } }
+  if (m.sol_price) m.errors = m.errors.filter((x) => !x.startsWith("sol price")); if (!m.sol_src && m.sol_price) m.sol_src = "dexscreener";
   const old = await kget(env, "market"); if (old) { if (!m.dex.length) m.dex = old.dex, m.dex_ts = old.dex_ts || old.ts; if (!m.sol_price && old.sol_price) m.sol_price = old.sol_price; }
   await kput(env, "market", m); return m;
 }
