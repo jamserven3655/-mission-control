@@ -1,6 +1,6 @@
-# Daily briefing, Mon Nov 2, 6:05 PM ET
-- Scout: PAPER PICK three. Passed every filter, highest score 81.
-- Paper: 2 open, 1 closed, win rate 100.0%, net $+4.42 realized, $+0.93 open (after fees/slippage). Paper only.
+# Daily briefing, Mon Nov 2, 6:29 PM ET
+- Scout: PAPER PICK WASTED. Passed every filter, highest score 74.
+- Paper: 2 open, 1 closed, win rate 100.0%, net $+4.42 realized, $+1.96 open (after fees/slippage). Paper only.
 - Wallets: $66.79 total vs $100.40 on Oct 27 (read-only).
 - Spend this week vs caps: Tobacco $0/$25, Crypto $0/$0, Restaurants $0/$10, Alcohol $0/$15.
 - $5K mission: income/savings are entered in the app on your phone; the server only knows confirmed savings $0.
