@@ -33,11 +33,11 @@
  },
  "usage": {
   "plan": "Premium",
-  "pct": 41.6,
+  "pct": 66.3,
   "reset": "2026-11-08T04:12:00-05:00",
   "reset_label": "Sun Nov 8, 4:12 AM ET",
-  "as_of": "Nov 2, 8:30 AM ET",
-  "note": "41.6% of the weekly limit used as of Monday morning (shared with your other apps on the plan). Resets Sun Nov 8, 4:12 AM ET.",
+  "as_of": "Nov 2, 6:05 PM ET",
+  "note": "66.3% of the weekly limit used as of Monday evening (shared with your other apps on the plan). Resets Sun Nov 8, 4:12 AM ET.",
   "by": [
    [
     "Deleted bots and others",
@@ -365,7 +365,7 @@
   ]
  ],
  "pnl": {
-  "as_of": "Nov 2, 1:43 PM ET",
+  "as_of": "Nov 2, 8:18 AM ET",
   "rows": [
    [
     "All-time (real wallets), as of Oct 27",
@@ -506,7 +506,7 @@
    "note": "Logged Nov 2 from 6 Chime screenshots. Tobacco $49.06 vs $25 weekly cap (over by $24.06). Restaurants/vending $4.30 of $10. Alcohol $0. Crypto $0."
   }
  },
- "updated_iso": "2026-11-02T13:43:01.184829-05:00",
+ "updated_iso": "2026-11-02T08:18:21.779611-05:00",
  "agents": [
   {
    "id": "chief",
@@ -515,7 +515,7 @@
    "bot": "chief",
    "hue": 190,
    "role": "Runs the 8 AM refresh, keeps the rules",
-   "activity": "Refresh done 1:43 PM ET"
+   "activity": "Refresh done 8:18 AM ET"
   },
   {
    "id": "scout",
@@ -1181,7 +1181,7 @@
   "Restaurants": 0.0,
   "Alcohol": 0.0
  },
- "updated": "Nov 2, 2026, 1:43 PM ET",
+ "updated": "Nov 2, 2026, 8:18 AM ET",
  "sol_price": 93.71,
  "wallets": [
   {
@@ -1240,7 +1240,7 @@
    68.54
   ],
   [
-   "Nov 2 1:43p",
+   "Nov 2 8:18a",
    66.79
   ]
  ],
@@ -1391,7 +1391,7 @@
    "sym": "BURN",
    "name": "BURN",
    "ca": "5ANpBFZjmhTv48dvU18sCLmgQS9mwJ7meU6aMYSZpump",
-   "age": "3 d",
+   "age": "4 d",
    "liq": "unverified",
    "vol": "unverified",
    "chg": "mcap $12.1k",
@@ -1472,6 +1472,6 @@
   "- Wallets: $66.79 total vs $100.40 on Oct 27 (read-only).",
   "- Spend this week vs caps: Tobacco $0/$25, Crypto $0/$0, Restaurants $0/$10, Alcohol $0/$15.",
   "- $5K mission: income/savings are entered in the app on your phone; the server only knows confirmed savings $0.",
-  "- Grok cost this month $71.69 (extra $26.69 vs $20 cap). Usage 41.6%, resets Sun Nov 8, 4:12 AM ET."
+  "- Grok cost this month $71.69 (extra $26.69 vs $20 cap). Usage 66.3%, resets Sun Nov 8, 4:12 AM ET."
  ]
 }

@@ -77,11 +77,11 @@
  },
  "usage": {
   "plan": "Premium",
-  "pct": 41.6,
+  "pct": 66.3,
   "reset": "2026-11-08T04:12:00-05:00",
   "reset_label": "Sun Nov 8, 4:12 AM ET",
-  "as_of": "Nov 2, 8:30 AM ET",
-  "note": "41.6% of the weekly limit used as of Monday morning (shared with your other apps on the plan). Resets Sun Nov 8, 4:12 AM ET.",
+  "as_of": "Nov 2, 6:05 PM ET",
+  "note": "66.3% of the weekly limit used as of Monday evening (shared with your other apps on the plan). Resets Sun Nov 8, 4:12 AM ET.",
   "by": [
    [
     "Deleted bots and others",
