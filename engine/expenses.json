@@ -1,0 +1,98 @@
+[
+ {
+  "date": "2026-10-29T04:55",
+  "merchant": "Apple Cash Sent Money",
+  "amount": 10,
+  "category": "Other",
+  "source": "Bank screenshot (Chime)"
+ },
+ {
+  "date": "2026-10-29T04:09",
+  "merchant": "Grok Xai",
+  "amount": 10,
+  "category": "Subscriptions",
+  "source": "Bank screenshot (Chime)"
+ },
+ {
+  "date": "2026-10-29T01:18",
+  "merchant": "Tobacco King",
+  "amount": 13.02,
+  "category": "Other",
+  "source": "Bank screenshot (Chime)",
+  "cap": "Tobacco"
+ },
+ {
+  "date": "2026-10-28T22:48",
+  "merchant": "Cpi*Canteen Vending",
+  "amount": 2.85,
+  "category": "Food",
+  "source": "Bank screenshot (Chime)",
+  "cap": "Restaurants"
+ },
+ {
+  "date": "2026-10-28T22:15",
+  "merchant": "Comewel.com",
+  "amount": 0.99,
+  "category": "Subscriptions",
+  "source": "Bank screenshot (Chime)"
+ },
+ {
+  "date": "2026-10-28T05:36",
+  "merchant": "Grok Xai",
+  "amount": 5,
+  "category": "Subscriptions",
+  "source": "Bank screenshot (Chime)"
+ },
+ {
+  "date": "2026-10-28T05:09",
+  "merchant": "Grok Xai",
+  "amount": 5,
+  "category": "Subscriptions",
+  "source": "Bank screenshot (Chime)"
+ },
+ {
+  "date": "2026-10-27T18:32",
+  "merchant": "Cpi*Canteen Vending",
+  "amount": 1.45,
+  "category": "Food",
+  "source": "Bank screenshot (Chime)",
+  "cap": "Restaurants"
+ },
+ {
+  "date": "2026-10-27T16:25",
+  "merchant": "Kikoff",
+  "amount": 35,
+  "category": "Bills",
+  "source": "Bank screenshot (Chime)"
+ },
+ {
+  "date": "2026-10-27T13:17",
+  "merchant": "Grok Xai",
+  "amount": 10,
+  "category": "Subscriptions",
+  "source": "Bank screenshot (Chime)"
+ },
+ {
+  "date": "2026-10-27T12:49",
+  "merchant": "Grok Xai",
+  "amount": 10,
+  "category": "Subscriptions",
+  "source": "Bank screenshot (Chime)"
+ },
+ {
+  "date": "2026-10-27T01:28",
+  "merchant": "Tobacco King",
+  "amount": 31.8,
+  "category": "Other",
+  "source": "Bank screenshot (Chime)",
+  "cap": "Tobacco"
+ },
+ {
+  "date": "2026-10-27T01:28",
+  "merchant": "Tobacco King",
+  "amount": 4.24,
+  "category": "Other",
+  "source": "Bank screenshot (Chime)",
+  "cap": "Tobacco"
+ }
+]

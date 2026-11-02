@@ -1,7 +1,7 @@
-# Daily briefing, Sun Nov 1, 11:44 PM ET
+# Daily briefing, Mon Nov 2, 8:22 AM ET
 - Scout: PAPER PICK CBUCKS. Passed every filter, highest score 73.
 - Paper: 2 open, 0 closed, win rate n/a, net $+0.00 realized, $+4.50 open (after fees/slippage). Paper only.
-- Wallets: $66.90 total vs $100.40 on Oct 27 (read-only).
-- Spend this week vs caps: Tobacco $0/$25, Crypto $0/$0, Restaurants $0/$10, Alcohol $0/$15 (no Notion expenses logged yet).
+- Wallets: $66.79 total vs $100.40 on Oct 27 (read-only).
+- Spend this week vs caps: Tobacco $0/$25, Crypto $0/$0, Restaurants $0/$10, Alcohol $0/$15.
 - $5K mission: income/savings are entered in the app on your phone; the server only knows confirmed savings $0.
-- Grok cost this month $71.69 (extra $26.69 vs $20 cap). Usage 21.6%, resets Sun Nov 8, 4:12 AM ET.
+- Grok cost this month $71.69 (extra $26.69 vs $20 cap). Usage 41.6%, resets Sun Nov 8, 4:12 AM ET.

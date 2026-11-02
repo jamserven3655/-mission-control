@@ -96,9 +96,9 @@ if S["usage"]["pct"] >= 90: lines.append("- WARNING: plan usage at or above 90%.
 open(os.path.join(H, "briefing.md"), "w").write("\n".join(lines[:10]) + "\n"); out["briefing"] = lines[1:10]
 sp = dict(S.get("spending") or {}); rows = list(sp.get("rows") or [])
 for x in notion_exp:
-    r = dict(date=x.get("date", "")[:10], store=x.get("merchant") or x.get("store", ""), amount=float(x.get("amount") or 0), category=x.get("category", "Other"), source=x.get("source", ""))
+    r = dict(date=x.get("date", "")[:10], time=x.get("date", "")[11:16], store=x.get("merchant") or x.get("store", ""), amount=float(x.get("amount") or 0), category=x.get("category", "Other"), source=x.get("source", ""))
     if r not in rows: rows.append(r)
-rows.sort(key=lambda r: r["date"], reverse=True)
+rows.sort(key=lambda r: (r["date"], r.get("time", "")), reverse=True)
 def _tot(d0): return round(sum(r["amount"] for r in rows if r["date"] and datetime.date.fromisoformat(r["date"]) >= d0), 2)
 sp.update(rows=rows, week_total=_tot(wk0), month_total=_tot(today.replace(day=1)))
 out["spending"] = sp

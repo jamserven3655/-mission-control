@@ -77,11 +77,11 @@
  },
  "usage": {
   "plan": "Premium",
-  "pct": 21.6,
+  "pct": 41.6,
   "reset": "2026-11-08T04:12:00-05:00",
   "reset_label": "Sun Nov 8, 4:12 AM ET",
-  "as_of": "Nov 1, 6:00 PM ET",
-  "note": "Weekly limit reset this morning; 21.6% used so far (shared with your other apps on the plan).",
+  "as_of": "Nov 2, 8:30 AM ET",
+  "note": "41.6% of the weekly limit used as of Monday morning (shared with your other apps on the plan). Resets Sun Nov 8, 4:12 AM ET.",
   "by": [
    [
     "Deleted bots and others",
@@ -499,6 +499,11 @@
   "rows": [],
   "week_total": 0,
   "month_total": 0,
-  "hint": "Log a receipt: drop receipt photos or bank screenshots (cover card/account numbers) in your Notion Inbox, or send them in chat. They're logged to Notion Expenses on the weekday-morning sync."
+  "hint": "Log a receipt: drop receipt photos or bank screenshots (cover card/account numbers) in your Notion Inbox, or send them in chat. They're logged to Notion Expenses on the weekday-morning sync. Last week (Oct 26 to Nov 1): $139.35 logged; tobacco $49.06 was over the $25 cap.",
+  "last_week": {
+   "label": "Oct 26 to Nov 1",
+   "total": 139.35,
+   "note": "Logged Nov 2 from 6 Chime screenshots. Tobacco $49.06 vs $25 weekly cap (over by $24.06). Restaurants/vending $4.30 of $10. Alcohol $0. Crypto $0."
+  }
  }
 }

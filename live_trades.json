@@ -1,62 +1,7 @@
 {
- "generated": "2026-11-01 08:15 EST",
- "sol_price": 94.80318186491058,
+ "generated": "2026-11-02 08:18 EST",
+ "sol_price": 93.70762533042316,
  "note": "Real trades signed by you, read from the public Solana RPC. USD at the refresh SOL price.",
- "trades": [
-  {
-   "wallet": "main",
-   "side": "buy",
-   "time": "2026-11-01 7:59:36 AM ET",
-   "ts": 1793537976,
-   "sig": "4HC58EYPN1EXKL3THzBWeSF5zbd5YponfXgsZkPbJaZa77GHazb6Qed1J3dupatYJnKxfywcbTUpCbpugTkkGy6U",
-   "mint": "Dbyy9LSMVHjxw2ZnPPRrCheSLVeuHq2GMkpxUs3t5xeT",
-   "sym": "REGRETAMINE",
-   "name": "Regretamine",
-   "url": "https://dexscreener.com/solana/8ydjl2ehenultqzus1wbhdqm2tw1jcdiwazttokq7pq8",
-   "dex": "pumpswap",
-   "tokens": 26493.577737,
-   "sol_wallet_delta": -0.053998232,
-   "network_fee": 1.4e-05,
-   "app_fees_tips": 0.000246071,
-   "rent_locked": 0.00151384,
-   "sol_trade": 0.052224321
-  },
-  {
-   "wallet": "main",
-   "side": "sell",
-   "time": "2026-11-01 8:02:41 AM ET",
-   "ts": 1793538161,
-   "sig": "4PRmVeSvac1jMmGmWCpW86wKaAxDKAtecxWQV1NQBXxksrBj9M3er1nh397ZGoj9WKzYjpa42YC9xhXc15UbD4k6",
-   "mint": "Dbyy9LSMVHjxw2ZnPPRrCheSLVeuHq2GMkpxUs3t5xeT",
-   "sym": "REGRETAMINE",
-   "name": "Regretamine",
-   "url": "https://dexscreener.com/solana/8ydjl2ehenultqzus1wbhdqm2tw1jcdiwazttokq7pq8",
-   "dex": "pumpswap",
-   "tokens": 26493.577737,
-   "sol_wallet_delta": 0.038187996,
-   "network_fee": 3.0197e-05,
-   "app_fees_tips": 0.000183338,
-   "rent_locked": 0,
-   "sol_trade": 0.038401531
-  }
- ],
- "summary": [
-  {
-   "mint": "Dbyy9LSMVHjxw2ZnPPRrCheSLVeuHq2GMkpxUs3t5xeT",
-   "sym": "REGRETAMINE",
-   "name": "Regretamine",
-   "url": "https://dexscreener.com/solana/8ydjl2ehenultqzus1wbhdqm2tw1jcdiwazttokq7pq8",
-   "closed": true,
-   "cost_sol": 0.052484392,
-   "proceeds_sol": 0.038187996,
-   "realized_sol": -0.014296396,
-   "realized_usd": -1.36,
-   "fees_sol": 0.000473606,
-   "fees_usd": 0.045,
-   "rent_locked_sol": 0.00151384,
-   "pct": -27.2,
-   "first": "2026-11-01 7:59:36 AM ET",
-   "last": "2026-11-01 8:02:41 AM ET"
-  }
- ]
+ "trades": [],
+ "summary": []
 }
