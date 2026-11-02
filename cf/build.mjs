@@ -4,13 +4,14 @@ const root = new URL("../pwa/", import.meta.url).pathname, F = {};
 const ct = { ".html": "text/html; charset=utf-8", ".js": "application/javascript; charset=utf-8", ".css": "text/css; charset=utf-8", ".json": "application/json; charset=utf-8", ".md": "text/markdown; charset=utf-8", ".png": "image/png" };
 const skip = new Set(["build_data.py", "static.json"]);
 (function walk(d) { for (const f of fs.readdirSync(d)) { const p = path.join(d, f); if (fs.statSync(p).isDirectory()) walk(p); else if (!skip.has(f)) F["/" + path.relative(root, p)] = [f === "manifest.json" ? "application/manifest+json" : ct[path.extname(p)] || "application/octet-stream", fs.readFileSync(p).toString("base64")]; } })(root);
-const API = fs.readFileSync(new URL("./api.js", import.meta.url), "utf8");
+const API = fs.readFileSync(new URL("./lock.js", import.meta.url), "utf8") + "\n" + fs.readFileSync(new URL("./api.js", import.meta.url), "utf8");
 const KV = "bb90dbb986dd42ec996e34e4dd4f8248", CRON = "*/30 * * * *";
 const w = `const F = ${JSON.stringify(F)};
 ${API}
 const BIN = {}, NOCACHE = new Set(["/sw.js", "/index.html", "/data.json", "/manifest.json", "/bot_ideas.json", "/coach.js", "/coach-ui.js", "/app.js", "/live.js"]);
 let DATA; const data = () => DATA || (DATA = JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(F["/data.json"][1]), (c) => c.charCodeAt(0)))));
 export default { async fetch(req, env) {
+  const g = await lockGate(req, env); if (g) return g; // password lock (cf/lock.js) on every page, file and API
   let p = new URL(req.url).pathname; if (p === "/" || p === "") p = "/index.html";
   if (p.startsWith("/api/")) { try { return await api(req, env, data(), p); } catch (e) { return J({ error: "server error" }, 500); } }
   if (req.method !== "GET" && req.method !== "HEAD") return new Response("GET only", { status: 405 });
@@ -24,7 +25,7 @@ fs.writeFileSync("worker.built.js", w);
 fs.writeFileSync("deploy.js", `async () => {
   const NAME = "jellis-mission-control", log = [], W = ${JSON.stringify(w)};
   const form = new FormData();
-  form.append("metadata", new Blob([JSON.stringify({ main_module: "worker.js", compatibility_date: "2026-10-01", bindings: [{ type: "kv_namespace", name: "MC", namespace_id: "${KV}" }] })], { type: "application/json" }));
+  form.append("metadata", new Blob([JSON.stringify({ main_module: "worker.js", keep_bindings: ["secret_text"], compatibility_date: "2026-10-01", bindings: [{ type: "kv_namespace", name: "MC", namespace_id: "${KV}" }] })], { type: "application/json" }));
   form.append("worker.js", new Blob([W], { type: "application/javascript+module" }), "worker.js");
   const up = await cloudflare.request({ method: "PUT", path: \`/accounts/\${accountId}/workers/scripts/\${NAME}\`, body: form });
   log.push("script " + up.success + " " + JSON.stringify(up.errors));
