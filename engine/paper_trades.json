@@ -104,7 +104,7 @@
    "qty": 261.53575202536103,
    "qty0": 261.53575202536103,
    "peak": 0.0167,
-   "last_px": 0.009338,
+   "last_px": 0.008921,
    "half_sold": false,
    "proceeds": 0.0,
    "fees": 0.045,
@@ -118,7 +118,7 @@
      -4.5
     ]
    ],
-   "mark_x": 0.559
+   "mark_x": 0.534
   },
   {
    "id": 4,
@@ -132,7 +132,7 @@
    "qty": 636.1268655437707,
    "qty0": 636.1268655437707,
    "peak": 0.006866,
-   "last_px": 0.006866,
+   "last_px": 0.006844,
    "half_sold": false,
    "proceeds": 0.0,
    "fees": 0.045,
@@ -146,7 +146,7 @@
      -4.5
     ]
    ],
-   "mark_x": 1.0
+   "mark_x": 0.997
   }
  ],
  "losses": {
@@ -341,6 +341,18 @@
   [
    "2026-11-03",
    "Opened $4.50 paper position in Dacity at $0.006866"
+  ],
+  [
+   "2026-11-03",
+   "DESSA: open, price x0.53 of entry"
+  ],
+  [
+   "2026-11-03",
+   "Dacity: open, price x1.00 of entry"
+  ],
+  [
+   "2026-11-03",
+   "Already opened a paper trade today"
   ]
  ],
  "summary": {
@@ -349,7 +361,7 @@
   "wins": 2,
   "win_rate": 100.0,
   "net": 7.05,
-  "unrealized": -2.39,
+  "unrealized": -2.51,
   "fees": 0.34,
   "slippage": 0.68,
   "avg_hold_h": 72.6,
