@@ -64,24 +64,33 @@
    "opened_ts": 1793471224.8959649,
    "entry_mkt": 0.007353,
    "fill": 0.00750006,
-   "qty": 593.9952480380157,
+   "qty": 0.0,
    "qty0": 593.9952480380157,
    "peak": 0.01318,
-   "last_px": 0.01231,
+   "last_px": 0.01237,
    "half_sold": false,
-   "proceeds": 0.0,
-   "fees": 0.045,
-   "slip_cost": 0.08735294117647059,
-   "status": "open",
+   "proceeds": 7.128759125926993,
+   "fees": 0.1170076679386565,
+   "slip_cost": 0.23430736554107567,
+   "status": "closed",
    "events": [
     [
      1793471224.8959649,
      "open $4.50 paper",
      0.007353,
      -4.5
+    ],
+    [
+     1793730981.0550427,
+     "max hold 3 days",
+     0.01237,
+     7.1288
     ]
    ],
-   "mark_x": 1.674
+   "mark_x": 1.682,
+   "closed": "2026-11-03",
+   "closed_ts": 1793730981.0550427,
+   "net": 2.6288
   },
   {
    "id": 3,
@@ -95,7 +104,7 @@
    "qty": 261.53575202536103,
    "qty0": 261.53575202536103,
    "peak": 0.0167,
-   "last_px": 0.01155,
+   "last_px": 0.009338,
    "half_sold": false,
    "proceeds": 0.0,
    "fees": 0.045,
@@ -109,11 +118,40 @@
      -4.5
     ]
    ],
-   "mark_x": 0.692
+   "mark_x": 0.559
+  },
+  {
+   "id": 4,
+   "sym": "Dacity",
+   "ca": "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump",
+   "url": "https://dexscreener.com/solana/g2uurbmvdzdfp4qyobjrskbxsi7d6v4bpp9thps36y4b",
+   "opened": "2026-11-03",
+   "opened_ts": 1793730981.0550427,
+   "entry_mkt": 0.006866,
+   "fill": 0.0070033199999999995,
+   "qty": 636.1268655437707,
+   "qty0": 636.1268655437707,
+   "peak": 0.006866,
+   "last_px": 0.006866,
+   "half_sold": false,
+   "proceeds": 0.0,
+   "fees": 0.045,
+   "slip_cost": 0.08735294117647059,
+   "status": "open",
+   "events": [
+    [
+     1793730981.0550427,
+     "open $4.50 paper",
+     0.006866,
+     -4.5
+    ]
+   ],
+   "mark_x": 1.0
   }
  ],
  "losses": {
-  "2026-11-02": 0
+  "2026-11-02": 0,
+  "2026-11-03": 0
  },
  "log": [
   [
@@ -291,19 +329,31 @@
   [
    "2026-11-03",
    "Risk Keeper: max 2 open positions"
+  ],
+  [
+   "2026-11-03",
+   "GATO: closed, net +2.63 (max hold 3 days)"
+  ],
+  [
+   "2026-11-03",
+   "DESSA: open, price x0.56 of entry"
+  ],
+  [
+   "2026-11-03",
+   "Opened $4.50 paper position in Dacity at $0.006866"
   ]
  ],
  "summary": {
-  "closed": 1,
+  "closed": 2,
   "open": 2,
-  "wins": 1,
+  "wins": 2,
   "win_rate": 100.0,
-  "net": 4.42,
-  "unrealized": 1.02,
-  "fees": 0.23,
-  "slippage": 0.45,
-  "avg_hold_h": 73.1,
-  "bucket_left": 83.42
+  "net": 7.05,
+  "unrealized": -2.39,
+  "fees": 0.34,
+  "slippage": 0.68,
+  "avg_hold_h": 72.6,
+  "bucket_left": 86.05
  },
  "last_run": "2026-11-03"
 }
