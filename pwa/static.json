@@ -4,17 +4,17 @@
    "id": "42fc9d6a-ae77-4ebf-8627-222c1f677868",
    "name": "Chief Bot",
    "short": "CB",
-   "state": "working",
-   "task": "Running the daily refresh",
-   "detail": "Savings tracking toward $1,000, memecoin Scout, Risk Keeper and Post-Mortem"
+   "state": "idle",
+   "task": "Daily refresh done",
+   "detail": "Nov 3 morning refresh complete; wallets $66.70, usage 67.3%"
   },
   "grok": {
    "id": "a3c71898-3ded-4507-8dcd-b748bcfd09f3",
    "name": "Grok Bot",
    "short": "GB",
    "state": "idle",
-   "task": "Idle, last active Oct 28, 3:22 AM",
-   "detail": "General teammate: job search, work email, Gmail",
+   "task": "Idle; ballz teammate on Coin Radar",
+   "detail": "General teammate / ballz Coin Radar work",
    "last": "Oct 28, 3:22 AM ET"
   }
  },
@@ -62,6 +62,14 @@
   [
    "Oct 30 8:20a",
    68.54
+  ],
+  [
+   "Nov 2 8:18a",
+   66.79
+  ],
+  [
+   "Nov 3 8:17a",
+   66.7
   ]
  ],
  "stats": {
@@ -73,65 +81,45 @@
   "grok_extra": 26.69,
   "grok_cap": 20,
   "caps": "Tobacco $25, crypto $0, restaurants $10, alcohol $15",
-  "caps_status": "No spend logged"
+  "caps_status": "This week (Nov 2\u20138): $0 logged. Tobacco $0/$25, restaurants $0/$10, alcohol $0/$15, crypto $0/$0. All under caps."
  },
  "usage": {
   "plan": "Premium",
-  "pct": 66.3,
+  "pct": 67.3,
   "reset": "2026-11-08T04:12:00-05:00",
   "reset_label": "Sun Nov 8, 4:12 AM ET",
-  "as_of": "Nov 2, 6:05 PM ET",
-  "note": "66.3% of the weekly limit used as of Monday evening (shared with your other apps on the plan). Resets Sun Nov 8, 4:12 AM ET.",
+  "as_of": "Nov 3, 8:17 AM ET",
+  "note": "67.3% of the weekly limit used as of Tuesday morning (shared with your other apps on the plan). Resets Sun Nov 8, 4:12 AM ET. Extra credits: $26.69 (James-given figure; date not reconfirmed this morning \u2014 keep as prior).",
   "by": [
    [
-    "Deleted bots and others",
-    70,
-    ""
-   ],
-   [
     "Chief Bot",
-    29,
-    ""
+    98,
+    "This week share of Grok Bot usage"
    ],
    [
-    "Grok Bot",
-    1,
+    "ballz",
+    2,
     ""
-   ],
-   [
-    "Mission Control daily refresh (routine)",
-    0,
-    "Ran once, Oct 29 8:08 AM; not yet rated"
    ]
   ],
   "days": [
    [
-    "Oct 25",
-    26,
+    "Sun Nov 1",
+    36,
     0
    ],
    [
-    "Oct 26",
-    30,
+    "Mon Nov 2",
+    61,
     2
    ],
    [
-    "Oct 27",
-    10,
-    10
-   ],
-   [
-    "Oct 28",
-    4,
-    13
-   ],
-   [
-    "Oct 29",
-    0,
-    4
+    "Tue Nov 3",
+    1,
+    0
    ]
   ],
-  "routine_note": "The only active routine, Mission Control daily refresh (weekdays at 8 AM ET), has only just started running, so it hasn't been flagged as low-value.",
+  "routine_note": "Mission Control daily refresh (weekdays ~8 AM ET) is running this morning. Coin Radar builds paused until Nov 8 reset per James.",
   "save": [
    "Send each prompt once",
    "Batch and crop screenshots",
@@ -179,6 +167,11 @@
   ]
  ],
  "timeline": [
+  [
+   "chief",
+   "Nov 3, 8:17 AM",
+   "Ran the daily Mission Control refresh: wallets, Notion Inbox, usage 67.3%, Cloudflare deploy"
+  ],
   [
    "chief",
    "Oct 30, 8:20 AM",
@@ -249,7 +242,7 @@
   [
    "Mission Control daily refresh",
    "Chief Bot, weekdays around 8 AM ET",
-   "Ran Oct 30, 8:14 AM ET; next Mon Nov 2 around 8 AM ET",
+   "Running Nov 3 ~8:17 AM ET; next Wed Nov 4 around 8 AM ET",
    "Scheduled"
   ],
   [
@@ -499,7 +492,7 @@
   "rows": [],
   "week_total": 0,
   "month_total": 0,
-  "hint": "Log a receipt: drop receipt photos or bank screenshots (cover card/account numbers) in your Notion Inbox, or send them in chat. They're logged to Notion Expenses on the weekday-morning sync. Last week (Oct 26 to Nov 1): $139.35 logged; tobacco $49.06 was over the $25 cap.",
+  "hint": "Inbox empty this morning \u2014 no new expenses. This week (Nov 2\u20138) $0; November $0 so far. Log a receipt: drop receipt photos or bank screenshots (cover card/account numbers) in your Notion Inbox, or send them in chat. Last week (Oct 26 to Nov 1): $139.35 logged; tobacco $49.06 was over the $25 cap.",
   "last_week": {
    "label": "Oct 26 to Nov 1",
    "total": 139.35,
