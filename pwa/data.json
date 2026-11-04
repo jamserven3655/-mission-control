@@ -360,7 +360,7 @@
   ]
  ],
  "pnl": {
-  "as_of": "Nov 4, 8:11 AM ET",
+  "as_of": "Nov 4, 8:59 AM ET",
   "rows": [
    [
     "All-time (real wallets), as of Oct 27",
@@ -501,7 +501,7 @@
    "note": "Logged Nov 2 from 6 Chime screenshots. Tobacco $49.06 vs $25 weekly cap (over by $24.06). Restaurants/vending $4.30 of $10. Alcohol $0. Crypto $0."
   }
  },
- "updated_iso": "2026-11-04T08:10:57.030690-05:00",
+ "updated_iso": "2026-11-04T08:59:46.712580-05:00",
  "agents": [
   {
    "id": "chief",
@@ -510,7 +510,7 @@
    "bot": "chief",
    "hue": 190,
    "role": "Runs the 8 AM refresh, keeps the rules",
-   "activity": "Refresh done 8:10 AM ET"
+   "activity": "Refresh done 8:59 AM ET"
   },
   {
    "id": "scout",
@@ -519,7 +519,7 @@
    "bot": "chief",
    "hue": 45,
    "role": "Scans DexScreener + RugCheck (scan.py)",
-   "activity": "Scanned 54 pairs: pick Dacity"
+   "activity": "Scanned 46 pairs: pick FLOAT"
   },
   {
    "id": "paper",
@@ -568,15 +568,15 @@
   }
  ],
  "scan": {
-  "run": "2026-11-03 23:40 ET",
-  "decision": "PAPER PICK Dacity",
+  "run": "2026-11-04 08:59 ET",
+  "decision": "PAPER PICK FLOAT",
   "reason": "Passed every filter, highest score 93",
   "pick": {
-   "sym": "Dacity",
-   "name": "Dacity Coin",
-   "ca": "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump",
-   "url": "https://dexscreener.com/solana/g2uurbmvdzdfp4qyobjrskbxsi7d6v4bpp9thps36y4b",
-   "price": 0.006892,
+   "sym": "FLOAT",
+   "name": "FLOAT",
+   "ca": "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr",
+   "url": "https://dexscreener.com/solana/fjk9sajdc2q4herppu3ylzkmf2zbyzkpihqlv9e2bn5a",
+   "price": 0.002418,
    "score": 93
   },
   "filters": {
@@ -592,18 +592,18 @@
   },
   "candidates": [
    {
-    "sym": "Dacity",
-    "name": "Dacity Coin",
-    "ca": "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump",
-    "url": "https://dexscreener.com/solana/g2uurbmvdzdfp4qyobjrskbxsi7d6v4bpp9thps36y4b",
-    "price": 0.006892,
-    "liq": 364745,
-    "vol24": 1968233,
-    "vol_liq": 5.4,
-    "age_h": 569.4,
-    "chg1": 0.98,
-    "chg24": -5.5,
-    "bs1": 1.73,
+    "sym": "FLOAT",
+    "name": "FLOAT",
+    "ca": "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr",
+    "url": "https://dexscreener.com/solana/fjk9sajdc2q4herppu3ylzkmf2zbyzkpihqlv9e2bn5a",
+    "price": 0.002418,
+    "liq": 319434,
+    "vol24": 2257752,
+    "vol_liq": 7.1,
+    "age_h": 159.7,
+    "chg1": -2.87,
+    "chg24": -37.32,
+    "bs1": 1.78,
     "score": 93,
     "scout": "WATCH",
     "flags": [],
@@ -611,62 +611,8 @@
      "ok": true,
      "mint_auth": null,
      "freeze_auth": null,
-     "top10": 18.8,
-     "holders": 62669,
-     "rugged": false,
-     "score": 1,
-     "risks": []
-    }
-   },
-   {
-    "sym": "three",
-    "name": "three.ws",
-    "ca": "FeMbDoX7R1Psc4GEcvJdsbNbZA3bfztcyDCatJVJpump",
-    "url": "https://dexscreener.com/solana/5byl7mzolabynwmpzkpkjf4mgkz7febzranos19pre2z",
-    "price": 0.0006396,
-    "liq": 163299,
-    "vol24": 48842,
-    "vol_liq": 0.3,
-    "age_h": 4533.5,
-    "chg1": -5.28,
-    "chg24": 28.48,
-    "bs1": 2.83,
-    "score": 84,
-    "scout": "WATCH",
-    "flags": [],
-    "rug": {
-     "ok": true,
-     "mint_auth": null,
-     "freeze_auth": null,
-     "top10": 12.9,
-     "holders": 38505,
-     "rugged": false,
-     "score": 1,
-     "risks": []
-    }
-   },
-   {
-    "sym": "WASTED",
-    "name": "WASTED",
-    "ca": "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump",
-    "url": "https://dexscreener.com/solana/tt7dks9yjjzj1fwmgopmkbmdrezzymamrhodcgdfwqn",
-    "price": 0.0009396,
-    "liq": 92781,
-    "vol24": 870325,
-    "vol_liq": 9.4,
-    "age_h": 106.5,
-    "chg1": 19.32,
-    "chg24": -6.33,
-    "bs1": 1.01,
-    "score": 73,
-    "scout": "WATCH",
-    "flags": [],
-    "rug": {
-     "ok": true,
-     "mint_auth": null,
-     "freeze_auth": null,
-     "top10": 22.7,
-     "holders": 11950,
+     "top10": 19.2,
+     "holders": 20379,
      "rugged": false,
      "score": 1,
      "risks": []
@@ -677,15 +623,15 @@
     "name": "Super Intelligence SI276",
     "ca": "HMYd9tosnUXuNHmq7pXmoePRVBLBBjA3JBfydq6upump",
     "url": "https://dexscreener.com/solana/12jc1dzjpzbcdakum4brakh9jcfry2tlg1ffgsl4ftcg",
-    "price": 0.0004686,
-    "liq": 67798,
-    "vol24": 69851,
-    "vol_liq": 1.0,
-    "age_h": 681.2,
-    "chg1": 3.09,
-    "chg24": 8.51,
-    "bs1": 1.82,
-    "score": 70,
+    "price": 0.0005111,
+    "liq": 71813,
+    "vol24": 167439,
+    "vol_liq": 2.3,
+    "age_h": 690.6,
+    "chg1": -1.98,
+    "chg24": -7.39,
+    "bs1": 1.69,
+    "score": 74,
     "scout": "WATCH",
     "flags": [],
     "rug": {
@@ -693,34 +639,88 @@
      "mint_auth": null,
      "freeze_auth": null,
      "top10": 23.3,
-     "holders": 6987,
+     "holders": 7012,
      "rugged": false,
      "score": 1,
      "risks": []
     }
    },
    {
-    "sym": "CBUCKS",
-    "name": "Cartoon Money",
-    "ca": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
-    "url": "https://dexscreener.com/solana/b4cp45pgifvm5faxfh6aev8qz3eunqnqgbw7kuc7mhnb",
-    "price": 0.001822,
-    "liq": 143169,
-    "vol24": 106296,
-    "vol_liq": 0.7,
-    "age_h": 682.2,
-    "chg1": 2.95,
-    "chg24": -0.53,
+    "sym": "GTA 6 Coin",
+    "name": "GTA6",
+    "ca": "EaxAUcXxNnVwcqm2BBocbows7D1XVY2Q63V38NEypump",
+    "url": "https://dexscreener.com/solana/9kgswjrkczs3ebukvbkbgdwj8bwtdwzzqxkufdhaps2a",
+    "price": 0.001342,
+    "liq": 158908,
+    "vol24": 41867,
+    "vol_liq": 0.3,
+    "age_h": 15469.2,
+    "chg1": -0.63,
+    "chg24": 5.03,
     "bs1": 1.0,
-    "score": 56,
+    "score": 70,
     "scout": "WATCH",
     "flags": [],
     "rug": {
      "ok": true,
      "mint_auth": null,
      "freeze_auth": null,
-     "top10": 26.3,
-     "holders": 3596,
+     "top10": 23.4,
+     "holders": 37366,
+     "rugged": false,
+     "score": 1,
+     "risks": []
+    }
+   },
+   {
+    "sym": "WASTED",
+    "name": "WASTED",
+    "ca": "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump",
+    "url": "https://dexscreener.com/solana/tt7dks9yjjzj1fwmgopmkbmdrezzymamrhodcgdfwqn",
+    "price": 0.0008126,
+    "liq": 87138,
+    "vol24": 454247,
+    "vol_liq": 5.2,
+    "age_h": 115.8,
+    "chg1": -3.95,
+    "chg24": -16.87,
+    "bs1": 1.16,
+    "score": 64,
+    "scout": "WATCH",
+    "flags": [],
+    "rug": {
+     "ok": true,
+     "mint_auth": null,
+     "freeze_auth": null,
+     "top10": 22.8,
+     "holders": 12006,
+     "rugged": false,
+     "score": 1,
+     "risks": []
+    }
+   },
+   {
+    "sym": "RICO",
+    "name": "GTA6DOG",
+    "ca": "8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump",
+    "url": "https://dexscreener.com/solana/fby8nv8frjznzriihudvanbadtljfbnt9mvkkn61foly",
+    "price": 0.0005094,
+    "liq": 60967,
+    "vol24": 590273,
+    "vol_liq": 9.7,
+    "age_h": 45.6,
+    "chg1": 15.01,
+    "chg24": -17.54,
+    "bs1": 1.9,
+    "score": 58,
+    "scout": "WATCH",
+    "flags": [],
+    "rug": {
+     "ok": true,
+     "mint_auth": null,
+     "freeze_auth": null,
+     "top10": 20.9,
+     "holders": 6040,
      "rugged": false,
      "score": 1,
      "risks": []
@@ -731,14 +731,14 @@
     "name": "GTA6CAT",
     "ca": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
     "url": "https://dexscreener.com/solana/5e3dxlxgwmtdcoka51wyyakttjfzbwqcoyuhbui5gt2m",
-    "price": 0.01046,
-    "liq": 330832,
-    "vol24": 2945808,
-    "vol_liq": 8.9,
-    "age_h": 1696.2,
-    "chg1": -2.86,
-    "chg24": -22.2,
-    "bs1": 0.92,
+    "price": 0.01161,
+    "liq": 353414,
+    "vol24": 2529383,
+    "vol_liq": 7.2,
+    "age_h": 1705.5,
+    "chg1": 5.38,
+    "chg24": -5.52,
+    "bs1": 0.54,
     "score": 73,
     "scout": "SKIP",
     "flags": [
@@ -748,37 +748,8 @@
      "ok": true,
      "mint_auth": null,
      "freeze_auth": null,
-     "top10": 11.0,
-     "holders": 19352,
-     "rugged": false,
-     "score": 1,
-     "risks": []
-    }
-   },
-   {
-    "sym": "Pok\u00e9mon",
-    "name": "Pok\u00e9mon",
-    "ca": "D42TjMjz5H7toPu5md5KBXreZkCSdZMEfLQwmBhJXvb1",
-    "url": "https://dexscreener.com/solana/cxyug8pvwbbkw41mlaq7j87ft3drydjzv2a5pgwb31an",
-    "price": 0.0002055,
-    "liq": 47033,
-    "vol24": 124382,
-    "vol_liq": 2.6,
-    "age_h": 389.9,
-    "chg1": 16.4,
-    "chg24": 50.74,
-    "bs1": 1.76,
-    "score": 71,
-    "scout": "SKIP",
-    "flags": [
-     "Low liquidity"
-    ],
-    "rug": {
-     "ok": true,
-     "mint_auth": null,
-     "freeze_auth": null,
-     "top10": 29.2,
-     "holders": 21641,
+     "top10": 11.1,
+     "holders": 19468,
      "rugged": false,
      "score": 1,
      "risks": []
@@ -789,32 +760,67 @@
     "name": "Big Titty Coin",
     "ca": "C5xph2yL6gMdxmuLGxJBkGpmuDFfyi5fqkBNhvL6pump",
     "url": "https://dexscreener.com/solana/3m9svgl4u6atkaiexf3xhqqnfmb6ijvzk3memcqaen1w",
-    "price": 0.0117,
-    "liq": 400613,
-    "vol24": 398866,
-    "vol_liq": 1.0,
-    "age_h": 1232.5,
-    "chg1": -0.76,
-    "chg24": 18.69,
-    "bs1": 0.28,
+    "price": 0.01488,
+    "liq": 457703,
+    "vol24": 569908,
+    "vol_liq": 1.2,
+    "age_h": 1241.8,
+    "chg1": 2.97,
+    "chg24": 68.45,
+    "bs1": 0.71,
     "score": 70,
     "scout": "SKIP",
     "flags": [
      "Sell pressure (1h)",
      "Top-10 holders 76.1%",
-     "RugCheck risk score 13792"
+     "RugCheck risk score 13805"
     ],
     "rug": {
      "ok": true,
      "mint_auth": null,
      "freeze_auth": null,
      "top10": 76.1,
-     "holders": 48877,
+     "holders": 52293,
      "rugged": false,
-     "score": 13792,
+     "score": 13805,
      "risks": [
       "Top 10 holders high ownership",
       "Single holder ownership"
+     ]
+    }
+   },
+   {
+    "sym": "Butny",
+    "name": "ButnyCyfron",
+    "ca": "Cx3onEtJqfzfqbVG1mnveskpvA7uMWpq31hhZx2jpump",
+    "url": "https://dexscreener.com/solana/adh9awgou1n2yzznpdrdr7syyqhr1t24azpxhfx37jwb",
+    "price": 0.0003159,
+    "liq": 46055,
+    "vol24": 329,
+    "vol_liq": 0.0,
+    "age_h": 2947.3,
+    "chg1": null,
+    "chg24": 2.55,
+    "bs1": 0.0,
+    "score": 67,
+    "scout": "SKIP",
+    "flags": [
+     "Low liquidity",
+     "Sell pressure (1h)",
+     "Top-10 holders 65.9%",
+     "Few holders",
+     "RugCheck risk score 1173"
+    ],
+    "rug": {
+     "ok": true,
+     "mint_auth": null,
+     "freeze_auth": null,
+     "top10": 65.9,
+     "holders": 231,
+     "rugged": false,
+     "score": 1173,
+     "risks": [
+      "High holder concentration"
      ]
     }
    },
@@ -823,15 +829,36 @@
     "name": "Hellhound",
     "ca": "A75Xx6SeftAmWduv9KGwb2GCjXUAhxozcCUCys9jpump",
     "url": "https://dexscreener.com/solana/ewsyhiuznynqh5f65ypfsoqblq2kyetuvhm5un7wsfdg",
-    "price": 0.00324,
-    "liq": 152787,
-    "vol24": 48608,
-    "vol_liq": 0.3,
-    "age_h": 519.6,
-    "chg1": 19.33,
-    "chg24": 11.93,
-    "bs1": 1.0,
-    "score": 68,
+    "price": 0.002912,
+    "liq": 142556,
+    "vol24": 78050,
+    "vol_liq": 0.5,
+    "age_h": 528.9,
+    "chg1": -13.43,
+    "chg24": 6.93,
+    "bs1": 0.99,
+    "score": 66,
+    "scout": "SKIP",
+    "flags": [
+     "Sell pressure (1h)",
+     "RugCheck not run (outside top 8)"
+    ],
+    "rug": null
+   },
+   {
+    "sym": "CBUCKS",
+    "name": "Cartoon Money",
+    "ca": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
+    "url": "https://dexscreener.com/solana/b4cp45pgifvm5faxfh6aev8qz3eunqnqgbw7kuc7mhnb",
+    "price": 0.001883,
+    "liq": 145612,
+    "vol24": 119135,
+    "vol_liq": 0.8,
+    "age_h": 691.5,
+    "chg1": 0.54,
+    "chg24": 3.05,
+    "bs1": 0.79,
+    "score": 64,
     "scout": "SKIP",
     "flags": [
      "Sell pressure (1h)",
@@ -844,125 +871,104 @@
     "name": "5 STARS",
     "ca": "FK5tP4Zw7ujWzaz3TgeJ5NcqGe5LFufo7m6zH6YQpump",
     "url": "https://dexscreener.com/solana/68pp3xccwhxg5qijgjcyuwsv764ttbevlm23ck85e85a",
-    "price": 0.0001018,
-    "liq": 24392,
-    "vol24": 198845,
-    "vol_liq": 8.2,
-    "age_h": 12.0,
-    "chg1": 21.19,
-    "chg24": 73.83,
-    "bs1": 1.03,
+    "price": 0.0001109,
+    "liq": 26045,
+    "vol24": 321978,
+    "vol_liq": 12.4,
+    "age_h": 21.3,
+    "chg1": 8.41,
+    "chg24": 89.25,
+    "bs1": 0.95,
+    "score": 63,
+    "scout": "SKIP",
+    "flags": [
+     "Low liquidity",
+     "Very new (<24h)",
+     "Sell pressure (1h)",
+     "RugCheck not run (outside top 8)"
+    ],
+    "rug": null
+   },
+   {
+    "sym": "CATPAD",
+    "name": "CATPAD",
+    "ca": "2gTbp2gwH46rqExzabSyrdR3294SLwCp2rSqWDS6Sim1",
+    "url": "https://dexscreener.com/solana/gu2ajbkebpvxumm27t41xetevusbvrwghdmjw7fdc4bn",
+    "price": 0.0001233,
+    "liq": 28291,
+    "vol24": 30926,
+    "vol_liq": 1.1,
+    "age_h": 119.0,
+    "chg1": -4.98,
+    "chg24": 37.88,
+    "bs1": 1.17,
+    "score": 63,
+    "scout": "SKIP",
+    "flags": [
+     "Low liquidity",
+     "RugCheck not run (outside top 8)"
+    ],
+    "rug": null
+   },
+   {
+    "sym": "PEPEYE",
+    "name": "PEPEYE",
+    "ca": "FBACZF1nWvsGubj2sJZsaAjgmKnxkUfYGYXZ1Zyjpump",
+    "url": "https://dexscreener.com/solana/8cvmx4rfuxhykubzyzfhi8eg9ndsxcdgnxyhniwvhlex",
+    "price": 3.509e-05,
+    "liq": 13550,
+    "vol24": 6709,
+    "vol_liq": 0.5,
+    "age_h": 139.8,
+    "chg1": -0.24,
+    "chg24": 17.44,
+    "bs1": 3.8,
+    "score": 62,
+    "scout": "SKIP",
+    "flags": [
+     "Low liquidity",
+     "RugCheck not run (outside top 8)"
+    ],
+    "rug": null
+   },
+   {
+    "sym": "PKONG",
+    "name": "Pepekong",
+    "ca": "3ttAXdqca9Fz6PCDQAZWeXh5YQ8wicLMFvQvEEXLPwZr",
+    "url": "https://dexscreener.com/solana/aovohqxeyt5s7uqxv8ku7lcvhij6fccrpnqpkbo3h7r2",
+    "price": 1.98e-05,
+    "liq": 6474,
+    "vol24": 11543,
+    "vol_liq": 1.8,
+    "age_h": 1582.0,
+    "chg1": 16.05,
+    "chg24": 56.71,
+    "bs1": 1.67,
     "score": 61,
     "scout": "SKIP",
     "flags": [
      "Low liquidity",
-     "Very new (<24h)",
      "RugCheck not run (outside top 8)"
     ],
     "rug": null
    },
    {
-    "sym": "WOOP",
-    "name": "woop",
-    "ca": "2724239D1JhWQGV5WZ7tdBTN5Jz4FZ3pdmvj3iD4LsVE",
-    "url": "https://dexscreener.com/solana/ettubzdvpgvrudlkuemzs8xnppbf71wd2kyahiqzmhtd",
-    "price": 0.0001057,
-    "liq": 26093,
-    "vol24": 197784,
-    "vol_liq": 7.6,
-    "age_h": 40.7,
-    "chg1": -7.73,
-    "chg24": -23.28,
-    "bs1": 1.15,
+    "sym": "$1",
+    "name": "Barron $1 Coin",
+    "ca": "5qjzEB3bUBaxqfyG1NQWXgGUwYbZyAgvFeZQo31Dpump",
+    "url": "https://dexscreener.com/solana/hnhdpmdhh7eq7ngj4szcnbxwguks6jhs1t6nytkebxcy",
+    "price": 1.235e-05,
+    "liq": 3296,
+    "vol24": 2313,
+    "vol_liq": 0.7,
+    "age_h": 458.7,
+    "chg1": -5.82,
+    "chg24": 47.89,
+    "bs1": 1.0,
     "score": 60,
     "scout": "SKIP",
     "flags": [
      "Low liquidity",
-     "RugCheck not run (outside top 8)"
-    ],
-    "rug": null
-   },
-   {
-    "sym": "BUSTED",
-    "name": "BUSTED",
-    "ca": "Gg3XUJHFoFSha6cWFDT2im8mtNuSHhCzp2D4naowpump",
-    "url": "https://dexscreener.com/solana/6hwhwypnhvi3qh3xkexetwg6b2mx7ctcxpntwznprwd9",
-    "price": 6.813e-05,
-    "liq": 20705,
-    "vol24": 108558,
-    "vol_liq": 5.2,
-    "age_h": 4.2,
-    "chg1": -4.25,
-    "chg24": 56.62,
-    "bs1": 2.2,
-    "score": 59,
-    "scout": "SKIP",
-    "flags": [
-     "Low liquidity",
-     "Very new (<24h)",
-     "RugCheck not run (outside top 8)"
-    ],
-    "rug": null
-   },
-   {
-    "sym": "AMC",
-    "name": "A Meme Coin",
-    "ca": "9bz8ubx6D676wPJGeEwvgJHnB84mqR23KQ26zdsZpump",
-    "url": "https://dexscreener.com/solana/3qw7tyfc31h96zk3x5hdpvgpo1jztsenz5ej77mmk7yx",
-    "price": 0.0003986,
-    "liq": 50041,
-    "vol24": 452127,
-    "vol_liq": 9.0,
-    "age_h": 0.9,
-    "chg1": 872,
-    "chg24": 872,
-    "bs1": 2.73,
-    "score": 56,
-    "scout": "SKIP",
-    "flags": [
-     "Very new (<24h)",
-     "RugCheck not run (outside top 8)"
-    ],
-    "rug": null
-   },
-   {
-    "sym": "RICO",
-    "name": "GTA6DOG",
-    "ca": "8kuQg3WivDtL85VEdw2jEmSXjYt6EEeYBATJ4DtQpump",
-    "url": "https://dexscreener.com/solana/fby8nv8frjznzriihudvanbadtljfbnt9mvkkn61foly",
-    "price": 0.0003215,
-    "liq": 47377,
-    "vol24": 979735,
-    "vol_liq": 20.7,
-    "age_h": 36.2,
-    "chg1": 4.76,
-    "chg24": 12.46,
-    "bs1": 1.45,
-    "score": 54,
-    "scout": "SKIP",
-    "flags": [
-     "Low liquidity",
-     "RugCheck not run (outside top 8)"
-    ],
-    "rug": null
-   },
-   {
-    "sym": "ANONVOYAGE",
-    "name": "Anon Voyage",
-    "ca": "8muc9DdhqWfAPcvmEebNQCG89bLiwi12T2KtBtzVpump",
-    "url": "https://dexscreener.com/solana/2yx74z677vrmwjn4qnm9aqthbxqi1dsxrysifk4rsmma",
-    "price": 0.000877,
-    "liq": 79891,
-    "vol24": 3779572,
-    "vol_liq": 47.3,
-    "age_h": 15.0,
-    "chg1": -0.45,
-    "chg24": 1352,
-    "bs1": 3.5,
-    "score": 53,
-    "scout": "SKIP",
-    "flags": [
-     "Very new (<24h)",
      "RugCheck not run (outside top 8)"
     ],
     "rug": null
@@ -976,7 +982,7 @@
    "wins": 2,
    "win_rate": 100.0,
    "net": 7.05,
-   "unrealized": -2.35,
+   "unrealized": -1.43,
    "fees": 0.34,
    "slippage": 0.68,
    "avg_hold_h": 72.6,
@@ -990,8 +996,8 @@
     "opened": "2026-11-03",
     "status": "open",
     "entry": 0.006866,
-    "last": 0.006902,
-    "x": 1.005,
+    "last": 0.0078,
+    "x": 1.136,
     "half": false,
     "net": null,
     "fees": 0.045,
@@ -1005,8 +1011,8 @@
     "opened": "2026-11-02",
     "status": "open",
     "entry": 0.0167,
-    "last": 0.009427,
-    "x": 0.564,
+    "last": 0.01088,
+    "x": 0.651,
     "half": false,
     "net": null,
     "fees": 0.045,
@@ -1047,18 +1053,6 @@
   "log": [
    [
     "2026-11-03",
-    "DESSA: open, price x0.56 of entry"
-   ],
-   [
-    "2026-11-03",
-    "Opened $4.50 paper position in Dacity at $0.006866"
-   ],
-   [
-    "2026-11-03",
-    "DESSA: open, price x0.53 of entry"
-   ],
-   [
-    "2026-11-03",
     "Dacity: open, price x1.00 of entry"
    ],
    [
@@ -1076,6 +1070,18 @@
    [
     "2026-11-03",
     "Already opened a paper trade today"
+   ],
+   [
+    "2026-11-04",
+    "DESSA: open, price x0.65 of entry"
+   ],
+   [
+    "2026-11-04",
+    "Dacity: open, price x1.14 of entry"
+   ],
+   [
+    "2026-11-04",
+    "Risk Keeper: max 2 open positions"
    ]
   ],
   "rules": {
@@ -1195,7 +1201,7 @@
   "Restaurants": 0.0,
   "Alcohol": 0.0
  },
- "updated": "Nov 4, 2026, 8:11 AM ET",
+ "updated": "Nov 4, 2026, 8:59 AM ET",
  "sol_price": 92.62,
  "wallets": [
   {
@@ -1262,7 +1268,7 @@
    66.7
   ],
   [
-   "Nov 4 8:11a",
+   "Nov 4 8:59a",
    66.7
   ]
  ],
@@ -1489,8 +1495,8 @@
   "trades": []
  },
  "briefing": [
-  "- Scout: PAPER PICK Dacity. Passed every filter, highest score 93.",
-  "- Paper: 2 open, 2 closed, win rate 100.0%, net $+7.05 realized, $-2.35 open (after fees/slippage). Paper only.",
+  "- Scout: PAPER PICK FLOAT. Passed every filter, highest score 93.",
+  "- Paper: 2 open, 2 closed, win rate 100.0%, net $+7.05 realized, $-1.43 open (after fees/slippage). Paper only.",
   "- Wallets: $66.70 total vs $100.40 on Oct 27 (read-only).",
   "- Spend this week vs caps: Tobacco $0/$25, Crypto $0/$0, Restaurants $0/$10, Alcohol $0/$15.",
   "- $5K mission: income/savings are entered in the app on your phone; the server only knows confirmed savings $0.",
