@@ -6,7 +6,7 @@
    "short": "CB",
    "state": "idle",
    "task": "Daily refresh done",
-   "detail": "Nov 3 morning refresh complete; wallets $66.70, usage 67.3%"
+   "detail": "Nov 4 morning refresh complete; wallets $66.70, usage 73.3%"
   },
   "grok": {
    "id": "a3c71898-3ded-4507-8dcd-b748bcfd09f3",
@@ -33,11 +33,11 @@
  },
  "usage": {
   "plan": "Premium",
-  "pct": 72.6,
+  "pct": 73.3,
   "reset": "2026-11-08T04:12:00-05:00",
   "reset_label": "Sun Nov 8, 4:12 AM ET",
-  "as_of": "Nov 3, 6:05 PM ET",
-  "note": "72.6% of the weekly limit used as of Tuesday evening (shared with your other apps on the plan). Resets Sun Nov 8, 4:12 AM ET. Extra credits: $26.69 (James-given figure; date not reconfirmed this evening \u2014 keep as prior).",
+  "as_of": "Nov 4, ~8:11 AM ET",
+  "note": "73.3% of the weekly limit used as of Wednesday morning (shared with your other apps on the plan). Resets Sun Nov 8, 4:12 AM ET. Extra credits: $26.69 (James-given prior figure from stats; date not reconfirmed \u2014 keep as prior).",
   "by": [
    [
     "Chief Bot",
@@ -65,9 +65,14 @@
     "Tue Nov 3",
     1,
     0
+   ],
+   [
+    "Wed Nov 4",
+    0,
+    0
    ]
   ],
-  "routine_note": "Mission Control usage update (~6 PM ET) refreshed plan %. Coin Radar builds paused until Nov 8 reset per James.",
+  "routine_note": "Mission Control daily refresh (~8 AM ET) refreshed wallets, Notion Inbox, and plan %.",
   "save": [
    "Send each prompt once",
    "Batch and crop screenshots",
@@ -115,6 +120,11 @@
   ]
  ],
  "timeline": [
+  [
+   "chief",
+   "Nov 4, 8:11 AM",
+   "Ran the daily Mission Control refresh: wallets, Notion Inbox, usage 73.3%, Cloudflare deploy"
+  ],
   [
    "chief",
    "Nov 3, 8:17 AM",
@@ -190,7 +200,7 @@
   [
    "Mission Control daily refresh",
    "Chief Bot, weekdays around 8 AM ET",
-   "Running Nov 3 ~8:17 AM ET; next Wed Nov 4 around 8 AM ET",
+   "Running Nov 4 ~8:11 AM ET; next Thu Nov 5 around 8 AM ET",
    "Scheduled"
   ],
   [
@@ -350,7 +360,7 @@
   ]
  ],
  "pnl": {
-  "as_of": "Nov 3, 11:40 PM ET",
+  "as_of": "Nov 4, 8:11 AM ET",
   "rows": [
    [
     "All-time (real wallets), as of Oct 27",
@@ -491,7 +501,7 @@
    "note": "Logged Nov 2 from 6 Chime screenshots. Tobacco $49.06 vs $25 weekly cap (over by $24.06). Restaurants/vending $4.30 of $10. Alcohol $0. Crypto $0."
   }
  },
- "updated_iso": "2026-11-03T23:40:07.303248-05:00",
+ "updated_iso": "2026-11-04T08:10:57.030690-05:00",
  "agents": [
   {
    "id": "chief",
@@ -500,7 +510,7 @@
    "bot": "chief",
    "hue": 190,
    "role": "Runs the 8 AM refresh, keeps the rules",
-   "activity": "Refresh done 11:40 PM ET"
+   "activity": "Refresh done 8:10 AM ET"
   },
   {
    "id": "scout",
@@ -1185,8 +1195,8 @@
   "Restaurants": 0.0,
   "Alcohol": 0.0
  },
- "updated": "Nov 3, 2026, 11:40 PM ET",
- "sol_price": 92.7,
+ "updated": "Nov 4, 2026, 8:11 AM ET",
+ "sol_price": 92.62,
  "wallets": [
   {
    "key": "main",
@@ -1201,7 +1211,7 @@
    "name": "Phantom J1df",
    "addr": "J1dfibagGeMAbWpUMAjWeJ1oLEQ7uLysqSjqw6xcDto5",
    "hold": "40.02 CASH",
-   "now": 39.99,
+   "now": 39.98,
    "prev": 39.99
   },
   {
@@ -1252,7 +1262,7 @@
    66.7
   ],
   [
-   "Nov 3 11:40p",
+   "Nov 4 8:11a",
    66.7
   ]
  ],
@@ -1415,7 +1425,7 @@
    "sym": "NTRNDM",
    "name": "notrandom",
    "ca": "NTRNDMqQSiwEC2jJs3wJiZS6bpGYQJtMNQJgiX3WyV6",
-   "age": "26 d",
+   "age": "27 d",
    "liq": "unverified",
    "vol": "unverified",
    "chg": "mcap $555.3k",
@@ -1439,7 +1449,7 @@
    "sym": "Wifoween",
    "name": "Wifoween",
    "ca": "DtBatQsrazRRVp37UTMQH7TnXL1mT2qrJTj7PB9Rpump",
-   "age": "8 d",
+   "age": "9 d",
    "liq": "unverified",
    "vol": "unverified",
    "chg": "mcap $54.9k",
@@ -1463,7 +1473,7 @@
    "sym": "AUDACITY",
    "name": "Dacity Coin",
    "ca": "HJS1ncCpUDfzXNpM8MwnTHisdPrBqMCbnrQ2nsL8pump",
-   "age": "18 d",
+   "age": "19 d",
    "liq": "unverified",
    "vol": "unverified",
    "chg": "mcap $11.9k",
@@ -1473,7 +1483,7 @@
   }
  ],
  "live_trades": {
-  "generated": "2026-11-03 08:17 EST",
+  "generated": "2026-11-04 08:11 EST",
   "note": "Real trades signed by you, read from the public Solana RPC. USD at the refresh SOL price.",
   "summary": [],
   "trades": []
@@ -1484,6 +1494,6 @@
   "- Wallets: $66.70 total vs $100.40 on Oct 27 (read-only).",
   "- Spend this week vs caps: Tobacco $0/$25, Crypto $0/$0, Restaurants $0/$10, Alcohol $0/$15.",
   "- $5K mission: income/savings are entered in the app on your phone; the server only knows confirmed savings $0.",
-  "- Grok cost this month $71.69 (extra $26.69 vs $20 cap). Usage 72.6%, resets Sun Nov 8, 4:12 AM ET."
+  "- Grok cost this month $71.69 (extra $26.69 vs $20 cap). Usage 73.3%, resets Sun Nov 8, 4:12 AM ET."
  ]
 }
