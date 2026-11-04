@@ -104,7 +104,7 @@
    "qty": 261.53575202536103,
    "qty0": 261.53575202536103,
    "peak": 0.0167,
-   "last_px": 0.01088,
+   "last_px": 0.01533,
    "half_sold": false,
    "proceeds": 0.0,
    "fees": 0.045,
@@ -118,7 +118,7 @@
      -4.5
     ]
    ],
-   "mark_x": 0.651
+   "mark_x": 0.918
   },
   {
    "id": 4,
@@ -131,8 +131,8 @@
    "fill": 0.0070033199999999995,
    "qty": 636.1268655437707,
    "qty0": 636.1268655437707,
-   "peak": 0.0078,
-   "last_px": 0.0078,
+   "peak": 0.008792,
+   "last_px": 0.008792,
    "half_sold": false,
    "proceeds": 0.0,
    "fees": 0.045,
@@ -146,7 +146,7 @@
      -4.5
     ]
    ],
-   "mark_x": 1.136
+   "mark_x": 1.281
   }
  ],
  "losses": {
@@ -377,6 +377,18 @@
   [
    "2026-11-04",
    "Risk Keeper: max 2 open positions"
+  ],
+  [
+   "2026-11-04",
+   "DESSA: open, price x0.92 of entry"
+  ],
+  [
+   "2026-11-04",
+   "Dacity: open, price x1.28 of entry"
+  ],
+  [
+   "2026-11-04",
+   "Risk Keeper: max 2 open positions"
   ]
  ],
  "summary": {
@@ -385,7 +397,7 @@
   "wins": 2,
   "win_rate": 100.0,
   "net": 7.05,
-  "unrealized": -1.43,
+  "unrealized": 0.32,
   "fees": 0.34,
   "slippage": 0.68,
   "avg_hold_h": 72.6,
