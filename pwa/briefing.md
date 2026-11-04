@@ -1,6 +1,6 @@
-# Daily briefing, Tue Nov 3, 6:32 PM ET
+# Daily briefing, Tue Nov 3, 11:40 PM ET
 - Scout: PAPER PICK Dacity. Passed every filter, highest score 93.
-- Paper: 2 open, 2 closed, win rate 100.0%, net $+7.05 realized, $-2.51 open (after fees/slippage). Paper only.
+- Paper: 2 open, 2 closed, win rate 100.0%, net $+7.05 realized, $-2.35 open (after fees/slippage). Paper only.
 - Wallets: $66.70 total vs $100.40 on Oct 27 (read-only).
 - Spend this week vs caps: Tobacco $0/$25, Crypto $0/$0, Restaurants $0/$10, Alcohol $0/$15.
 - $5K mission: income/savings are entered in the app on your phone; the server only knows confirmed savings $0.
