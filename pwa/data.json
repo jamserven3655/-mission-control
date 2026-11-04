@@ -33,11 +33,11 @@
  },
  "usage": {
   "plan": "Premium",
-  "pct": 73.3,
+  "pct": 86.5,
   "reset": "2026-11-08T04:12:00-05:00",
   "reset_label": "Sun Nov 8, 4:12 AM ET",
-  "as_of": "Nov 4, ~8:11 AM ET",
-  "note": "73.3% of the weekly limit used as of Wednesday morning (shared with your other apps on the plan). Resets Sun Nov 8, 4:12 AM ET. Extra credits: $26.69 (James-given prior figure from stats; date not reconfirmed \u2014 keep as prior).",
+  "as_of": "Nov 4, ~6:00 PM ET",
+  "note": "86.5% of the weekly limit used as of Wednesday evening (shared with your other apps on the plan). Resets Sun Nov 8, 4:12 AM ET. Extra credits: $26.69 (James-given prior figure from stats; date not reconfirmed \u2014 keep as prior).",
   "by": [
    [
     "Chief Bot",
@@ -72,7 +72,7 @@
     0
    ]
   ],
-  "routine_note": "Mission Control daily refresh (~8 AM ET) refreshed wallets, Notion Inbox, and plan %.",
+  "routine_note": "Mission Control usage update (~6 PM ET) refreshed plan % only.",
   "save": [
    "Send each prompt once",
    "Batch and crop screenshots",
@@ -360,7 +360,7 @@
   ]
  ],
  "pnl": {
-  "as_of": "Nov 4, 1:43 PM ET",
+  "as_of": "Nov 4, 6:01 PM ET",
   "rows": [
    [
     "All-time (real wallets), as of Oct 27",
@@ -501,7 +501,7 @@
    "note": "Logged Nov 2 from 6 Chime screenshots. Tobacco $49.06 vs $25 weekly cap (over by $24.06). Restaurants/vending $4.30 of $10. Alcohol $0. Crypto $0."
   }
  },
- "updated_iso": "2026-11-04T13:43:01.481128-05:00",
+ "updated_iso": "2026-11-04T18:01:06.887493-05:00",
  "agents": [
   {
    "id": "chief",
@@ -510,7 +510,7 @@
    "bot": "chief",
    "hue": 190,
    "role": "Runs the 8 AM refresh, keeps the rules",
-   "activity": "Refresh done 1:43 PM ET"
+   "activity": "Refresh done 6:01 PM ET"
   },
   {
    "id": "scout",
@@ -1188,7 +1188,7 @@
   "Restaurants": 0.0,
   "Alcohol": 0.0
  },
- "updated": "Nov 4, 2026, 1:43 PM ET",
+ "updated": "Nov 4, 2026, 6:01 PM ET",
  "sol_price": 92.62,
  "wallets": [
   {
@@ -1255,7 +1255,7 @@
    66.7
   ],
   [
-   "Nov 4 1:43p",
+   "Nov 4 6:01p",
    66.7
   ]
  ],
@@ -1406,7 +1406,7 @@
    "sym": "BURN",
    "name": "BURN",
    "ca": "5ANpBFZjmhTv48dvU18sCLmgQS9mwJ7meU6aMYSZpump",
-   "age": "5 d",
+   "age": "6 d",
    "liq": "unverified",
    "vol": "unverified",
    "chg": "mcap $12.1k",
@@ -1487,6 +1487,6 @@
   "- Wallets: $66.70 total vs $100.40 on Oct 27 (read-only).",
   "- Spend this week vs caps: Tobacco $0/$25, Crypto $0/$0, Restaurants $0/$10, Alcohol $0/$15.",
   "- $5K mission: income/savings are entered in the app on your phone; the server only knows confirmed savings $0.",
-  "- Grok cost this month $71.69 (extra $26.69 vs $20 cap). Usage 73.3%, resets Sun Nov 8, 4:12 AM ET."
+  "- Grok cost this month $71.69 (extra $26.69 vs $20 cap). Usage 86.5%, resets Sun Nov 8, 4:12 AM ET."
  ]
 }

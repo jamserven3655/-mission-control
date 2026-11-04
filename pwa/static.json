@@ -81,15 +81,15 @@
     "grok_extra": 26.69,
     "grok_cap": 20,
     "caps": "Tobacco $25, crypto $0, restaurants $10, alcohol $15",
-    "caps_status": "This week (Nov 2–8): $0 logged. Tobacco $0/$25, restaurants $0/$10, alcohol $0/$15, crypto $0/$0. All under caps."
+    "caps_status": "This week (Nov 2\u20138): $0 logged. Tobacco $0/$25, restaurants $0/$10, alcohol $0/$15, crypto $0/$0. All under caps."
   },
   "usage": {
     "plan": "Premium",
-    "pct": 73.3,
+    "pct": 86.5,
     "reset": "2026-11-08T04:12:00-05:00",
     "reset_label": "Sun Nov 8, 4:12 AM ET",
-    "as_of": "Nov 4, ~8:11 AM ET",
-    "note": "73.3% of the weekly limit used as of Wednesday morning (shared with your other apps on the plan). Resets Sun Nov 8, 4:12 AM ET. Extra credits: $26.69 (James-given prior figure from stats; date not reconfirmed — keep as prior).",
+    "as_of": "Nov 4, ~6:00 PM ET",
+    "note": "86.5% of the weekly limit used as of Wednesday evening (shared with your other apps on the plan). Resets Sun Nov 8, 4:12 AM ET. Extra credits: $26.69 (James-given prior figure from stats; date not reconfirmed \u2014 keep as prior).",
     "by": [
       [
         "Chief Bot",
@@ -124,7 +124,7 @@
         0
       ]
     ],
-    "routine_note": "Mission Control daily refresh (~8 AM ET) refreshed wallets, Notion Inbox, and plan %.",
+    "routine_note": "Mission Control usage update (~6 PM ET) refreshed plan % only.",
     "save": [
       "Send each prompt once",
       "Batch and crop screenshots",
@@ -502,7 +502,7 @@
     "rows": [],
     "week_total": 0,
     "month_total": 0,
-    "hint": "Inbox empty this morning — no new expenses. This week (Nov 2–8) $0; November $0 so far. Log a receipt: drop receipt photos or bank screenshots (cover card/account numbers) in your Notion Inbox, or send them in chat. Last week (Oct 26 to Nov 1): $139.35 logged; tobacco $49.06 was over the $25 cap.",
+    "hint": "Inbox empty this morning \u2014 no new expenses. This week (Nov 2\u20138) $0; November $0 so far. Log a receipt: drop receipt photos or bank screenshots (cover card/account numbers) in your Notion Inbox, or send them in chat. Last week (Oct 26 to Nov 1): $139.35 logged; tobacco $49.06 was over the $25 cap.",
     "last_week": {
       "label": "Oct 26 to Nov 1",
       "total": 139.35,
