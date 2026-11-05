@@ -103,8 +103,8 @@
    "fill": 0.017034,
    "qty": 261.53575202536103,
    "qty0": 261.53575202536103,
-   "peak": 0.02009,
-   "last_px": 0.02009,
+   "peak": 0.02028,
+   "last_px": 0.02028,
    "half_sold": false,
    "proceeds": 0.0,
    "fees": 0.045,
@@ -118,7 +118,7 @@
      -4.5
     ]
    ],
-   "mark_x": 1.203
+   "mark_x": 1.214
   },
   {
    "id": 4,
@@ -132,7 +132,7 @@
    "qty": 636.1268655437707,
    "qty0": 636.1268655437707,
    "peak": 0.009921,
-   "last_px": 0.009921,
+   "last_px": 0.009106,
    "half_sold": false,
    "proceeds": 0.0,
    "fees": 0.045,
@@ -146,7 +146,7 @@
      -4.5
     ]
    ],
-   "mark_x": 1.445
+   "mark_x": 1.326
   }
  ],
  "losses": {
@@ -154,18 +154,6 @@
   "2026-11-03": 0
  },
  "log": [
-  [
-   "2026-10-30",
-   "Already opened a paper trade today"
-  ],
-  [
-   "2026-10-31",
-   "CBUCKS: open, price x1.26 of entry"
-  ],
-  [
-   "2026-10-31",
-   "NO TRADE today (no token passed every filter)"
-  ],
   [
    "2026-10-31",
    "CBUCKS: open, price x1.50 of entry"
@@ -393,6 +381,18 @@
   [
    "2026-11-04",
    "Risk Keeper: max 2 open positions"
+  ],
+  [
+   "2026-11-04",
+   "DESSA: open, price x1.21 of entry"
+  ],
+  [
+   "2026-11-04",
+   "Dacity: open, price x1.33 of entry"
+  ],
+  [
+   "2026-11-04",
+   "Risk Keeper: max 2 open positions"
   ]
  ],
  "summary": {
@@ -401,7 +401,7 @@
   "wins": 2,
   "win_rate": 100.0,
   "net": 7.05,
-  "unrealized": 2.22,
+  "unrealized": 1.77,
   "fees": 0.34,
   "slippage": 0.68,
   "avg_hold_h": 72.6,
